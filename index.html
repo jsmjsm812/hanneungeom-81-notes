@@ -134,6 +134,22 @@ aside.toc a.cur small{color:var(--card)}
 .outlook li strong{font-size:17.5px}
 .outlook li span{color:var(--fg);font-size:16px}
 .chips a,button.t{font-size:14px}
+
+/* ---- 사진 ---- */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin:8px 0 6px}
+.gal figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.gal .zoom{display:block;background:var(--tealbg);aspect-ratio:4/3}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.gal figcaption{padding:8px 10px 10px;font-size:14.5px;line-height:1.5;display:flex;flex-direction:column;gap:2px}
+.gal figcaption b{font-size:15.5px}
+.gal figcaption span{color:var(--fg)}
+.gal figcaption small{color:var(--muted);font-size:11.5px;line-height:1.4;word-break:break-all}
+.gal figcaption small a{color:var(--muted)}
+@media (max-width:560px){.gal{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gal figcaption{padding:6px 8px 8px;font-size:13.5px}.gal figcaption b{font-size:14.5px}}
+#lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:4px}
+body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </style>
 </head>
 <body>
@@ -215,6 +231,9 @@ aside.toc a.cur small{color:var(--card)}
     <li>청동기의 변화: <b class="k">의기화·독자화</b>. 비파형 동검→<b class="k">세형동검</b>, 거친무늬 거울→<b class="k">잔무늬 거울</b>, 만들었다는 증거는 <b class="k">거푸집</b>.</li>
     <li>중국과 교류한 증거: 중국 동전(<b class="k">명도전·화천·반량전</b>)과 붓. 동전 이름을 확인하라고 했어요.</li>
   </ul>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/jeongok.jpg"><img src="img/jeongok.jpg" alt="전곡리 주먹도끼" loading="lazy"></a><figcaption><b>전곡리 주먹도끼</b><span>구석기 · 연천 전곡리 출토</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Handaxe._Jeongok_ri._Gyeonggi_do._National_Museum_of_Korea.jpg" target="_blank" rel="noopener">Ismoon (talk) 19:51, 23 May 2018 (UTC) · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/amsa.jpg"><img src="img/amsa.jpg" alt="암사동 유적 움집 복원" loading="lazy"></a><figcaption><b>암사동 유적 움집 복원</b><span>신석기 · 서울 암사동</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Amsa_prehistoric_Museum2.jpg" target="_blank" rel="noopener">강병기 · CC BY 3.0</a></small></figcaption></figure><figure><a class="zoom" href="img/bitsal.jpg"><img src="img/bitsal.jpg" alt="빗살무늬 토기" loading="lazy"></a><figcaption><b>빗살무늬 토기</b><span>신석기 · 곡식 저장</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B9%97%EC%82%B4%EB%AC%B4%EB%8A%AC%ED%86%A0%EA%B8%B0.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/garak.jpg"><img src="img/garak.jpg" alt="가락바퀴" loading="lazy"></a><figcaption><b>가락바퀴</b><span>신석기 · 옷감 짜기</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EA%B0%80%EB%9D%BD%EB%B0%94%ED%80%B4_(%EC%8B%A0%EC%84%9D%EA%B8%B0_%EC%8B%9C%EB%8C%80).jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/banwol.jpg"><img src="img/banwol.jpg" alt="반달 돌칼" loading="lazy"></a><figcaption><b>반달 돌칼</b><span>청동기 · 부여 송국리 출토</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B6%80%EC%97%AC_%EC%86%A1%EA%B5%AD%EB%A6%AC_%EC%9C%A0%EC%A0%81_%EC%B6%9C%ED%86%A0_%EB%B0%98%EB%8B%AC%EB%8F%8C%EC%B9%BC.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/songguk.jpg"><img src="img/songguk.jpg" alt="부여 송국리 유적" loading="lazy"></a><figcaption><b>부여 송국리 유적</b><span>청동기 · 벼농사 마을</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B6%80%EC%97%AC_%EC%86%A1%EA%B5%AD%EB%A6%AC_%EC%9C%A0%EC%A0%81.jpg" target="_blank" rel="noopener">문화재청 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/goindol.jpg"><img src="img/goindol.jpg" alt="고인돌" loading="lazy"></a><figcaption><b>고인돌</b><span>청동기 · 군장의 무덤</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Example_of_a_southern-style_dolmen_at_Ganghwa_Island.jpg" target="_blank" rel="noopener">Taewangkorea · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/sehyung.jpg"><img src="img/sehyung.jpg" alt="세형동검" loading="lazy"></a><figcaption><b>세형동검</b><span>철기 · 청동기의 독자화</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Slender_bronze_dagger_in_Korea_in_2008.jpg" target="_blank" rel="noopener">AsPJT · CC0</a></small></figcaption></figure></div>
 </section>
 
 <!-- 2 고조선 -->
@@ -279,6 +298,9 @@ aside.toc a.cur small{color:var(--card)}
     <li class="keep"><span class="b ans">정답 단골</span>변한에서 출발, <b class="k">철(덩이쇠)을 낙랑·왜에 수출</b>.</li>
     <li class="keep">사진: 금동관(투박함), <b class="k">철갑옷</b>, 수레바퀴 장식 토기, 기마 인물형 뿔잔(신라 것과 비슷하니 주의).</li>
   </ul>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/gima.jpg"><img src="img/gima.jpg" alt="기마인물형 뿔잔" loading="lazy"></a><figcaption><b>기마인물형 뿔잔</b><span>가야 · 신라 것과 비슷해 주의</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%8F%84%EA%B8%B0_%EA%B8%B0%EB%A7%88%EC%9D%B8%EB%AC%BC%ED%98%95_%EB%BF%94%EC%9E%94.jpg" target="_blank" rel="noopener">Eggmoon at Korean Wikipedia · CC BY-SA 3.0</a></small></figcaption></figure></div>
 </section>
 
 <!-- 5 삼국 항쟁 -->
@@ -312,6 +334,9 @@ aside.toc a.cur small{color:var(--card)}
     <li><b>법흥왕</b>: <b class="k">법·병·불</b> = 율령·병부와 상대등·불교 공인(<b class="k">이차돈의 순교</b>). 연호 <b class="k">건원</b>, 금관가야 멸망.</li>
     <li><b>진흥왕</b>: <b class="k">화랑도</b>를 국가 조직으로 개편, <b class="k">황룡사</b>, 역사서 『국사』(거칠부), 연호 대창 <span class="b sup">(보충)</span>, <b class="k">대가야 멸망</b>, <b class="k">단양 적성비</b>와 순수비 네 개(그중 북한산비는 김정희가 고증).</li>
   </ul>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/howoo.jpg"><img src="img/howoo.jpg" alt="호우명 그릇" loading="lazy"></a><figcaption><b>호우명 그릇</b><span>신라 고분 출토 · 400년 광개토 대왕의 신라 구원과 연결</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Bronze_Bowl_with_Inscription_of_%22Ho-u%22_from_Gyeongju,_Korea.jpg" target="_blank" rel="noopener">Eggmoon · CC BY-SA 3.0</a></small></figcaption></figure><figure><a class="zoom" href="img/chiljido.jpg"><img src="img/chiljido.jpg" alt="칠지도" loading="lazy"></a><figcaption><b>칠지도</b><span>근초고왕 · 백제가 왜에 보낸 칼</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Chiljido_Seven-Branched_Sword_(30110353701).jpg" target="_blank" rel="noopener">Gary Todd from Xinzheng, China · CC0</a></small></figcaption></figure><figure><a class="zoom" href="img/muryeong.jpg"><img src="img/muryeong.jpg" alt="무령왕릉" loading="lazy"></a><figcaption><b>무령왕릉</b><span>웅진(공주) · 벽돌 무덤</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Tomb_of_Muryeong_of_Baekje.JPG" target="_blank" rel="noopener">Ryuch · CC BY-SA 3.0</a></small></figcaption></figure><figure><a class="zoom" href="img/jinmyosu.jpg"><img src="img/jinmyosu.jpg" alt="진묘수" loading="lazy"></a><figcaption><b>진묘수</b><span>무령왕릉 출토 돌짐승</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%AC%B4%EB%A0%B9%EC%99%95%EB%A6%89_%EC%84%9D%EC%88%98.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/jeokseong.jpg"><img src="img/jeokseong.jpg" alt="단양 신라 적성비" loading="lazy"></a><figcaption><b>단양 신라 적성비</b><span>진흥왕</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Danyang_Jeokseongbi_01.JPG" target="_blank" rel="noopener">Lawinc82 · CC BY-SA 3.0</a></small></figcaption></figure><figure><a class="zoom" href="img/bukhan.jpg"><img src="img/bukhan.jpg" alt="북한산 신라 진흥왕 순수비" loading="lazy"></a><figcaption><b>북한산 신라 진흥왕 순수비</b><span>진흥왕 · 김정희가 고증</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B6%81%ED%95%9C%EC%82%B0_%EC%8B%A0%EB%9D%BC_%EC%A7%84%ED%9D%A5%EC%99%95_%EC%88%9C%EC%88%98%EB%B9%84.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure></div>
 </section>
 
 <!-- 6 수당~통일 -->
@@ -360,6 +385,9 @@ aside.toc a.cur small{color:var(--card)}
     <li class="hot"><b>최치원</b>: 인물 단독 문제를 대비하라고 했어요. 6두품, 어린 나이에 당에 유학해 <b class="k">빈공과 급제</b>, <b class="k">황소의 난</b> 때 <b class="k">격황소서</b>로 이름을 떨침. 귀국해 진성 여왕에게 시무 10여 조를 건의했지만 받아들여지지 않아 은둔(해인사 등).</li>
     <li class="keep"><b>신라 말 사회상</b>(지난 시험): <b class="k">호족·6두품·선종</b> 삼각형 + <b class="k">풍수지리설</b>(선종 승려 도선이 전함). 호족은 반독립적 지방 세력, 6두품은 유학, 선종은 '견성오도'.</li>
   </ul>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/daewang.jpg"><img src="img/daewang.jpg" alt="문무대왕릉(대왕암)" loading="lazy"></a><figcaption><b>문무대왕릉(대왕암)</b><span>문무왕 · 바다에 묻힌 수중릉</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Underwater_Tomb_of_King_Munmu.jpeg" target="_blank" rel="noopener">vatar/편성재 · CC BY-SA 3.0</a></small></figcaption></figure></div>
 </section>
 
 <!-- 8 문화 -->
@@ -381,6 +409,9 @@ aside.toc a.cur small{color:var(--card)}
     <li><b class="k">도교</b>는 신선 사상, 불로장생, 산천 숭배. 거의 문화재로 나와요. 연개소문 정변 뒤 불교를 누르며 도교를 띄운 것도 연결해서 보세요. 유물: <b class="k">강서대묘 사신도</b>(현무도), <b class="k">산수무늬 벽돌</b>(무릉도원), <b class="k">금동 대향로</b>(부여 능산리, 백제, 불교+도교 → 시험은 도교로 냄).</li>
     <li><b class="k">풍수지리설</b>: 신라 말 선종 승려 <b class="k">도선</b>이 전래. 땅의 기운에 따라 인간의 화복이 달라진다.</li>
   </ul>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/buseok.jpg"><img src="img/buseok.jpg" alt="부석사 무량수전" loading="lazy"></a><figcaption><b>부석사 무량수전</b><span>의상 · 화엄종 핵심 사찰</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B6%80%EC%84%9D%EC%82%AC_%EB%AC%B4%EB%9F%89%EC%88%98%EC%A0%84.jpg" target="_blank" rel="noopener">최옥석 · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/daehyangro.jpg"><img src="img/daehyangro.jpg" alt="백제 금동 대향로" loading="lazy"></a><figcaption><b>백제 금동 대향로</b><span>부여 능산리 · 불교+도교</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B0%B1%EC%A0%9C_%EA%B8%88%EB%8F%99%EB%8C%80%ED%96%A5%EB%A1%9C.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/sansu.jpg"><img src="img/sansu.jpg" alt="산수무늬 벽돌" loading="lazy"></a><figcaption><b>산수무늬 벽돌</b><span>백제 · 도교 · 무릉도원</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Landscape_Design_of_Earthenware_Patterned_Tiles_from_Oe-ri,_Buyeo_%EB%B6%80%EC%97%AC_%EC%99%B8%EB%A6%AC_%EB%AC%B8%EC%96%91%EC%A0%84_%EC%A4%91_%EC%82%B0%EC%88%98%EB%AC%B8%EC%A0%84_angle_02.jpg" target="_blank" rel="noopener">by martinroell · CC BY-SA 2.0</a></small></figcaption></figure></div>
 </section>
 
 <section class="card sec" id="s8b">
@@ -408,6 +439,9 @@ aside.toc a.cur small{color:var(--card)}
     <li><b class="k">고구려 연가 7년명 금동 여래 입상</b>(별표): 서 있는 부처, 광배가 특징. 발해의 <b class="k">이불병좌상</b>(앉은 부처 두 분)과 비교하면 광배가 같아 영향을 받았어요.</li>
     <li>백제: <b class="k">서산 마애 삼존불</b>(백제의 미소). 통일 신라: <b class="k">석굴암 본존불</b>.</li>
   </ul>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/mireuk.jpg"><img src="img/mireuk.jpg" alt="미륵사지 석탑" loading="lazy"></a><figcaption><b>미륵사지 석탑</b><span>백제 · 익산 · 무왕</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EC%9D%B5%EC%82%B0_%EB%AF%B8%EB%A5%B5%EC%82%AC%EC%A7%80_%EC%84%9D%ED%83%91(2019%EB%85%84)_%EC%95%BC%EA%B2%BD.jpg" target="_blank" rel="noopener">공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/jeongrim.jpg"><img src="img/jeongrim.jpg" alt="정림사지 5층 석탑" loading="lazy"></a><figcaption><b>정림사지 5층 석탑</b><span>백제 · 부여 · 평제탑</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EC%A0%95%EB%A6%BC%EC%82%AC%EC%A7%80_%EC%98%A4%EC%B8%B5%EC%84%9D%ED%83%91_%EC%A0%95%EB%A9%B4.jpg" target="_blank" rel="noopener">문화재청 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/bunhwang.jpg"><img src="img/bunhwang.jpg" alt="분황사 모전 석탑" loading="lazy"></a><figcaption><b>분황사 모전 석탑</b><span>신라 · 전탑 모방</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Korea-Gyeongju-Bunhwangsa_seoktap-04.jpg" target="_blank" rel="noopener">bifyu (a flickr user) · CC BY-SA 2.0</a></small></figcaption></figure><figure><a class="zoom" href="img/gameunsa.jpg"><img src="img/gameunsa.jpg" alt="감은사지 3층 석탑" loading="lazy"></a><figcaption><b>감은사지 3층 석탑</b><span>통일 신라 · 상륜 단순</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EA%B0%90%EC%9D%80%EC%82%AC%EC%A7%80_blue_sky.jpg" target="_blank" rel="noopener">Ronnie Dayo · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/seokga.jpg"><img src="img/seokga.jpg" alt="불국사 3층 석탑(석가탑)" loading="lazy"></a><figcaption><b>불국사 3층 석탑(석가탑)</b><span>통일 신라 · 무구정광 대다라니경</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Three_Storied_Stone_Pagoda_at_Bulguksa_(South_Korea)_001.jpg" target="_blank" rel="noopener">Leonard J. DeFrancisci · CC BY-SA 3.0</a></small></figcaption></figure><figure><a class="zoom" href="img/dabo.jpg"><img src="img/dabo.jpg" alt="불국사 다보탑" loading="lazy"></a><figcaption><b>불국사 다보탑</b><span>석가탑과 모양이 다름</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg" target="_blank" rel="noopener">Bernard Gagnon · CC0</a></small></figcaption></figure><figure><a class="zoom" href="img/hwaeom.jpg"><img src="img/hwaeom.jpg" alt="화엄사 4사자 3층 석탑" loading="lazy"></a><figcaption><b>화엄사 4사자 3층 석탑</b><span>통일 신라 · 사자 네 마리</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Korea-Mountain-Jirisan-Hwaeomsa-05.jpg" target="_blank" rel="noopener">by eimoberg · CC BY 2.0</a></small></figcaption></figure><figure><a class="zoom" href="img/jinjeon.jpg"><img src="img/jinjeon.jpg" alt="진전사지 3층 석탑" loading="lazy"></a><figcaption><b>진전사지 3층 석탑</b><span>통일 신라 · 조각이 복잡</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EC%96%91%EC%96%91_%EC%A7%84%EC%A0%84%EC%82%AC%EC%A7%80_%EC%82%BC%EC%B8%B5%EC%84%9D%ED%83%91_03.JPG" target="_blank" rel="noopener">Eggmoon · CC BY-SA 3.0</a></small></figcaption></figure><figure><a class="zoom" href="img/yeonga.jpg"><img src="img/yeonga.jpg" alt="연가 7년명 금동 여래 입상" loading="lazy"></a><figcaption><b>연가 7년명 금동 여래 입상</b><span>고구려 · 광배가 특징</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%E3%80%8C%EC%97%B0%EA%B0%80_%EC%B9%A0%EB%85%84%E3%80%8D%EC%9D%B4_%EC%83%88%EA%B2%A8%EC%A7%84_%EA%B8%88%EB%8F%99%EB%B6%88%EC%9E%85%EC%83%81_02.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/seosan.jpg"><img src="img/seosan.jpg" alt="서산 마애 삼존불" loading="lazy"></a><figcaption><b>서산 마애 삼존불</b><span>백제의 미소</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EC%A0%9C2%EA%B2%BD_%EB%A7%88%EC%95%A0%EC%97%AC%EB%9E%98%EC%82%BC%EC%A1%B4%EC%83%81.jpg" target="_blank" rel="noopener">Seosan City Government · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/seokgul.jpg"><img src="img/seokgul.jpg" alt="석굴암 본존불" loading="lazy"></a><figcaption><b>석굴암 본존불</b><span>통일 신라</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Front_view_of_Seokguram_from_front_chamber.jpg" target="_blank" rel="noopener">Seok-Hong, Han · 공공누리 제1유형</a></small></figcaption></figure></div>
 </section>
 
 <!-- 10 고대 국가 문제 -->
@@ -432,6 +466,9 @@ aside.toc a.cur small{color:var(--card)}
     <li><b>익산</b>: 미륵사지 석탑, 왕궁리 유적.</li>
   </ul>
   <div class="box nh">외우는 팁: 수도 순서는 <b>한성→웅진→사비</b>이고, 마지막으로 무왕이 금마저(익산)로 옮기려 했다는 점도 있어요 <span class="b sup">(보충)</span>.</div>
+
+  <h3 class="nh">사진으로 보기</h3>
+  <div class="gal"><figure><a class="zoom" href="img/janggun.jpg"><img src="img/janggun.jpg" alt="장군총" loading="lazy"></a><figcaption><b>장군총</b><span>고구려</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:South_of_Tomb_of_the_General.jpg" target="_blank" rel="noopener">Prcshaw · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/anak3.jpg"><img src="img/anak3.jpg" alt="안악 3호분 벽화" loading="lazy"></a><figcaption><b>안악 3호분 벽화</b><span>고구려</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Man_-_Anak_Tomb_No._3.jpg" target="_blank" rel="noopener">Public domain</a></small></figcaption></figure><figure><a class="zoom" href="img/ssangyeong.jpg"><img src="img/ssangyeong.jpg" alt="쌍영총 벽화" loading="lazy"></a><figcaption><b>쌍영총 벽화</b><span>고구려</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Occupant_of_the_Tomb_and_his_Wife.jpg" target="_blank" rel="noopener">朝鮮總督府 · Public domain</a></small></figcaption></figure><figure><a class="zoom" href="img/geumgwan.jpg"><img src="img/geumgwan.jpg" alt="신라 금관" loading="lazy"></a><figcaption><b>신라 금관</b><span>천마총 출토</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EC%B2%9C%EB%A7%88%EC%B4%9D_%EA%B8%88%EA%B4%80.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure></div>
 </section>
 
 <!-- 11 발해 -->
@@ -497,6 +534,12 @@ aside.toc a.cur small{color:var(--card)}
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(tocLinks).forEach(function(k){tocLinks[k].classList.remove('cur')});tocLinks[e.target.id].classList.add('cur')}})},{rootMargin:'-20% 0px -70% 0px'});
     $$('.card.sec').forEach(function(s){io.observe(s)});
   }
+
+  /* 사진 크게 보기 */
+  var lb=document.createElement('div'); lb.id='lb'; lb.innerHTML='<img alt="">'; document.body.appendChild(lb);
+  lb.onclick=function(){lb.classList.remove('on')};
+  document.addEventListener('click',function(e){var z=e.target.closest&&e.target.closest('a.zoom');if(z){e.preventDefault();$('img',lb).src=z.href;lb.classList.add('on')}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
 
   /* 유력만 보기 */
   var bHot=$('#bHot');
