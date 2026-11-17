@@ -25,14 +25,26 @@ html{scroll-behavior:smooth;scroll-padding-top:64px}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "Noto Sans KR",system-ui,sans-serif;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px;word-break:keep-all}
 a{color:var(--teal)}
-.wrap{max-width:860px;margin:0 auto}
-header.hero{padding:40px 0 20px}
-.kicker{font-size:13px;letter-spacing:.14em;color:var(--muted);font-weight:500}
-h1{font:900 clamp(30px,6vw,46px)/1.2 "Noto Serif KR",serif;margin:8px 0 12px;text-wrap:balance}
-h1 em{font-style:normal;color:var(--red)}
-.lead{color:var(--muted);margin:0 0 18px;max-width:60ch}
-.dday{display:inline-flex;align-items:baseline;gap:10px;background:var(--fg);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:700}
-.dday b{font:900 26px "Noto Serif KR",serif;color:var(--bg)}
+.wrap{max-width:1060px;margin:0 auto}
+header.hero{padding:28px 0 6px;border-bottom:2px solid var(--fg)}
+.kicker{font-size:13px;letter-spacing:.08em;color:var(--muted);font-weight:500}
+h1{font:900 clamp(24px,4.4vw,34px)/1.3 "Noto Serif KR",serif;margin:4px 0 8px;text-wrap:balance}
+h1 em{font-style:normal}
+.lead{color:var(--muted);margin:0 0 10px;max-width:68ch;font-size:15px}
+.dday{display:inline-block;font-size:14px;font-weight:700;color:var(--red)}
+.dday b{font-weight:900}
+.layout{display:grid;grid-template-columns:minmax(0,1fr);gap:0 44px}
+aside.toc{display:none}
+@media (min-width:920px){
+  .layout{grid-template-columns:220px minmax(0,1fr)}
+  aside.toc{display:block;position:sticky;top:64px;align-self:start;max-height:calc(100vh - 84px);overflow:auto;padding:22px 0;font-size:14px}
+  nav.bar .chips{display:none}
+  nav.bar .in{justify-content:flex-end}
+}
+aside.toc .tt{font-size:12px;letter-spacing:.12em;color:var(--muted);margin:0 0 8px;font-weight:700}
+aside.toc a{display:flex;gap:8px;justify-content:space-between;text-decoration:none;color:var(--fg);padding:6px 8px;border-radius:6px;line-height:1.4}
+aside.toc a:hover,aside.toc a.cur{background:var(--tealbg);color:var(--teal)}
+aside.toc a small{color:var(--muted);font-variant-numeric:tabular-nums;flex:none}
 .src{margin-top:14px;font-size:14px;color:var(--muted)}
 .legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin:18px 0 0;font-size:14px;color:var(--muted)}
 .b{display:inline-block;font-size:12px;font-weight:700;line-height:1;padding:4px 8px;border-radius:6px;vertical-align:2px;margin-right:6px;white-space:nowrap}
@@ -52,10 +64,14 @@ button.t{font:500 13px "Noto Sans KR",sans-serif;color:var(--fg);background:var(
 button.t[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
 :root[data-theme="dark"] button.t[aria-pressed="true"]{color:#2a0d0a}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.t[aria-pressed="true"]{color:#2a0d0a}}
-main{display:grid;gap:22px;margin-top:22px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px clamp(16px,3vw,28px);box-shadow:var(--shadow);min-width:0}
-.card h2{font:900 clamp(21px,3.4vw,26px)/1.3 "Noto Serif KR",serif;margin:0 0 4px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px}
-.card h2 .no{font-size:.62em;color:var(--red);letter-spacing:.06em}
+main{display:block;min-width:0;padding-top:6px}
+.card{background:none;border:0;border-radius:0;box-shadow:none;padding:30px 0 10px;min-width:0}
+.card+.card{border-top:1px solid var(--line)}
+.card h2{font:900 clamp(20px,3.2vw,24px)/1.35 "Noto Serif KR",serif;margin:0 0 2px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px}
+.card h2 .no{font:700 .7em "Noto Sans KR",sans-serif;color:var(--bg);background:var(--fg);padding:1px 8px;border-radius:4px;letter-spacing:.04em}
+.card .box{background:none;border-left:3px solid var(--gold);border-radius:0;padding:4px 0 4px 14px;color:var(--fg)}
+li.hot,li.hot{background:linear-gradient(90deg,var(--redbg),transparent 92%)!important;border-left:3px solid var(--red);border-radius:0!important;padding:3px 10px!important;margin-left:0!important}
+.outlook li{border:0!important;border-left:3px solid var(--red)!important;border-radius:0!important;background:none!important;padding:2px 0 2px 14px!important}
 .meta{font-size:13.5px;color:var(--muted);margin:0 0 12px}
 .meta a{white-space:nowrap}
 .card h3{font:700 16px "Noto Sans KR",sans-serif;margin:20px 0 6px;padding-left:10px;border-left:4px solid var(--teal)}
@@ -92,9 +108,9 @@ mark{background:var(--goldbg);color:inherit;border-radius:3px}
 <body>
 <div class="wrap">
 <header class="hero">
-  <div class="kicker">81회 한국사능력검정시험 심화 · 1/4 특강 · 선사 ~ 고대</div>
-  <h1>고대사, <em>이번 시험에 나온다고 한 것</em>부터</h1>
-  <p class="lead">문동균 선생님의 강의 한 편(59분 56초)을 자막으로 읽고 주제별로 정리했어요. 강의 중에 "이번 시험에 나올 수 있다", "지난 시험에 안 나와서 비중이 있다"고 짚은 부분은 빨간 표시로 눌러 놨어요.</p>
+  <div class="kicker">한국사능력검정시험 심화 · 강의 노트</div>
+  <h1>[81회 한능검 1/4특강] 선사 ~ 고대</h1>
+  <p class="lead">문동균 선생님 · 59분 56초 · 강의 순서대로 받아 적은 노트예요. 선생님이 "이번 시험에 나올 수 있다", "지난 시험에 안 나왔다"고 짚은 부분은 빨간 줄로 표시했어요.</p>
   <div class="dday" id="dday" aria-live="polite">81회 시험 <b>D-?</b></div>
   <div class="legend">
     <span><span class="b hot">이번 시험 유력</span>강의에서 직접 가능성을 말한 부분</span>
@@ -116,7 +132,7 @@ mark{background:var(--goldbg);color:inherit;border-radius:3px}
   </div>
 </div></nav>
 
-<div class="wrap"><main id="main">
+<div class="wrap"><div class="layout"><aside class="toc" id="toc"></aside><main id="main">
 
 <!-- 출제 전망 -->
 <section class="card sec" id="outlook">
@@ -408,7 +424,7 @@ mark{background:var(--goldbg);color:inherit;border-radius:3px}
   </ul>
 </section>
 
-</main>
+</main></div>
 
 <footer>
   <p>이 노트는 영상 자막(자동 생성)을 읽고 정리한 비공식 요약이에요. 자막의 오인식은 실제 역사 용어에 맞춰 고쳤고, 영상에 없는 내용은 (보충)으로 표시했어요. 시험 가능성에 대한 말은 강사의 의견이라 실제 출제와 다를 수 있어요. 시험 직전에는 반드시 원본 영상과 교재로 확인하세요.</p>
@@ -434,6 +450,22 @@ mark{background:var(--goldbg);color:inherit;border-radius:3px}
     a.textContent=(no.textContent+' '+h.textContent.replace(no.textContent,'')).replace(/\s+/g,' ').trim().slice(0,12);
     chips.appendChild(a);
   });
+
+  /* 왼쪽 목차(시각 포함) + 현재 위치 표시 */
+  var toc=$('#toc'), tl=document.createElement('div'); tl.className='tt'; tl.textContent='목차'; toc.appendChild(tl);
+  var tocLinks={};
+  $$('.card.sec').forEach(function(s){
+    var h=$('h2',s), no=$('.no',h), tm=$('.meta a',s);
+    var a=document.createElement('a'); a.href='#'+s.id;
+    var t=document.createElement('span'); t.textContent=h.textContent.replace(no.textContent,'').trim();
+    a.appendChild(t);
+    if(tm){var sm=document.createElement('small'); sm.textContent=tm.textContent.replace('▶','').trim(); a.appendChild(sm)}
+    toc.appendChild(a); tocLinks[s.id]=a;
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(tocLinks).forEach(function(k){tocLinks[k].classList.remove('cur')});tocLinks[e.target.id].classList.add('cur')}})},{rootMargin:'-20% 0px -70% 0px'});
+    $$('.card.sec').forEach(function(s){io.observe(s)});
+  }
 
   /* 유력만 보기 */
   var bHot=$('#bHot');
