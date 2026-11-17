@@ -103,6 +103,37 @@ footer{margin-top:30px;font-size:13.5px;color:var(--muted)}
 .search{width:100%;margin-top:14px;padding:10px 14px;font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:10px}
 mark{background:var(--goldbg);color:inherit;border-radius:3px}
 @media (max-width:560px){nav.bar .tools .lbl{display:none}}
+
+/* ---- 시인성 강화 ---- */
+:root{--mk:#ffe27a;--fg:#17140f;--muted:#4f483d;--line:#cdbf9f;--redbg:#fde0d9;--red:#a8160d;--tealbg:#d6ebe7;--teal:#1f5a55;--goldbg:#fff0b8;--gold:#7a5200}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--mk:#6e5b14;--fg:#f6f1e6;--muted:#c9c0ae;--line:#4a443a;--redbg:#4a2420;--red:#ffaaa0;--tealbg:#1f3835;--teal:#9fe0d8;--goldbg:#4a3b10;--gold:#f0c85a}}
+:root[data-theme="dark"]{--mk:#6e5b14;--fg:#f6f1e6;--muted:#c9c0ae;--line:#4a443a;--redbg:#4a2420;--red:#ffaaa0;--tealbg:#1f3835;--teal:#9fe0d8;--goldbg:#4a3b10;--gold:#f0c85a}
+body{font-size:17px;line-height:1.9}
+li{margin:7px 0}
+.k{font-weight:700;border-bottom:0;background:linear-gradient(transparent 55%,var(--mk) 55%);padding:0 1px}
+body.recall .k:not(.on){background:var(--line);color:transparent}
+li.hot{background:var(--redbg)!important;border-left:5px solid var(--red)!important;padding:6px 12px!important;font-weight:500}
+.b{font-size:13px;padding:5px 9px}
+.card h2{font-size:clamp(22px,3.4vw,27px)}
+.card h3{font-size:17.5px;margin:26px 0 8px;border-left-width:5px}
+.meta{font-size:14.5px}
+table{font-size:16px}
+th{background:var(--teal);color:var(--card)}
+td,th{padding:10px 12px;border-color:var(--line)}
+tr.hot td{background:var(--redbg)}
+.legend{font-size:14.5px;color:var(--fg)}
+aside.toc{font-size:15px}
+aside.toc a{padding:8px 10px}
+aside.toc a.cur{background:var(--teal);color:var(--card)}
+aside.toc a.cur small{color:var(--card)}
+.flow{font-size:15.5px;gap:8px}
+.flow span{background:var(--teal);color:var(--card);padding:5px 11px}
+.flow i{color:var(--fg);font-weight:700}
+.box{font-size:16.5px}
+.card .box{border-left-width:5px}
+.outlook li strong{font-size:17.5px}
+.outlook li span{color:var(--fg);font-size:16px}
+.chips a,button.t{font-size:14px}
 </style>
 </head>
 <body>
