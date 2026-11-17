@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>81회 한능검 고대 요약</title>
+<meta name="description" content="문동균 81회 한능검 1/4특강(선사~고대) 자막을 정리한 요약 노트. 강의에서 '이번 시험에 나올 수 있다'고 짚은 내용을 강조했어요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7;--card:#fffdf8;--fg:#2a2622;--muted:#6f675c;--line:#e2d9c6;
+  --red:#b3261e;--redbg:#fbe9e5;--teal:#2c6b66;--tealbg:#e3f0ee;--gold:#8a5f00;--goldbg:#fbf0cf;
+  --shadow:0 1px 0 rgba(60,45,20,.06),0 8px 24px -16px rgba(60,45,20,.25);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#15130f;--card:#1d1a15;--fg:#ece6da;--muted:#a39a8a;--line:#34302a;
+  --red:#ff9a90;--redbg:#3a1e1b;--teal:#7fc4bd;--tealbg:#1a2d2b;--gold:#e4b950;--goldbg:#33290f;--shadow:none;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15130f;--card:#1d1a15;--fg:#ece6da;--muted:#a39a8a;--line:#34302a;
+  --red:#ff9a90;--redbg:#3a1e1b;--teal:#7fc4bd;--tealbg:#1a2d2b;--gold:#e4b950;--goldbg:#33290f;--shadow:none;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "Noto Sans KR",system-ui,sans-serif;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px;word-break:keep-all}
+a{color:var(--teal)}
+.wrap{max-width:860px;margin:0 auto}
+header.hero{padding:40px 0 20px}
+.kicker{font-size:13px;letter-spacing:.14em;color:var(--muted);font-weight:500}
+h1{font:900 clamp(30px,6vw,46px)/1.2 "Noto Serif KR",serif;margin:8px 0 12px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--red)}
+.lead{color:var(--muted);margin:0 0 18px;max-width:60ch}
+.dday{display:inline-flex;align-items:baseline;gap:10px;background:var(--fg);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:700}
+.dday b{font:900 26px "Noto Serif KR",serif;color:var(--bg)}
+.src{margin-top:14px;font-size:14px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin:18px 0 0;font-size:14px;color:var(--muted)}
+.b{display:inline-block;font-size:12px;font-weight:700;line-height:1;padding:4px 8px;border-radius:6px;vertical-align:2px;margin-right:6px;white-space:nowrap}
+.b.hot{background:var(--red);color:#fff}
+:root[data-theme="dark"] .b.hot{color:#2a0d0a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .b.hot{color:#2a0d0a}}
+.b.star{background:var(--goldbg);color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.b.ans{background:var(--tealbg);color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.b.sup{background:transparent;color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+nav.bar{position:sticky;top:0;z-index:10;margin:0 -16px;padding:8px 16px;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.bar .in{max-width:860px;margin:0 auto;display:flex;gap:8px;align-items:center}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-size:13px;color:var(--fg);padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.tools{display:flex;gap:6px;flex:none}
+button.t{font:500 13px "Noto Sans KR",sans-serif;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 11px;cursor:pointer}
+button.t[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+:root[data-theme="dark"] button.t[aria-pressed="true"]{color:#2a0d0a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.t[aria-pressed="true"]{color:#2a0d0a}}
+main{display:grid;gap:22px;margin-top:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px clamp(16px,3vw,28px);box-shadow:var(--shadow);min-width:0}
+.card h2{font:900 clamp(21px,3.4vw,26px)/1.3 "Noto Serif KR",serif;margin:0 0 4px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px}
+.card h2 .no{font-size:.62em;color:var(--red);letter-spacing:.06em}
+.meta{font-size:13.5px;color:var(--muted);margin:0 0 12px}
+.meta a{white-space:nowrap}
+.card h3{font:700 16px "Noto Sans KR",sans-serif;margin:20px 0 6px;padding-left:10px;border-left:4px solid var(--teal)}
+ul{margin:6px 0;padding-left:1.2em}
+li{margin:4px 0}
+li.hot{background:var(--redbg);border-radius:8px;padding:6px 10px;margin-left:-6px;list-style-position:inside}
+li.hot::marker{color:var(--red)}
+.k{font-weight:700;border-bottom:2px solid color-mix(in srgb,var(--teal) 45%,transparent)}
+body.recall .k:not(.on){color:transparent;background:var(--line);border-radius:4px;border-bottom:0;cursor:pointer;user-select:none}
+body.recall .k.on{cursor:pointer}
+.scroll{overflow-x:auto;margin:8px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--tealbg);color:var(--teal);font-weight:700}
+tr.hot td{background:var(--redbg)}
+.box{background:var(--goldbg);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:15px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0;font-size:14.5px}
+.flow span{background:var(--tealbg);color:var(--teal);padding:4px 10px;border-radius:8px;font-weight:500}
+.flow i{font-style:normal;color:var(--muted)}
+.outlook{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+.outlook li{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--red);border-radius:10px;padding:10px 14px;margin:0}
+.outlook li strong{display:block}
+.outlook li span{font-size:14.5px;color:var(--muted)}
+body.onlyhot li:not(.hot):not(.keep),body.onlyhot tr:not(.hot):not(:first-child),body.onlyhot .flow,body.onlyhot .box.nh,body.onlyhot h3.nh{display:none}
+body.onlyhot .card.sec:not(:has(.hot)){display:none}
+body.onlyhot .scroll:not(:has(tr.hot)){display:none}
+.hide-empty{display:none}
+footer{margin-top:30px;font-size:13.5px;color:var(--muted)}
+.search{width:100%;margin-top:14px;padding:10px 14px;font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:10px}
+mark{background:var(--goldbg);color:inherit;border-radius:3px}
+@media (max-width:560px){nav.bar .tools .lbl{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">81회 한국사능력검정시험 심화 · 1/4 특강 · 선사 ~ 고대</div>
+  <h1>고대사, <em>이번 시험에 나온다고 한 것</em>부터</h1>
+  <p class="lead">문동균 선생님의 강의 한 편(59분 56초)을 자막으로 읽고 주제별로 정리했어요. 강의 중에 "이번 시험에 나올 수 있다", "지난 시험에 안 나와서 비중이 있다"고 짚은 부분은 빨간 표시로 눌러 놨어요.</p>
+  <div class="dday" id="dday" aria-live="polite">81회 시험 <b>D-?</b></div>
+  <div class="legend">
+    <span><span class="b hot">이번 시험 유력</span>강의에서 직접 가능성을 말한 부분</span>
+    <span><span class="b star">★ 별표</span>강의에서 별표 친 부분</span>
+    <span><span class="b ans">정답 단골</span>선지에서 정답으로 잘 나온다고 한 부분</span>
+    <span><span class="b sup">(보충)</span>강의에는 없고 제가 덧붙인 부분</span>
+  </div>
+  <p class="src">원본 영상: <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ" target="_blank" rel="noopener">[81회 한능검 1/4특강] 선사 ~ 고대 (문동균)</a> · 각 주제 옆 ▶ 시각을 누르면 그 부분부터 재생돼요. 강의 교재는 문동균 한능검 교재예요.</p>
+  <input class="search" id="q" type="search" placeholder="키워드 검색 (예: 옥저, 원효, 관산성)" aria-label="키워드 검색">
+</header>
+</div>
+
+<nav class="bar"><div class="in">
+  <div class="chips" id="chips"></div>
+  <div class="tools">
+    <button class="t" id="bHot" aria-pressed="false" title="강의에서 시험 가능성을 짚은 항목만 보기">🔥<span class="lbl"> 유력만</span></button>
+    <button class="t" id="bRecall" aria-pressed="false" title="굵은 핵심어를 가려서 외우기">🙈<span class="lbl"> 암기</span></button>
+    <button class="t" id="bTheme" title="화면 밝기 바꾸기">◐</button>
+  </div>
+</div></nav>
+
+<div class="wrap"><main id="main">
+
+<!-- 출제 전망 -->
+<section class="card sec" id="outlook">
+  <h2><span class="no">TOP</span>이번 시험 출제 전망 한눈에</h2>
+  <p class="meta">강의에서 선생님이 직접 말한 내용만 모았어요. 지난 시험은 80회, 이번 시험은 81회(2026.11.28)예요.</p>
+  <ul class="outlook">
+    <li class="hot"><strong>1번 선사 생활 → 신석기가 가장 유력</strong><span>지난 시험은 청동기. 구석기 또는 신석기 중 신석기 가능성이 제일 높다고 했어요. 1점짜리 한 문제.</span></li>
+    <li class="hot"><strong>고조선 → 지난 시험에 안 나와서 비중 있음</strong><span>전체 문제 또는 (단군 조선→위만 조선) 순서 문제로 나와요.</span></li>
+    <li class="hot"><strong>여러 나라 → 옥저, 15회 넘게 안 나옴</strong><span>80회에는 고구려가 나왔어요. 옥저가 나올 가능성이 있다고 짚었어요.</span></li>
+    <li class="hot"><strong>가야 → 출제 비중 30~40%인데 지난 회차에 안 냄</strong><span>어렵게 내지는 않으니 대비해 두라고 했어요.</span></li>
+    <li class="hot"><strong>삼국의 항쟁 → 무조건 잡아야 할 두 문제(5점 안팎)</strong><span>① 4·5·6세기에서 한 문제 ② 6세기 말~7세기(수·당 전쟁~통일 전쟁) 한 문제. 이번에는 고구려 쪽에 더 중점을 두고, 6세기 백제·신라 왕 다섯 명도 모두 단독 문제 급이에요.</span></li>
+    <li class="hot"><strong>통일 신라 → 신문왕 말고 나머지 왕, 그리고 신라 하대의 순서</strong><span>지난 시험에 신문왕과 신라 말 사회상(선종)이 나왔어요. 이번에는 문무왕·성덕왕·경덕왕과 하대 사건 순서를 보라고 했어요.</span></li>
+    <li class="hot"><strong>승려 → 원효·의상 외에 원광·자장, 혜초까지</strong><span>최근 시험이 승려로 난도를 올리는 흐름이라고 했어요. 혜초는 보통 틀린 선지지만 단독으로 낼 수도 있대요.</span></li>
+    <li class="hot"><strong>고대 국가 문제(사진+제도) → 두 문제</strong><span>지난 시험에도 두 문제가 나왔어요. 사진으로 나라를 묻고 제도 정리를 정답으로 줘요.</span></li>
+    <li class="hot"><strong>발해 → 8번 전후</strong><span>80회는 8번, 79회는 7번이었어요. 왕 이름보다 전체 국가 문제 비중이 훨씬 커요.</span></li>
+  </ul>
+  <div class="box nh">강사 말씀: 지난 시험에도 새 선지와 난도를 높이려는 변화가 보였대요. 그래서 시험마다 변화를 따라가야 오차가 줄고, 강의는 반복해서 보라고 했어요.</div>
+</section>
+
+<!-- 1 선사 -->
+<section class="card sec" id="s1">
+  <h2><span class="no">01</span>선사 시대 생활</h2>
+  <p class="meta">1번 문제 · 1점 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=28s" target="_blank" rel="noopener">▶ 0:28</a></p>
+  <div class="box nh">큰 틀: 돌을 쓴 두 시대(구석기·신석기)는 모두 <b class="k">평등</b>이에요. <b class="k">청동기</b>부터 계급과 군장이 생기고 그 무덤이 고인돌이에요. 철기에서 더 심해져요.</div>
+  <h3 class="nh">구석기</h3>
+  <ul>
+    <li><b class="k">뗀석기</b>를 썼어요: <b class="k">주먹도끼</b>, 찍개, 밀개, 찌르개.</li>
+    <li>수렵·채집·어로로 먹을 것을 얻고, 먹을 게 떨어지면 <b class="k">이동</b>해요. 그래서 <b class="k">동굴·막집·바위 그늘</b>에서 살아요(별표, 정답 단골).</li>
+    <li>유적은 가볍게: 연천 전곡리(주먹도끼), 공주 석장리. 토기는 없어요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>신석기</h3>
+  <ul>
+    <li class="hot">도구는 <b class="k">간석기</b>('돌'자가 들어간 이름): 갈판, 돌괭이, 돌보습, 돌호미.</li>
+    <li class="hot"><b class="k">농경과 목축의 시작</b> <span class="b star">★</span><span class="b ans">정답 단골</span> 쉬워 보여도 정답으로 잘 나와요.</li>
+    <li class="hot">곡식을 저장하는 <b class="k">빗살무늬 토기</b>. 청동기의 민무늬 토기와 비교하는 게 시험 문제예요.</li>
+    <li class="hot">정착해서 <b class="k">움집</b>에 살고 사회는 여전히 평등.</li>
+    <li class="hot"><b class="k">가락바퀴·뼈바늘</b>로 옷을 만들었어요(직조) <span class="b ans">정답 단골</span> 정착했으니 추워도 이사를 못 가서 옷을 만든다고 외우면 쉬워요.</li>
+    <li>유적은 대도시 위주: 서울 암사동, 부산 동삼동.</li>
+  </ul>
+  <h3 class="nh">청동기</h3>
+  <ul>
+    <li>청동으로 <b class="k">무기·의기·장신구</b>를 만들었어요. 의기로는 청동 방울이 지난 시험에 나왔어요. 청동 <b class="k">농기구는 없어요</b>(있었던 적이 없다고 했어요).</li>
+    <li>농기구는 간석기인 <b class="k">반달 돌칼</b> <span class="b star">★</span>. 토기는 <b class="k">민무늬 토기</b>, 대표 유적은 <b class="k">부여 송국리</b>(송국리형 토기).</li>
+    <li>벼농사가 가능해지고 <b class="k">사유 재산·계급</b>이 생겨요. 군장의 무덤인 <b class="k">고인돌 축조</b> <span class="b star">★</span><span class="b ans">정답 단골</span></li>
+  </ul>
+  <h3 class="nh">철기</h3>
+  <ul>
+    <li>철기는 단독 문제를 의외로 안 내요. 철제 무기 → <b class="k">정복 전쟁</b>, 철제 농기구 → <b class="k">생산력 증가</b> → 여러 나라가 생겨요.</li>
+    <li>청동기의 변화: <b class="k">의기화·독자화</b>. 비파형 동검→<b class="k">세형동검</b>, 거친무늬 거울→<b class="k">잔무늬 거울</b>, 만들었다는 증거는 <b class="k">거푸집</b>.</li>
+    <li>중국과 교류한 증거: 중국 동전(<b class="k">명도전·화천·반량전</b>)과 붓. 동전 이름을 확인하라고 했어요.</li>
+  </ul>
+</section>
+
+<!-- 2 고조선 -->
+<section class="card sec" id="s2">
+  <h2><span class="no">02</span>고조선</h2>
+  <p class="meta">지난 시험 미출제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=315s" target="_blank" rel="noopener">▶ 5:15</a></p>
+  <ul>
+    <li class="hot">청동기를 배경으로 <b class="k">단군왕검</b>이 세운 <b class="k">우리 역사상 최초의 국가</b>. 지난 시험에 안 나와서 이번에 비중이 있다고 했어요.</li>
+    <li>문제 유형은 <b class="k">전체 문제</b> 또는 <b class="k">순서 문제</b>예요.</li>
+  </ul>
+  <h3 class="nh">순서 문제: 단군 조선 → 위만 조선</h3>
+  <div class="flow"><span>단군 조선(연과 대등, 연의 침입으로 2천 리 상실)</span><i>→</i><span>위만의 정변(준왕을 몰아냄)</span><i>→</i><span>위만 조선(철기·중계 무역·임둔 진번 복속)</span><i>→</i><span>한 무제 침입(1차 방어, 2차 패배)</span><i>→</i><span>우거왕 피살→왕검성 함락</span><i>→</i><span>한 군현 설치</span></div>
+  <ul>
+    <li>단군 조선: 전국 시대 <b class="k">연나라와 대등</b>했지만 연의 침입으로 <b class="k">2천 리 땅을 빼앗겼어요</b>(연 장수 진개 <span class="b sup">(보충)</span>).</li>
+    <li>위만 조선: 발달한 <b class="k">철기</b>로 <b class="k">임둔·진번</b>을 복속하고, 한과 남쪽 진 사이의 <b class="k">중계 무역</b>을 독점해요. 이게 한 무제가 공격한 원인이에요.</li>
+    <li>멸망 선지 키워드: 마지막 왕 <b class="k">우거왕의 피살</b>, <b class="k">왕검성 함락</b>, 이후 <b class="k">한 군현 설치</b>. 이때 <b class="k">범금 8조가 60여 조로 늘어났어요</b>.</li>
+  </ul>
+  <h3 class="nh">전체 문제 정답으로 잘 나오는 것 <span class="b ans">정답 단골</span></h3>
+  <ul>
+    <li><b class="k">상·대부·장군</b> 같은 관료 조직</li>
+    <li><b class="k">범금 8조</b>(시험에서는 8조법을 이렇게 써요. 8조법 사료는 괜찮대요.)</li>
+    <li>참성단, 개천절 같은 기타 선지도 모두 고조선과 관련돼 있어요.</li>
+  </ul>
+</section>
+
+<!-- 3 여러 나라 -->
+<section class="card sec" id="s3">
+  <h2><span class="no">03</span>여러 나라의 성장(초기 국가)</h2>
+  <p class="meta">철기 배경 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=501s" target="_blank" rel="noopener">▶ 8:21</a></p>
+  <ul>
+    <li class="hot"><b class="k">옥저</b>가 안 나온 지 15회 차가 넘어 출제 가능성이 있어요. 지난 시험(80회)은 고구려가 나왔어요.</li>
+    <li class="keep">가장 쉬운 정답은 <b class="k">제천 행사</b>: 부여 영고(12월), 고구려 동맹, 동예 무천, 삼한 계절제(5월·10월). 옥저는 기록이 없어요.</li>
+    <li class="keep">위치: 제일 위쪽 부여(송화강 평야) → 압록강 상류 고구려 → 동해안 옥저·동예 → 남쪽 삼한(마한·진한·변한).</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th>나라</th><th>핵심 특징</th></tr>
+    <tr><td><b>부여</b></td><td>송화강 평야, 동쪽 나라 가운데 가장 넓고 평탄한 곳. <b class="k">영고</b>(12월). 왕 아래 <b class="k">마가·우가·저가·구가</b>가 <b class="k">사출도</b>를 다스리는 연맹 왕국. 농사가 안 되거나 전쟁에 지면 왕에게 책임을 물어 교체하거나 죽여요.</td></tr>
+    <tr><td><b>고구려</b></td><td>부여와 비슷하지만 차이에 주목. <b class="k">약탈 경제</b>의 증거 <b class="k">부경</b>(창고), 제천 행사 <b class="k">동맹</b>, 혼인 풍습 <b class="k">서옥제</b>(남자가 여자 집에 작은 집을 짓고 사는 풍습). 부여는 생산 경제.</td></tr>
+    <tr class="hot"><td><b>옥저</b> <span class="b hot">유력</span></td><td>왕이 없고 <b class="k">읍군·삼로</b>가 다스려요(옥저·동예 공통). 두 개만 보면 돼요: <b class="k">민며느리제</b>(어린 여자아이를 데려다 길러 아내로 삼음)와 <b class="k">가족 공동 무덤</b>(가족의 뼈를 한곳에 모음). 둘 중 하나가 정답으로 나온다고 했어요.</td></tr>
+    <tr><td><b>동예</b></td><td>제천 행사 <b class="k">무천</b>. <b class="k">책화</b>(다른 부족 영역을 침범하면 변상, 동물 '선 넘지 마'). 특산물 <b class="k">단궁·과하마·반어피</b>. 읍군·삼로.</td></tr>
+    <tr><td><b>삼한</b></td><td>마한·진한·변한. 지배자 <b class="k">신지·읍차</b>, 제사장 <b class="k">천군</b>이 다스리는 <b class="k">소도</b>(제정 분리의 증거). 5월·10월 계절제. 변한은 <b class="k">철</b>(덩이쇠)을 낙랑·왜에 수출 → 나중에 가야.</td></tr>
+  </table></div>
+</section>
+
+<!-- 4 가야 -->
+<section class="card sec" id="s4">
+  <h2><span class="no">04</span>가야</h2>
+  <p class="meta">출제 비중 3~40% · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=779s" target="_blank" rel="noopener">▶ 12:59</a></p>
+  <ul>
+    <li class="hot">지난 회차에 안 나왔으니 대비해야 해요. 어렵게 내지는 않는다고 했어요.</li>
+    <li><b class="k">연맹 왕국</b>이에요. 전기는 <b class="k">금관가야</b>, 후기는 <b class="k">대가야</b>가 이끌었어요. 주도권이 넘어가는 계기는 <b class="k">400년 광개토 대왕의 신라 구원</b>이에요(금관가야는 망하지는 않고 위축).</li>
+    <li class="keep">두 나라 비교(전체 문제로 나와요):</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th></th><th>금관가야</th><th>대가야</th></tr>
+    <tr><td>위치</td><td>김해 <b class="k">대성동</b></td><td>고령 <b class="k">지산동</b></td></tr>
+    <tr><td>시조</td><td><b class="k">김수로</b>(하늘에서 내려온 알 여섯 개 중 가장 먼저 나온 이가 왕)</td><td><b class="k">이진아시왕</b></td></tr>
+    <tr><td>멸망</td><td>6세기 <b class="k">법흥왕</b>에게</td><td>6세기 <b class="k">진흥왕</b>에게</td></tr>
+  </table></div>
+  <ul>
+    <li>6세기 신라 왕 세 명: 지증왕(지난 시험) → 법흥왕 → 진흥왕. 둘을 구별하는 문제는 아직 없었으니 "6세기 신라 법흥왕 또는 진흥왕에게 망했다"로 기억하면 돼요.</li>
+    <li class="keep"><span class="b ans">정답 단골</span>변한에서 출발, <b class="k">철(덩이쇠)을 낙랑·왜에 수출</b>.</li>
+    <li class="keep">사진: 금동관(투박함), <b class="k">철갑옷</b>, 수레바퀴 장식 토기, 기마 인물형 뿔잔(신라 것과 비슷하니 주의).</li>
+  </ul>
+</section>
+
+<!-- 5 삼국 항쟁 -->
+<section class="card sec" id="s5">
+  <h2><span class="no">05</span>삼국의 항쟁 ① 4·5·6세기</h2>
+  <p class="meta">5점 안팎 · 무조건 잡아야 할 주제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=934s" target="_blank" rel="noopener">▶ 15:34</a></p>
+  <div class="box nh">구도: 2~4세기는 세 나라의 <b class="k">기틀</b>, 4~6세기가 <b class="k">전성기</b>(백제→고구려→신라). 5세기까지는 <b class="k">고구려 중심</b>으로 보세요. 이렇게 서로 싸울 수 있었던 이유는 중국이 분열기(위진 남북조)였기 때문이고, 6세기 말 수나라가 통일하면서 판이 바뀌어요.</div>
+  <ul>
+    <li class="hot">4·5·6세기에서 한 문제가 나와요(지난 시험은 지증왕). 이번에는 고구려 쪽에 조금 더 중점을 두라고 했어요. 고구려를 안 낸 지 좀 됐대요.</li>
+    <li>2·3세기는 안 봐도 되지만 하나만: 고구려 <b class="k">진대법</b>(춘대추납) → 고려 태조 흑창 → 성종 때 의창.</li>
+  </ul>
+  <h3 class="nh">4세기: 미천왕 → 고국원왕 → 소수림왕 / 백제 근초고왕</h3>
+  <ul>
+    <li>미천왕: 낙랑 축출. 고국원왕: 평양성에서 <b class="k">근초고왕</b>의 공격으로 전사(<b class="k">유시에 맞아 숨짐</b>) <span class="b ans">A급</span></li>
+    <li>근초고왕(백제 전성기): 평양성 공격으로 고국원왕 전사, 배를 타고 요서·산둥·일본 규슈 진출, 증거는 <b class="k">칠지도</b>, 역사서 <b class="k">『서기』</b>(고흥).</li>
+    <li>소수림왕은 <b class="k">불·태·율</b>(불교·태학·율령) 3종 세트. 불교는 고구려가 전진의 순도, 백제가 동진의 마라난타(침류왕).</li>
+  </ul>
+  <h3 class="nh">5세기: 고구려 전성기 (고구려 중점)</h3>
+  <ul>
+    <li class="hot"><b>광개토 대왕</b>(담덕): 연호 <b class="k">영락</b> <span class="b ans">정답 단골</span>, 만주 벌판 정복(<b class="k">후연</b>·비려·숙신), 요동 진출, <b class="k">400년 신라 구원</b>(내물 마립간을 도움). 증거는 신라 고분에서 나온 <b class="k">호우명 그릇</b>.</li>
+    <li class="hot"><b>장수왕</b>(거련): ① <b class="k">평양 천도</b>(남진 정책) → 백제·신라 <b class="k">나제 동맹</b> ② <b class="k">한성 함락</b>, <b class="k">개로왕 전사</b> <span class="b ans">A급</span>. 바둑 잘 두는 승려 <b class="k">도림</b>을 첩자로 보냈고, 개로왕은 북위에 군사 도움을 청하는 국서를 보냈어요.</li>
+    <li>백제 왕 순서 암기: <b class="k">비·계·문·동</b>(비유왕·개로왕·문주왕·동성왕). 문주왕은 <b class="k">웅진 천도</b>, 동성왕은 신라 소지 마립간과 <b class="k">결혼 동맹</b>.</li>
+  </ul>
+  <h3 class="nh">6세기: 고구려는 생략, 백제·신라 다섯 명</h3>
+  <ul>
+    <li class="hot">6세기 고구려는 안 봐도 돼요(귀족 분열기). <b>무령왕, 성왕, 지증왕, 법흥왕, 진흥왕</b> 다섯 명 모두 단독 문제 급이에요.</li>
+    <li><b>무령왕</b>: 정답은 늘 <b class="k">22담로</b>(지방에 왕족 파견). 벽돌 무덤(송산리 고분군, 중국 남조 양과 교류), 돌짐승 <b class="k">진묘수</b>.</li>
+    <li><b>성왕</b>: <b class="k">사비 천도</b>, 국호 <b class="k">남부여</b>. 한강 유역을 잠깐 장악했으나 진흥왕의 배신으로 빼앗겼고, 무리하게 나섰다가 <b class="k">관산성 전투</b>에서 전사 <span class="b ans">A급</span>(사료는 '구천' 키워드 판과 '김무력·고도' 판 두 가지).</li>
+    <li class="keep"><b>죽은 왕 세트</b> <span class="b star">★</span> 고국원왕(근초고왕이 가해자) → 개로왕(장수왕) → 성왕(관산성). 순서 배열에 아주 잘 나와요.</li>
+    <li><b>지증왕</b>(지난 시험): 국호 <b class="k">사로→신라</b>, <b class="k">마립간→왕</b>, <b class="k">우산국 정복(이사부)</b>, <b class="k">우경</b>, <b class="k">동시전</b>, 순장 금지.</li>
+    <li><b>법흥왕</b>: <b class="k">법·병·불</b> = 율령·병부와 상대등·불교 공인(<b class="k">이차돈의 순교</b>). 연호 <b class="k">건원</b>, 금관가야 멸망.</li>
+    <li><b>진흥왕</b>: <b class="k">화랑도</b>를 국가 조직으로 개편, <b class="k">황룡사</b>, 역사서 『국사』(거칠부), 연호 대창 <span class="b sup">(보충)</span>, <b class="k">대가야 멸망</b>, <b class="k">단양 적성비</b>와 순수비 네 개(그중 북한산비는 김정희가 고증).</li>
+  </ul>
+</section>
+
+<!-- 6 수당~통일 -->
+<section class="card sec" id="s6">
+  <h2><span class="no">06</span>삼국의 항쟁 ② 7세기: 수·당 전쟁에서 통일 전쟁까지</h2>
+  <p class="meta">5점 안팎 · 하나의 큰 그림으로 외우기 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=1688s" target="_blank" rel="noopener">▶ 28:08</a></p>
+  <ul>
+    <li class="hot">6세기 말 수나라, 7세기 초 당나라를 묶어서 한 문제가 나와요. 범위가 어디까지일지 모르니 "다음 사이, 이후"까지 한꺼번에 대비하라고 했어요.</li>
+  </ul>
+  <div class="flow"><span>수 문제 침입</span><i>→</i><span>수 양제 대규모 침입, 612 살수 대첩(을지문덕·우중문)</span><i>→</i><span>수 멸망, 당 건국</span><i>→</i><span>천리장성 축조(감독 연개소문)</span><i>→</i><span>연개소문 정변</span><i>→</i><span>(대야성 전투)</span><i>→</i><span>645 안시성 전투</span><i>→</i><span>648 나당 동맹</span></div>
+  <ul>
+    <li>살수 대첩 사료에서 을지문덕이 "만족하고 그만두길 바란다"고 해요. 연개소문 키워드는 <b class="k">대막리지</b>이고, 정변 뒤 귀족을 누르고 불교를 억누르며 <b class="k">도교</b>를 띄웠어요.</li>
+    <li>안시성(645) 다음이 나당 동맹(648)이라 고민할 필요 없어요. 조금 어렵게 내면 안시성 앞에 <b class="k">대야성 전투</b>(642 <span class="b sup">(보충)</span>)가 나와요.</li>
+  </ul>
+  <h3 class="nh">통일 전쟁: 다섯 포인트</h3>
+  <ul>
+    <li class="keep"><b>나당 동맹</b> 체결 → <b>백제 멸망</b>: <b class="k">황산벌 전투</b>(김유신 vs 계백), 의자왕 항복. 종결은 <b class="k">취리산 회맹</b>(이름은 몰라도 괜찮음).</li>
+    <li class="keep"><b>백제 부흥 운동</b> <span class="b ans">잘 나옴</span>: <b class="k">복신·도침·흑치상지</b>, 왜 수군이 지원, <b class="k">백강 전투</b>.</li>
+    <li class="keep"><b>고구려 멸망</b>(보장왕) → <b>고구려 부흥 운동</b>: <b class="k">검모잠·고연무·안승</b>. 신라는 당을 견제하려고 부흥 운동을 도왔어요.</li>
+    <li class="keep"><b>나당 전쟁</b>: 당이 한반도를 다 차지하려 하자 신라가 몰아낸 마지막 전투 <b class="k">매소성 전투</b>, <b class="k">기벌포 전투</b> → 삼국 통일.</li>
+  </ul>
+</section>
+
+<!-- 7 통일 신라 -->
+<section class="card sec" id="s7">
+  <h2><span class="no">07</span>통일 신라</h2>
+  <p class="meta">한두 문제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=1962s" target="_blank" rel="noopener">▶ 32:42</a></p>
+  <ul>
+    <li class="hot">지난 시험에는 신문왕과 신라 말 사회상(선종)이 나왔어요. 이번에는 <b>신문왕을 뺀 나머지 왕</b>과 <b>신라 하대로 넘어가는 순서</b>를 보라고 했어요. 성덕왕·경덕왕은 최근 선지가 나오기 시작했어요.</li>
+  </ul>
+  <div class="flow"><span>상대(성골) 선덕·진덕 여왕</span><i>→</i><span>중대 시작 태종 무열왕(최초 진골)</span><i>→</i><span>문무왕</span><i>→</i><span>신문왕</span><i>→</i><span>성덕왕</span><i>→</i><span>경덕왕</span><i>→</i><span>혜공왕 피살</span><i>→</i><span>하대</span></div>
+  <p class="meta">그래프로 보면: 빨간색은 왕권, 파란색은 귀족. 신문왕 때 전제 왕권이 정점이고 경덕왕 때 꺾여요.</p>
+  <h3 class="nh">중대의 왕들</h3>
+  <ul>
+    <li class="hot"><b>문무왕</b>: 정답은 거의 <b class="k">외사정</b>(지방 감찰관 파견). 유언으로 바다에 묻힌 <b class="k">대왕암</b>. <b class="k">감은사</b>는 문무왕이 시작하고 신문왕이 완공했어요.</li>
+    <li><b>신문왕</b>(지난 시험 출제): 김흠돌의 난 진압 → <b class="k">관료전 지급·녹읍 폐지</b>, <b class="k">9주 5소경</b>, <b class="k">9서당 10정</b>, 교육 기관 <b class="k">국학</b>(지난 시험 정답), 감은사 완공, <b class="k">만파식적</b>. 아들 효소왕 때 서시·남시가 추가로 설치돼요(통일 신라 선지).</li>
+    <li class="hot"><b>성덕왕</b>: 백성에게 토지를 주는 <b class="k">정전 지급</b>. <b>경덕왕</b>: 귀족이 고개를 들며 <b class="k">녹읍 부활</b>, 하지만 <b class="k">문화적 전성기</b>(불국사·석굴암).</li>
+    <li>혜공왕 피살: 김지정의 난을 진압하는 과정에서 왕이 죽었어요. 이후가 신라 하대예요.</li>
+  </ul>
+  <h3 class="nh">하대: 중앙에서 지방으로, 전국으로 <span class="b hot">순서 유력</span></h3>
+  <div class="flow"><span>혜공왕 피살</span><i>→</i><span>김헌창의 난(웅천주)</span><i>→</i><span>장보고(청해진)</span><i>→</i><span>진성 여왕 때 전국적 농민 봉기(원종·애노, 적고적)</span></div>
+  <ul>
+    <li class="hot"><b class="k">김헌창의 난</b>: 아버지 김주원이 왕이 못 된 일로 웅천주(공주)에서 반란, 키워드 <b class="k">장안국</b>. <b>장보고</b>보다 먼저예요(순서 꼭 기억).</li>
+    <li class="hot"><b class="k">장보고</b>: 당에서 군인으로 활동하다 귀국해 <b class="k">청해진</b>(완도)을 설치, 삼각 무역, 당의 <b class="k">적산 법화원</b>.</li>
+    <li class="hot"><b>진성 여왕</b>: <b class="k">원종·애노의 난</b>, <b class="k">적고적</b>, 향가집 <b class="k">『삼대목』</b>(지금은 전하지 않음), 해인사 <b class="k">길상탑기</b>, 최치원의 <b class="k">시무 10여 조</b>.</li>
+    <li class="hot"><b>최치원</b>: 인물 단독 문제를 대비하라고 했어요. 6두품, 어린 나이에 당에 유학해 <b class="k">빈공과 급제</b>, <b class="k">황소의 난</b> 때 <b class="k">격황소서</b>로 이름을 떨침. 귀국해 진성 여왕에게 시무 10여 조를 건의했지만 받아들여지지 않아 은둔(해인사 등).</li>
+    <li class="keep"><b>신라 말 사회상</b>(지난 시험): <b class="k">호족·6두품·선종</b> 삼각형 + <b class="k">풍수지리설</b>(선종 승려 도선이 전함). 호족은 반독립적 지방 세력, 6두품은 유학, 선종은 '견성오도'.</li>
+  </ul>
+</section>
+
+<!-- 8 문화 -->
+<section class="card sec" id="s8">
+  <h2><span class="no">08</span>고대 문화 ① 사상</h2>
+  <p class="meta">불교·유교·도교·풍수지리 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=2390s" target="_blank" rel="noopener">▶ 39:50</a></p>
+  <h3 class="nh">불교: 승려 4+1명</h3>
+  <ul>
+    <li class="hot">원효·의상이 A급이고 문무왕 때(통일 시기) 활동했어요. 그 앞에 <b>원광·자장</b>이 있고, 최근 시험이 기타 승려로 난도(3점)를 올리고 있어 <b>대비해야 해요</b>.</li>
+    <li><b>원광</b>: 수나라에 군사를 청하는 <b class="k">걸사표</b>, 화랑의 계율 <b class="k">세속 5계</b>. <b>자장</b>: 황룡사는 진흥왕, <b class="k">황룡사 9층 목탑</b>은 선덕 여왕 때 건의.</li>
+    <li class="keep"><b>원효</b>(6두품, 파계승): 당 유학을 포기, 요석 공주와 혼인해 <b class="k">설총</b>을 낳음. 왕을 만나지 않고 백성에게 <b class="k">무애가</b>를 부르며 포교. 키워드 <b class="k">일심·화쟁</b>, 염불은 <b class="k">나무아미타불</b>.</li>
+    <li class="keep"><b>의상</b>(진골, 엘리트): 당에 유학, <b class="k">화엄종</b>, 『화엄일승법계도』, 핵심 사찰 <b class="k">부석사</b>(선묘 설화: 선묘가 용이 되어 돌이 떠서 절을 짓도록 도움). 염불은 <b class="k">관세음보살</b>(관음 신앙). 단독 문제가 더 유력하다고 했어요.</li>
+    <li class="hot"><b>혜초</b>: 보통 틀린 선지지만 요즘 분위기라 단독으로 낼 수도 있어요(예전에 한 번 냈대요). 인도 기행문 『왕오천축국전』. 강사 표현으로 "지금 따지면 여행 유튜버".</li>
+    <li>신라 말 <b class="k">선종</b>: 참선 수행, <b class="k">견성오도·이심전심</b>, 구산 선문.</li>
+  </ul>
+  <h3 class="nh">유교·도교·풍수지리</h3>
+  <ul>
+    <li><b>강수</b>(최근 시험 출제): 외교 문서에 능했고 <b class="k">청방인문표</b>. <b>설총</b>: 원효의 아들, <b class="k">이두 정리</b>, <b class="k">화왕계</b>(꽃의 왕 = 신문왕). 최치원은 앞 장 참고.</li>
+    <li><b class="k">도교</b>는 신선 사상, 불로장생, 산천 숭배. 거의 문화재로 나와요. 연개소문 정변 뒤 불교를 누르며 도교를 띄운 것도 연결해서 보세요. 유물: <b class="k">강서대묘 사신도</b>(현무도), <b class="k">산수무늬 벽돌</b>(무릉도원), <b class="k">금동 대향로</b>(부여 능산리, 백제, 불교+도교 → 시험은 도교로 냄).</li>
+    <li><b class="k">풍수지리설</b>: 신라 말 선종 승려 <b class="k">도선</b>이 전래. 땅의 기운에 따라 인간의 화복이 달라진다.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s8b">
+  <h2><span class="no">09</span>고대 문화 ② 탑과 불상</h2>
+  <p class="meta">사진 자료가 중요 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=2727s" target="_blank" rel="noopener">▶ 45:27</a></p>
+  <ul>
+    <li class="keep">한국 탑의 중심은 <b class="k">통일 신라의 이중 기단 3층 석탑</b>이에요. 고려는 다각 다층 탑이라고 외우면 돼요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th>시대</th><th>탑</th><th>외울 것</th></tr>
+    <tr><td>고구려</td><td>(목탑)</td><td>나무라서 남아 있는 게 없어요.</td></tr>
+    <tr><td rowspan="2">백제</td><td><b>미륵사지 석탑</b></td><td>익산, <b class="k">무왕</b> 때. 복원 과정에서 발견된 기록에 왕비가 <b class="k">사택적덕의 딸</b>이라고 나와요(미끄러지는 느낌).</td></tr>
+    <tr><td><b>정림사지 5층 석탑</b></td><td>부여. 소정방이 백제 멸망을 새긴 <b class="k">평제탑</b>.</td></tr>
+    <tr><td>신라</td><td><b>분황사 모전 석탑</b></td><td>벽돌 탑(전탑)을 모방한 석탑, 신라 탑 중 가장 오래됨.</td></tr>
+    <tr class="hot"><td rowspan="4">통일 신라</td><td><b>감은사지 3층</b></td><td>상륜부에 아무 장식 없음. 가장 이른 시기.</td></tr>
+    <tr class="hot"><td><b>불국사 3층(석가탑)</b> <span class="b ans">단골</span></td><td>장식이 붙어 있어요. 안에서 <b class="k">무구정광 대다라니경</b>이 나왔어요. 단독 문제도 여러 번. (마주 보는 <b>다보탑</b>은 모양이 달라요.)</td></tr>
+    <tr class="hot"><td><b>화엄사 4사자 3층</b></td><td>사자 네 마리가 탑을 이고 있어요.</td></tr>
+    <tr class="hot"><td><b>진전사지 3층</b></td><td>시기가 뒤로 갈수록 복잡해져요. 탑신에 조각이 들어가요.</td></tr>
+  </table></div>
+  <ul>
+    <li>신라 말에는 선종과 연결된 <b class="k">승탑</b>(승려의 탑)이 만들어져요. 발해의 <b class="k">영광탑</b>은 입구가 특징이에요(별표).</li>
+  </ul>
+  <h3 class="nh">불상 <span class="b star">★</span></h3>
+  <ul>
+    <li><b class="k">고구려 연가 7년명 금동 여래 입상</b>(별표): 서 있는 부처, 광배가 특징. 발해의 <b class="k">이불병좌상</b>(앉은 부처 두 분)과 비교하면 광배가 같아 영향을 받았어요.</li>
+    <li>백제: <b class="k">서산 마애 삼존불</b>(백제의 미소). 통일 신라: <b class="k">석굴암 본존불</b>.</li>
+  </ul>
+</section>
+
+<!-- 10 고대 국가 문제 -->
+<section class="card sec" id="s9">
+  <h2><span class="no">10</span>고대 국가 문제(사진 + 제도 정리)</h2>
+  <p class="meta">딱 두 문제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=3014s" target="_blank" rel="noopener">▶ 50:14</a></p>
+  <ul>
+    <li class="hot">지난 시험에도 두 문제가 나왔어요. 위쪽에 사진을 줘서 나라를 묻고, 아래의 <b>제도 정리를 정답</b>으로 줘요. 무덤 양식을 자세히 공부하는 사람이 있는데 안 나와요. <b>이름만</b> 알면 돼요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th></th><th>사진·유물</th><th>제도 정리(정답으로 나오는 것)</th></tr>
+    <tr><td><b>고구려</b></td><td><b class="k">장군총·안악 3호분·쌍영총</b>, 연가 7년명 금동 여래 입상 <span class="b star">★</span>, 호우명 그릇(신라와 겹침)</td><td><b class="k">제가 회의</b>, 수상 <b class="k">대대로</b>, 지방관 <b class="k">욕살</b>, <b class="k">부경</b>, <b class="k">진대법</b>, 중앙 <b class="k">태학</b>·지방 <b class="k">경당</b>, 연호 <b class="k">영락</b></td></tr>
+    <tr><td><b>백제</b></td><td>한성 <b>석촌동 고분</b>, 웅진 <b class="k">무령왕릉</b>(벽돌 무덤, 진묘수), <b class="k">칠지도</b>, <b class="k">금동 대향로</b>, 산수무늬 벽돌</td><td><b class="k">정사암 회의</b>, 수상 <b class="k">상좌평</b>, 왕족 <b class="k">부여씨</b>와 <b class="k">8성 귀족</b>, 6좌평</td></tr>
+    <tr><td><b>신라</b></td><td><b class="k">금관</b>, 천마총 <b class="k">천마도</b>(벽화가 아니라 말다래), 호우명 그릇</td><td><b class="k">화백 회의</b>, <b class="k">상대등</b>, <b class="k">골품제</b>(자세히는 안 냄), <b class="k">화랑도</b></td></tr>
+    <tr><td><b>통일 신라</b></td><td><b class="k">민정(촌락) 문서</b>(청주 서원경 일대 네 개 촌), 서시·남시, <b class="k">울산항</b>, <b class="k">청해진</b></td><td><b class="k">9주 5소경</b>, <b class="k">9서당 10정</b>, 신문왕 때 완성, 국학</td></tr>
+  </table></div>
+  <h3 class="nh">백제 수도의 이동 <span class="b star">★</span> 한성 → 웅진 → 사비(→ 익산)</h3>
+  <ul>
+    <li><b>한성</b>(서울): 온조가 도읍, <b class="k">풍납토성·몽촌토성·석촌동 고분</b>(잠실 쪽).</li>
+    <li><b>웅진</b>(공주): 개로왕 전사 후 <b class="k">문주왕</b>이 천도. <b class="k">송산리 고분군</b>(무령왕릉은 7호), 공산성. 글자 '공·송'으로 체크하면 편해요.</li>
+    <li><b>사비</b>(부여): <b class="k">성왕</b>이 마지막으로 천도, 남부여. <b class="k">능산리</b>(금동 대향로), <b class="k">부소산성</b>, <b class="k">관북리</b>, 정림사지 5층 석탑.</li>
+    <li><b>익산</b>: 미륵사지 석탑, 왕궁리 유적.</li>
+  </ul>
+  <div class="box nh">외우는 팁: 수도 순서는 <b>한성→웅진→사비</b>이고, 마지막으로 무왕이 금마저(익산)로 옮기려 했다는 점도 있어요 <span class="b sup">(보충)</span>.</div>
+</section>
+
+<!-- 11 발해 -->
+<section class="card sec" id="s10">
+  <h2><span class="no">11</span>발해</h2>
+  <p class="meta">8번 전후 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=3400s" target="_blank" rel="noopener">▶ 56:40</a></p>
+  <ul>
+    <li class="hot">80회는 8번, 79회는 7번으로 나왔어요. 왕 이름보다 <b>전체 국가 문제</b>가 훨씬 많아요. <b class="k">주문중</b>(주자감·문적원·중정대)을 잘 대비하라고 했어요.</li>
+  </ul>
+  <h3 class="nh">왕대사(가볍게)</h3>
+  <ul>
+    <li><b>고왕</b>(대조영): 동모산 인근에서 건국. <b>무왕</b>: 당을 공격(<b class="k">등주 공격</b>, 장문휴). <b>문왕</b>: 당과 친선, 제도 수용. <b>선왕</b>: 전성기, <b class="k">해동성국</b>, 지방 제도 완성. 멸망: <b class="k">거란</b>에게.</li>
+  </ul>
+  <h3 class="nh">전체 국가 문제 <span class="b ans">정답 단골</span></h3>
+  <ul>
+    <li><b class="k">3성 6부</b>: 정당성(장관 <b class="k">대내상</b>이 국정 총괄), 선조성, 중대성. 6부 이름은 <b class="k">충·인·의·지·예·신</b>.</li>
+    <li class="hot"><b class="k">주자감</b>(대학), <b class="k">문적원</b>(서적 관리), <b class="k">중정대</b>(감찰) = <b>주·문·중</b></li>
+    <li>지방 제도: <b class="k">5경 15부 62주</b>. 황제국 표방: 칭호와 독자 연호.</li>
+    <li>사진·기타: <b class="k">이불병좌상</b> <span class="b star">★</span>, <b class="k">영광탑</b> <span class="b star">★</span>(입구가 특징), 큰 석등, 정혜·정효 공주 무덤(몇째 딸인지는 안 물어요), 기와. 교통로로 거란도·영주도 등이 나오면 발해로 보면 돼요.</li>
+    <li>당이 신라와 발해를 경쟁시킨 <b class="k">쟁장 사건</b>(사신 자리다툼), 빈공과 등수 사건은 용어를 몰라도 '견제'로 이해하면 돼요.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>이 노트는 영상 자막(자동 생성)을 읽고 정리한 비공식 요약이에요. 자막의 오인식은 실제 역사 용어에 맞춰 고쳤고, 영상에 없는 내용은 (보충)으로 표시했어요. 시험 가능성에 대한 말은 강사의 의견이라 실제 출제와 다를 수 있어요. 시험 직전에는 반드시 원본 영상과 교재로 확인하세요.</p>
+  <p>2/4~4/4 특강(고려·조선·근현대)도 같은 형식으로 이어서 추가할 수 있어요.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+
+  /* D-day */
+  var exam=new Date(2026,10,28), t0=new Date(); t0.setHours(0,0,0,0);
+  var d=Math.round((exam-t0)/864e5);
+  $('#dday').innerHTML='81회 시험(2026.11.28) <b>'+(d>0?'D-'+d:d===0?'D-DAY':'종료')+'</b>';
+
+  /* 상단 칩 */
+  var chips=$('#chips');
+  $$('.card.sec').forEach(function(s){
+    var h=$('h2',s), no=$('.no',h); if(!no)return;
+    var a=document.createElement('a'); a.href='#'+s.id;
+    a.textContent=(no.textContent+' '+h.textContent.replace(no.textContent,'')).replace(/\s+/g,' ').trim().slice(0,12);
+    chips.appendChild(a);
+  });
+
+  /* 유력만 보기 */
+  var bHot=$('#bHot');
+  bHot.onclick=function(){var on=document.body.classList.toggle('onlyhot');bHot.setAttribute('aria-pressed',on);ls('hn_hot',on?'1':'0')};
+  if(ls('hn_hot')==='1')bHot.onclick();
+
+  /* 암기 모드: 굵은 핵심어 가리기, 눌러서 확인 */
+  var bR=$('#bRecall');
+  bR.onclick=function(){var on=document.body.classList.toggle('recall');bR.setAttribute('aria-pressed',on);$$('.k.on').forEach(function(k){k.classList.remove('on')});ls('hn_recall',on?'1':'0')};
+  document.addEventListener('click',function(e){var k=e.target.closest&&e.target.closest('.k');if(k&&document.body.classList.contains('recall'))k.classList.toggle('on')});
+  if(ls('hn_recall')==='1')bR.onclick();
+
+  /* 테마 */
+  var root=document.documentElement, th=ls('hn_theme');
+  if(th==='dark'||th==='light')root.setAttribute('data-theme',th);
+  $('#bTheme').onclick=function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+    var nx=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',nx); ls('hn_theme',nx);
+  };
+
+  /* 검색: 일치하는 카드 안의 항목만 남기고 하이라이트 */
+  var q=$('#q'), items=$$('.card.sec li, .card.sec tr, .card.sec .box');
+  function clearMarks(){$$('mark').forEach(function(m){var p=m.parentNode;p.replaceChild(document.createTextNode(m.textContent),m);p.normalize()})}
+  q.addEventListener('input',function(){
+    clearMarks();
+    var v=q.value.trim();
+    $$('.card.sec').forEach(function(c){c.style.display=''});
+    items.forEach(function(i){i.style.display=''});
+    if(!v)return;
+    var low=v.toLowerCase(), any;
+    $$('.card.sec').forEach(function(c){
+      var hit=false;
+      $$('li, tr, .box',c).forEach(function(i){
+        if(i.closest('table')&&i.tagName==='LI')return;
+        var m=i.textContent.toLowerCase().indexOf(low)>-1;
+        if(!m&&!(i.tagName==='TR'&&i.rowIndex===0))i.style.display='none'; else if(m)hit=true;
+      });
+      if(!hit)c.style.display='none';
+    });
+    var w=document.createTreeWalker($('#main'),NodeFilter.SHOW_TEXT,null), nodes=[], n;
+    while(n=w.nextNode()){if(n.nodeValue.toLowerCase().indexOf(low)>-1&&!n.parentNode.closest('script,style'))nodes.push(n)}
+    nodes.forEach(function(n){
+      var s=n.nodeValue, i=s.toLowerCase().indexOf(low); if(i<0)return;
+      var f=document.createDocumentFragment(); f.appendChild(document.createTextNode(s.slice(0,i)));
+      var m=document.createElement('mark'); m.textContent=s.slice(i,i+v.length); f.appendChild(m);
+      f.appendChild(document.createTextNode(s.slice(i+v.length))); n.parentNode.replaceChild(f,n);
+    });
+  });
+})();
+</script>
+</body>
+</html>
