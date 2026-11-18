@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>81회 한능검 고대 요약</title>
-<meta name="description" content="문동균 81회 한능검 1/4특강(선사~고대) 자막을 정리한 요약 노트. 강의에서 '이번 시험에 나올 수 있다'고 짚은 내용을 강조했어요.">
+<title>81회 한능검 전범위 강의 노트</title>
+<meta name="description" content="문동균 81회 한능검 1/4특강(선사~현대 전범위) 자막을 강의 순서대로 정리한 노트. 강의에서 '이번 시험에 나올 수 있다'고 짚은 내용을 강조했어요.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
@@ -150,14 +150,22 @@ aside.toc a.cur small{color:var(--card)}
 #lb.on{display:flex}
 #lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:4px}
 body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
+
+/* ---- 시대 구분 ---- */
+.era{margin:54px 0 -4px;display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;border-bottom:3px solid var(--fg);padding-bottom:8px;scroll-margin-top:70px}
+.era .en{font:900 clamp(28px,5.2vw,40px)/1 "Noto Serif KR",serif}
+.era small{color:var(--muted);font-size:14px}
+aside.toc a.eh{display:block;margin-top:14px;padding:5px 8px;font-size:12.5px;font-weight:700;letter-spacing:.1em;color:var(--bg);background:var(--fg);border-radius:4px}
+aside.toc a.eh:hover{background:var(--fg);color:var(--bg)}
+aside.toc a{font-size:14px}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="hero">
   <div class="kicker">한국사능력검정시험 심화 · 강의 노트</div>
-  <h1>[81회 한능검 1/4특강] 선사 ~ 고대</h1>
-  <p class="lead">문동균 선생님 · 59분 56초 · 강의 순서대로 받아 적은 노트예요. 선생님이 "이번 시험에 나올 수 있다", "지난 시험에 안 나왔다"고 짚은 부분은 빨간 줄로 표시했어요.</p>
+  <h1>[81회 한능검 1/4특강] 선사 ~ 현대 전범위</h1>
+  <p class="lead">문동균 선생님의 81회 대비 1/4 특강 두 편을 강의 순서대로 받아 적은 노트예요. ① 선사~고대 편(59분 56초)에 ② 전범위 통합본(6시간 21분 36초)에서 새로 나온 고려~현대를 이어 붙였어요. 선생님이 "이번 시험에 나올 수 있다", "지난 시험에 안 나왔다"고 짚은 부분은 빨간 줄로 표시했어요.</p>
   <div class="dday" id="dday" aria-live="polite">81회 시험 <b>D-?</b></div>
   <div class="legend">
     <span><span class="b hot">이번 시험 유력</span>강의에서 직접 가능성을 말한 부분</span>
@@ -165,7 +173,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
     <span><span class="b ans">정답 단골</span>선지에서 정답으로 잘 나온다고 한 부분</span>
     <span><span class="b sup">(보충)</span>강의에는 없고 제가 덧붙인 부분</span>
   </div>
-  <p class="src">원본 영상: <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ" target="_blank" rel="noopener">[81회 한능검 1/4특강] 선사 ~ 고대 (문동균)</a> · 각 주제 옆 ▶ 시각을 누르면 그 부분부터 재생돼요. 강의 교재는 문동균 한능검 교재예요.</p>
+  <p class="src">원본 영상: <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ" target="_blank" rel="noopener">① 선사 ~ 고대</a> · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU" target="_blank" rel="noopener">② 전범위 통합본(고려~현대)</a> (문동균) · 각 주제 옆 ▶ 시각을 누르면 그 영상의 해당 부분부터 재생돼요. 강의 교재는 문동균 한능검 교재예요.</p>
   <input class="search" id="q" type="search" placeholder="키워드 검색 (예: 옥저, 원효, 관산성)" aria-label="키워드 검색">
 </header>
 </div>
@@ -184,7 +192,8 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 <!-- 출제 전망 -->
 <section class="card sec" id="outlook">
   <h2><span class="no">TOP</span>이번 시험 출제 전망 한눈에</h2>
-  <p class="meta">강의에서 선생님이 직접 말한 내용만 모았어요. 지난 시험은 80회, 이번 시험은 81회(2026.11.28)예요.</p>
+  <p class="meta">시대별로 모았어요. 강의에서 선생님이 직접 말한 내용만 넣었고, 지난 시험은 80회, 이번 시험은 81회(2026.11.28)예요.</p>
+  <h3 class="nh">선사 ~ 고대 (영상 ①)</h3>
   <ul class="outlook">
     <li class="hot"><strong>1번 선사 생활 → 신석기가 가장 유력</strong><span>지난 시험은 청동기. 구석기 또는 신석기 중 신석기 가능성이 제일 높다고 했어요. 1점짜리 한 문제.</span></li>
     <li class="hot"><strong>고조선 → 지난 시험에 안 나와서 비중 있음</strong><span>전체 문제 또는 (단군 조선→위만 조선) 순서 문제로 나와요.</span></li>
@@ -196,11 +205,23 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
     <li class="hot"><strong>고대 국가 문제(사진+제도) → 두 문제</strong><span>지난 시험에도 두 문제가 나왔어요. 사진으로 나라를 묻고 제도 정리를 정답으로 줘요.</span></li>
     <li class="hot"><strong>발해 → 8번 전후</strong><span>80회는 8번, 79회는 7번이었어요. 왕 이름보다 전체 국가 문제 비중이 훨씬 커요.</span></li>
   </ul>
+  <h3 class="nh">고려 (영상 ② 전범위 통합본)</h3>
+  <ul class="outlook"><li class="hot"><strong>후삼국 통일 과정</strong><span>인물(견훤·궁예) 두 번 연속 출제, 이번엔 순서 문제 유력 (발해 멸망 이후 애·공·고·경·일이 핵심)</span></li><li class="hot"><strong>고려 초기 왕</strong><span>지난 시험 성종, 그 전 현종. 이번엔 태조 유력, 문숙예인(문종~인종) 파트도 오랜만에 가능</span></li><li class="hot"><strong>거란·여진</strong><span>대외 관계는 거의 매 회차(상수). 거란 순서 확인</span></li><li class="hot"><strong>문벌 귀족</strong><span>이자겸의 난→묘청→삼국사기 순서, 문숙예인 관학 진흥책(최충·서적포·양현고)은 3점짜리 가능성 높음</span></li><li class="hot"><strong>무신 집권기(출제 비중 80%)</strong><span>최충헌·최우 인물 또는 정중부 때 난까지 섞은 순서</span></li><li class="hot"><strong>몽골 항쟁·삼별초</strong><span>최근 출제가 적어 가능성 꽤 높음</span></li><li class="hot"><strong>원 간섭기</strong><span>매 회차 100%. 지난 시험 사회상 → 이번엔 공민왕 왕대사 유력</span></li><li class="hot"><strong>고려 문화사</strong><span>비중 증가, 사이드 승려(균여 보현십원가·요세 등)·사이드 책 주의</span></li><li class="hot"><strong>고려 문화사</strong><span>청자(서긍)·나전칠기·탑(월정사 팔각9층/경천사지 10층)·불상(관촉사 등)·건축(봉부수응) 사진으로 시대 구별</span></li><li class="hot"><strong>고려 국가 문제</strong><span>고·소·영(고려의 소, 관영점)이 가장 쉬운 정답. 지난 시험도 이걸로 끝남</span></li></ul>
+  <h3 class="nh">조선 (영상 ② 전범위 통합본)</h3>
+  <ul class="outlook"><li class="hot"><strong>조선 건국 과정</strong><span>출제 비중 50%인데 지난 시험 안 나옴, 이번에 가능성 꽤 높음(위화도 회군·건국 1년 전 과전법 순서)</span></li><li class="hot"><strong>조선 초기 왕</strong><span>지난 시험 성종, 그 전 세종 → 이번엔 태종·세조 유력 (거의 매번 한두 문제). 정도전은 73회가 마지막이라 오래됨</span></li><li class="hot"><strong>4대 사화</strong><span>최근 4번 연속 미출제, 대비 필요(순서, 조광조, 양재역 벽서 사건=을사사화)</span></li><li class="hot"><strong>임진왜란</strong><span>전체 전쟁(인물) 또는 4단계 순서. 의병장·승병 이름 숙지</span></li><li class="hot"><strong>17세기(광·인·효·현)</strong><span>이번엔 인조·효종(북벌) 가능성 아주 높음. 광해군은 지난 시험(기유약조)에 나와 낮음, 숙종은 80회 출제라 낮음</span></li><li class="hot"><strong>영조·정조</strong><span>지난 시험 안 냈음, 이번엔 무조건 출제(정조 조금 더 유력, 영조도 가능성 높음)</span></li><li class="hot"><strong>세도 정치</strong><span>홍경래의 난 vs 임술 농민 봉기 비교, 임술이 더 유력(삼정이정청)</span></li><li class="hot"><strong>조선 제도</strong><span>중앙 제도가 가장 잘 나옴(승정원·의금부·3사·홍문관). 대외 관계는 지난 시험 명나라 → 이번엔 일본 가능성</span></li><li class="hot"><strong>조선 후기 사회상</strong><span>매 시험 100% 출제</span></li><li class="hot"><strong>실학</strong><span>정약용 또는 박지원 가능성 가장 높음. 이황·이이는 사이드 인물 확인</span></li></ul>
+  <h3 class="nh">근대 (영상 ② 전범위 통합본)</h3>
+  <ul class="outlook"><li class="hot"><strong>개항기(7~8문제, 지난 시험 7)</strong><span>거의 대외 정책(비중 70%+). 지난 시험 신미양요지만 연달아 가능</span></li><li class="hot"><strong>강화도 조약</strong><span>최근 연속 출제로 변화. 부속 조약·1883 개정 통상 장정(관세·방곡령)·&quot;다음 사이&quot;(조미 조약/두모진 수세 사건) 3점 대비. 조미 조약은 70회가 마지막이라 단독 가능</span></li><li class="hot"><strong>임오군란·갑신정변</strong><span>지난 시험 안 나옴, 이번엔 낼 가능성 높고 한 문제는 무조건. 결과 암기(임오=제물포·조청 상민, 갑신=한성·톈진)</span></li><li class="hot"><strong>동학 농민 운동</strong><span>최근 두 번 미출제(78회가 마지막). 순서 문제 대비(1차 백산→황토현→황룡촌→전주 화약, 2차 우금치)</span></li><li class="hot"><strong>대한제국(광무개혁)</strong><span>이번 시험 가장 유력(지계 발급 사업). 독립협회도 연속 가능, 을미개혁 단독은 낮음. 지난 시험은 을미개혁+독립협회</span></li><li class="hot"><strong>일본 독주기</strong><span>의병이 최근 계속 연속 출제(을미·을사·정미 비교). 애국 계몽은 거의 신민회</span></li><li class="hot"><strong>근대 문화(신문·교육·시설)</strong><span>매 시험 출제, 이 페이지에서 한 문제 무조건. 지난 시험 유경공원+철도. 대한매일신보↔국채 보상 운동이 서로의 정답</span></li><li class="hot"><strong>국권 피탈 과정</strong><span>화폐 정리 사업·국채 보상 운동 가능성. 용암포 사건은 3점짜리</span></li></ul>
+  <h3 class="nh">일제 강점기 (영상 ② 전범위 통합본)</h3>
+  <ul class="outlook"><li class="hot"><strong>일제 강점기 통치(8문제)</strong><span>지난 시험 10년대+미나미. 미나미는 거의 디폴트, 이번엔 20년대 또는 우가키 가능</span></li><li class="hot"><strong>1910년대 독립운동</strong><span>지난 시험 국외(하와이) → 이번엔 국내(독립 의군부 vs 대한 광복회) 가능성 더 높음</span></li><li class="hot"><strong>3·1 운동·임시 정부</strong><span>출제 확률 80%. 지난 시험 임시 정부 1문제, 3·1 운동은 낸 지 조금 됨(3·1·6·10·광주 비교)</span></li><li class="hot"><strong>임시 정부</strong><span>한 문제는 무조건(많으면 두 문제). 지난 시험 건국 강령. 순서·인물(조소앙) 가능. 광복군 정답은 OSS·인도 미얀마·김원봉 합류</span></li><li class="hot"><strong>항일 학생 운동</strong><span>지난 시험 6·10 → 이번엔 광주 학생 항일 운동 또는 3·1 운동. 의열단은 77회가 마지막이라 주목</span></li><li class="hot"><strong>무장 투쟁(비중 90%)</strong><span>세 유형 중 한중 연합 작전이 이번에 가장 유력(남만주 양세봉·영릉가·흥경성 / 북만주 지청천·대전자령). 기본 순서는 지난 시험에 출제</span></li><li class="hot"><strong>1920년대 국내 독립운동(120%)</strong><span>지난 시험 물산 장려 → 이번엔 민립대학 또는 형평·소년 운동</span></li><li class="hot"><strong>일제 사회·문화·종교</strong><span>한 문제 또는 두 문제 무조건</span></li><li class="hot"><strong>국어 연구·역사학</strong><span>국어 연구 A급(조선어 연구회·학회, 이윤재·최현배), 백남운 가장 유력, 2차 교육령(이·민·경)</span></li></ul>
+  <h3 class="nh">현대 (영상 ② 전범위 통합본)</h3>
+  <ul class="outlook"><li class="hot"><strong>해방 이후 정부 수립</strong><span>100% 출제, 지난 시험 김규식. 순서(카·얄·포→맥아더→모스크바 3상→미소공위→정읍 발언) + 여운형(77회가 마지막)</span></li><li class="hot"><strong>해방 이후 정부 수립</strong><span>순서(모·미·정·좌 → UN 총회·소총회 → 4·3·남북 협상 → 5·10 총선) + 인물 네 명(이승만·김구·여운형·김규식, 호까지)</span></li><li class="hot"><strong>6·25 전쟁</strong><span>지난 시험 출제로 낮음. &quot;다음 전쟁 기간 중&quot; 유형(애치슨 선언 제외, 발췌 개헌·반공 포로 석방 포함)</span></li><li class="hot"><strong>이승만 정부</strong><span>6·25보다 가능성 높음. 개헌(발췌·사사오입)·대선 연도(48·52·56·60)·진보당 사건·4·19의 &quot;다음 사이&quot; 순서</span></li><li class="hot"><strong>박정희 정부</strong><span>비중 130%, 한두 문제 무조건(경제 개발 5개년 계획·수출 100억 불·포항 제철, 전·세·경·광/유·고·마·청, 지하철 1호선)</span></li><li class="hot"><strong>민주화 운동</strong><span>4·19 / 5·18 / 6월 항쟁 비교(지난 시험 하나 출제), 4·19와 6월 비교 중점</span></li><li class="hot"><strong>노태우 정부</strong><span>지난 시험에 현대사를 정부별로 몰아 세 문제. 코어는 1991년(UN 동시 가입·남북 기본 합의서·비핵화 선언), 79회에 출제</span></li></ul>
   <div class="box nh">강사 말씀: 지난 시험에도 새 선지와 난도를 높이려는 변화가 보였대요. 그래서 시험마다 변화를 따라가야 오차가 줄고, 강의는 반복해서 보라고 했어요.</div>
 </section>
 
 <!-- 1 선사 -->
-<section class="card sec" id="s1">
+<div class="era" id="era_ancient"><span class="en">선사 ~ 고대</span><small>영상 ① 선사~발해 (0:00~59:56)</small></div>
+
+<section class="card sec" id="s1" data-era="ancient">
   <h2><span class="no">01</span>선사 시대 생활</h2>
   <p class="meta">1번 문제 · 1점 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=28s" target="_blank" rel="noopener">▶ 0:28</a></p>
   <div class="box nh">큰 틀: 돌을 쓴 두 시대(구석기·신석기)는 모두 <b class="k">평등</b>이에요. <b class="k">청동기</b>부터 계급과 군장이 생기고 그 무덤이 고인돌이에요. 철기에서 더 심해져요.</div>
@@ -237,7 +258,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 2 고조선 -->
-<section class="card sec" id="s2">
+<section class="card sec" id="s2" data-era="ancient">
   <h2><span class="no">02</span>고조선</h2>
   <p class="meta">지난 시험 미출제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=315s" target="_blank" rel="noopener">▶ 5:15</a></p>
   <ul>
@@ -260,7 +281,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 3 여러 나라 -->
-<section class="card sec" id="s3">
+<section class="card sec" id="s3" data-era="ancient">
   <h2><span class="no">03</span>여러 나라의 성장(초기 국가)</h2>
   <p class="meta">철기 배경 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=501s" target="_blank" rel="noopener">▶ 8:21</a></p>
   <ul>
@@ -279,7 +300,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 4 가야 -->
-<section class="card sec" id="s4">
+<section class="card sec" id="s4" data-era="ancient">
   <h2><span class="no">04</span>가야</h2>
   <p class="meta">출제 비중 3~40% · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=779s" target="_blank" rel="noopener">▶ 12:59</a></p>
   <ul>
@@ -304,7 +325,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 5 삼국 항쟁 -->
-<section class="card sec" id="s5">
+<section class="card sec" id="s5" data-era="ancient">
   <h2><span class="no">05</span>삼국의 항쟁 ① 4·5·6세기</h2>
   <p class="meta">5점 안팎 · 무조건 잡아야 할 주제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=934s" target="_blank" rel="noopener">▶ 15:34</a></p>
   <div class="box nh">구도: 2~4세기는 세 나라의 <b class="k">기틀</b>, 4~6세기가 <b class="k">전성기</b>(백제→고구려→신라). 5세기까지는 <b class="k">고구려 중심</b>으로 보세요. 이렇게 서로 싸울 수 있었던 이유는 중국이 분열기(위진 남북조)였기 때문이고, 6세기 말 수나라가 통일하면서 판이 바뀌어요.</div>
@@ -340,7 +361,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 6 수당~통일 -->
-<section class="card sec" id="s6">
+<section class="card sec" id="s6" data-era="ancient">
   <h2><span class="no">06</span>삼국의 항쟁 ② 7세기: 수·당 전쟁에서 통일 전쟁까지</h2>
   <p class="meta">5점 안팎 · 하나의 큰 그림으로 외우기 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=1688s" target="_blank" rel="noopener">▶ 28:08</a></p>
   <ul>
@@ -361,7 +382,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 7 통일 신라 -->
-<section class="card sec" id="s7">
+<section class="card sec" id="s7" data-era="ancient">
   <h2><span class="no">07</span>통일 신라</h2>
   <p class="meta">한두 문제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=1962s" target="_blank" rel="noopener">▶ 32:42</a></p>
   <ul>
@@ -391,7 +412,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 8 문화 -->
-<section class="card sec" id="s8">
+<section class="card sec" id="s8" data-era="ancient">
   <h2><span class="no">08</span>고대 문화 ① 사상</h2>
   <p class="meta">불교·유교·도교·풍수지리 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=2390s" target="_blank" rel="noopener">▶ 39:50</a></p>
   <h3 class="nh">불교: 승려 4+1명</h3>
@@ -414,7 +435,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
   <div class="gal"><figure><a class="zoom" href="img/buseok.jpg"><img src="img/buseok.jpg" alt="부석사 무량수전" loading="lazy"></a><figcaption><b>부석사 무량수전</b><span>의상 · 화엄종 핵심 사찰</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B6%80%EC%84%9D%EC%82%AC_%EB%AC%B4%EB%9F%89%EC%88%98%EC%A0%84.jpg" target="_blank" rel="noopener">최옥석 · CC BY-SA 4.0</a></small></figcaption></figure><figure><a class="zoom" href="img/daehyangro.jpg"><img src="img/daehyangro.jpg" alt="백제 금동 대향로" loading="lazy"></a><figcaption><b>백제 금동 대향로</b><span>부여 능산리 · 불교+도교</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:%EB%B0%B1%EC%A0%9C_%EA%B8%88%EB%8F%99%EB%8C%80%ED%96%A5%EB%A1%9C.jpg" target="_blank" rel="noopener">국립중앙박물관 · 공공누리 제1유형</a></small></figcaption></figure><figure><a class="zoom" href="img/sansu.jpg"><img src="img/sansu.jpg" alt="산수무늬 벽돌" loading="lazy"></a><figcaption><b>산수무늬 벽돌</b><span>백제 · 도교 · 무릉도원</span><small>사진: <a href="https://commons.wikimedia.org/wiki/File:Landscape_Design_of_Earthenware_Patterned_Tiles_from_Oe-ri,_Buyeo_%EB%B6%80%EC%97%AC_%EC%99%B8%EB%A6%AC_%EB%AC%B8%EC%96%91%EC%A0%84_%EC%A4%91_%EC%82%B0%EC%88%98%EB%AC%B8%EC%A0%84_angle_02.jpg" target="_blank" rel="noopener">by martinroell · CC BY-SA 2.0</a></small></figcaption></figure></div>
 </section>
 
-<section class="card sec" id="s8b">
+<section class="card sec" id="s8b" data-era="ancient">
   <h2><span class="no">09</span>고대 문화 ② 탑과 불상</h2>
   <p class="meta">사진 자료가 중요 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=2727s" target="_blank" rel="noopener">▶ 45:27</a></p>
   <ul>
@@ -445,7 +466,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 10 고대 국가 문제 -->
-<section class="card sec" id="s9">
+<section class="card sec" id="s9" data-era="ancient">
   <h2><span class="no">10</span>고대 국가 문제(사진 + 제도 정리)</h2>
   <p class="meta">딱 두 문제 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=3014s" target="_blank" rel="noopener">▶ 50:14</a></p>
   <ul>
@@ -472,7 +493,7 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
 </section>
 
 <!-- 11 발해 -->
-<section class="card sec" id="s10">
+<section class="card sec" id="s10" data-era="ancient">
   <h2><span class="no">11</span>발해</h2>
   <p class="meta">8번 전후 · <a href="https://www.youtube.com/watch?v=dMLET1HUTwQ&t=3400s" target="_blank" rel="noopener">▶ 56:40</a></p>
   <ul>
@@ -492,11 +513,1188 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
   </ul>
 </section>
 
+<div class="era" id="era_goryeo"><span class="en">고려</span><small>후삼국 통일 ~ 공양왕 · 영상 ② 1:00:02~</small></div>
+
+<section class="card sec" id="s11" data-era="goryeo">
+  <h2><span class="no">12</span>후삼국 통일 과정</h2>
+  <p class="meta">매 회차 출제 · 주제 10 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=3602s" target="_blank" rel="noopener">▶ 1:00:02</a></p>
+  <ul>
+    <li class="hot">문제 유형은 <b>① 인물(견훤·궁예) ② 순서</b> 두 가지예요. 인물은 두 번 연속 나왔고(지난 시험 견훤, 그 전 시험 궁예), 이번에는 <b>순서 문제</b>에 더 무게를 두고 대비하라고 했어요.</li>
+  </ul>
+  <div class="box nh">구도: 신라는 통일 뒤 대동강~원산만 이남을 차지했어요. 후반으로 갈수록 왕의 힘이 경주 주변으로 줄어들고, 지방에서는 호족이 일어나요. <b class="k">후백제(견훤)</b>와 <b class="k">후고구려(궁예)</b>의 건국은 1년 차이밖에 안 나지만, 지도에서 시계 방향으로 돌며 순서를 외워요.</div>
+  <h3 class="nh">인물 키워드</h3>
+  <ul>
+    <li><b>견훤(후백제)</b>: 도읍 <b class="k">완산주(전주)</b>. 초반 기세가 가장 좋았고 경제력이 탁월했어요. 중국(오월 등)과 교류했어요.</li>
+    <li><b>궁예(후고구려)</b>: <b class="k">광평성</b>(관제)을 가장 잘 내요. 도읍은 송악 → <b class="k">철원</b>이고 국호는 <b class="k">태봉</b>이에요. 궁예를 밀어내고 왕건이 왕이 되어 고려가 세워져요.</li>
+  </ul>
+  <h3 class="nh">순서 (발해 멸망이 기준점)</h3>
+  <div class="flow"><span>후백제 건국(견훤)</span><i>→</i><span>후고구려 건국(궁예)</span><i>→</i><span>고려 건국(왕건)</span><i>→</i><span>발해 멸망(거란)</span><i>→</i><span>경애왕의 죽음(견훤의 신라 침입)</span><i>→</i><span>공산 전투(왕건 패배, 신숭겸 전사)</span><i>→</i><span>고창 전투(왕건 승리)</span><i>→</i><span>견훤 귀순, 경순왕 항복</span><i>→</i><span>일리천 전투(후백제 멸망)</span></div>
+  <ul>
+    <li class="keep"><b>발해 멸망 이후가 핵심</b>이라고 했어요(시험에서 이 구간이 가장 중요). 암기 약칭은 <b class="k">애·공·고·경·일</b>이에요.</li>
+    <li>견훤이 아들에게 쫓겨나 <b class="k">금산사</b>에 갇혔다가 탈출해 왕건에게 귀순했어요. 이를 본 <b class="k">경순왕</b>이 끝까지 버티다 항복했고, 마지막 전투는 <b class="k">선산 일리천 전투</b>예요.</li>
+    <li>공산 전투에서는 왕건을 대신해 <b class="k">신숭겸</b>이 죽었어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s12" data-era="goryeo">
+  <h2><span class="no">13</span>고려 초기 왕의 업적</h2>
+  <p class="meta">주제 11 · 호족 → 문벌 귀족 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=3846s" target="_blank" rel="noopener">▶ 1:04:06</a></p>
+  <div class="box nh">고려는 지배 계층에 따라 시기를 다섯으로 나눠요. <b class="k">호족 → 문벌 귀족 → 무신 → 권문세족 → 신진 사대부</b>(앞 글자로 <b>호·문·무·권·신</b>). 무신 집권기 뒤에 약 40년 몽골과 싸운 시기(대몽 항쟁기)가 오고, 이어 원 간섭기가 와요.</div>
+  <ul>
+    <li class="hot">지난 시험은 <b>성종</b>, 그 전 시험은 <b>현종</b>이 나왔어요. 이번에는 <b>태조</b> 가능성이 높고, 오랜만에 <b>문종~예종·인종(문숙예인)</b> 파트도 낼 수 있다고 했어요.</li>
+    <li class="keep">순서는 <b class="k">태·혜·정·광·경·성·목·현</b>(태조 → 혜종 → 정종 → 광종 → 경종 → 성종 → 목종 → 현종)이에요. 태조 사후 바닥까지 떨어진 왕권을 <b>광종</b>이 끌어올리고 <b>성종</b>이 체제를 완성해요. 중기 전성기는 <b>문종</b>이에요.</li>
+  </ul>
+  <h3 class="nh">태조</h3>
+  <ul>
+    <li>고려 건국, 후삼국 통일, 연호 <b class="k">천수</b>. 호족 통합 정책으로 <b class="k">기인 제도</b>(인질)와 <b class="k">사심관 제도</b>(1호 사심관이 경순왕)를 썼어요.</li>
+    <li class="keep"><b class="k">흑창</b>(진대법을 이은 빈민 구제 기구, 성종 때 의창으로 발전) <span class="b star">★</span> 신하에게는 통일 공로에 따라 <b class="k">역분전</b>을 줬어요.</li>
+    <li>후대 왕에게 <b class="k">훈요 10조</b>, 신하에게 <b class="k">정계·계백료서</b>를 남겼어요. 거란이 보낸 낙타를 굶겨 죽인 <b class="k">만부교 사건</b>도 있어요(대외 관계에서도 나와요).</li>
+    <li>왕건의 상에서 황제를 상징하는 통천관을 쓴 모습이 발견돼 이런 자료가 문제에 나온 적이 있어요.</li>
+  </ul>
+  <h3 class="nh">혜종·정종·광종·경종</h3>
+  <ul>
+    <li>혜종 때는 왕권이 불안해 <b class="k">왕규의 난</b>이 있었고, 이를 진압하고 즉위한 <b>정종</b>은 거란에 대비한 <b class="k">광군</b>을 만들었어요.</li>
+    <li class="keep"><b>광종</b>(누가 봐도 왕권 강화): <b class="k">과거제</b>(후주 출신 쌍기의 건의), <b class="k">공복 제도</b>, 연호 <b class="k">광덕·준풍</b>, <b class="k">노비안검법</b>. 성종 때 최승로의 건의로 나온 <b class="k">노비환천법</b>과 비교해서 외워요.</li>
+    <li class="keep">경종 → 성종 → 목종 사이에 <b class="k">전시과</b>가 3단으로 변해요: 경종 <b>시정</b> 전시과 → 목종 <b>개정</b> 전시과 → 중기 문종 <b>경정</b> 전시과.</li>
+  </ul>
+  <h3 class="nh">성종·목종·현종</h3>
+  <ul>
+    <li><b>성종</b>: 중요한 건 <b>최승로</b>예요. <b class="k">시무 28조</b>(5조는 실전)로 12목에 지방관 파견을 건의했고 안검법을 비판했어요. 제도는 모두 성종 때 정비: <b class="k">2성 6부</b>, <b class="k">중추원</b>, <b class="k">어사대</b> <span class="b sup">(보충)</span>, <b class="k">의창·상평창</b>, 대학교 <b class="k">국자감</b>. 거란의 1차 침입도 성종 때예요.</li>
+    <li><b>목종</b>: 개정 전시과.</li>
+    <li class="keep"><b>현종</b>: <b class="k">강조의 정변</b>(목종을 폐하고 현종 즉위), 거란의 2·3차 침입, 부처의 힘으로 나라를 지키려고 <b class="k">초조대장경</b> 조판을 시작했어요(완성 시점은 안 내요). 최근 사료에 <b class="k">7대 실록</b>이 나와 선지로도 낼 수 있어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s13" data-era="goryeo">
+  <h2><span class="no">14</span>거란·여진과의 전쟁</h2>
+  <p class="meta">주제 12 · 대외 관계는 거의 매 회차 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=4185s" target="_blank" rel="noopener">▶ 1:09:45</a></p>
+  <ul>
+    <li class="hot">고려의 대외 관계는 <b>끊임없이 출제</b>되고, 지난 시험도 거란을 냈어요. 거란은 거의 상수로 봐야 하고, <b>순서를 확인</b>할 수 있어야 해요.</li>
+  </ul>
+  <h3 class="nh">거란: 태조 → 정종 → 성종(1차) → 현종(2·3차)</h3>
+  <div class="scroll"><table>
+    <tr><th>시기</th><th>핵심</th></tr>
+    <tr><td>태조</td><td><b class="k">만부교 사건</b>: 거란이 보낸 낙타를 굶겨 죽이고 사신을 귀양 보냈어요.</td></tr>
+    <tr><td>정종</td><td><b class="k">광군</b> 조직</td></tr>
+    <tr class="hot"><td>성종 · 1차</td><td>지휘관 <b class="k">소손녕</b>이 침입했고 <b class="k">서희</b>가 담판(말싸움)으로 해결, 그 결과 <b class="k">강동 6주</b>를 얻었어요. 군사적 싸움이 아닌 외교 담판이에요.</td></tr>
+    <tr class="hot"><td>현종 · 2차</td><td><b class="k">강조의 정변</b>을 구실로 침입. <b class="k">흥화진</b>에서 <b class="k">양규</b>가 항전했고, 현종이 <b class="k">나주까지 피란</b>했어요. 강화 조건은 현종의 친조였지만 가지 않았어요.</td></tr>
+    <tr class="hot"><td>현종 · 3차</td><td><b class="k">강감찬</b>이 <b class="k">귀주 대첩</b>에서 크게 이겼어요(낙성대).</td></tr>
+  </table></div>
+  <ul>
+    <li><b>3차 이후 결과</b>: 수도 개경을 둘러싼 <b class="k">나성</b>, 국경에 쌓은 <b class="k">천리장성</b>, 초조대장경과 7대 실록.</li>
+  </ul>
+  <h3 class="nh">여진: 숙종 → 예종 → 인종</h3>
+  <div class="flow"><span>여진이 세력 통합</span><i>→</i><span>윤관 출정, 숙종 때 별무반</span><i>→</i><span>예종 때 동북 9성</span><i>→</i><span>예종 때 9성 반환</span><i>→</i><span>금 건국, 사대 요구</span><i>→</i><span>이자겸의 수용(인종)</span></div>
+  <ul>
+    <li><b class="k">별무반</b>(숙종): 여진이 기병으로 이긴 걸 보고 만든 부대예요. 기병 <b class="k">신기군</b>, 보병 <b class="k">신보군</b>, 승병 <b class="k">항마군</b>. 동북 9성과 반환은 모두 <b>예종</b>이에요.</li>
+    <li>금이 요를 무너뜨리고 강해져 "군신 관계를 맺자"고 하자 <b>이자겸</b>이 받아들였어요. 이게 <b>고려 사회 변질의 확정</b>이라고 해요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s14" data-era="goryeo">
+  <h2><span class="no">15</span>문벌 귀족 사회와 문숙예인</h2>
+  <p class="meta">주제 13 · 순서가 핵심 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=4483s" target="_blank" rel="noopener">▶ 1:14:43</a></p>
+  <div class="box nh">초기 호족은 자주적·개혁적이었다면, 성종 이후 <b class="k">문벌 귀족</b>은 보수적이고 뒤로 갈수록 더 보수화돼요. 이 모순이 <b>이자겸의 난 → 묘청의 난</b>으로 터지고, 그래도 해결이 안 돼 사회가 뒤집힌 게 <b class="k">무신 정변(1170)</b>이에요.</div>
+  <ul>
+    <li>문벌 귀족의 특권: <b class="k">음서</b>(과거 없이 관직), <b class="k">공음전</b>(세습되는 토지).</li>
+  </ul>
+  <h3 class="nh">이자겸의 난 → 묘청의 난 → 삼국사기 <span class="b hot">순서 유력</span></h3>
+  <div class="flow"><span>이자겸의 난(척준경과 함께)</span><i>→</i><span>이자겸 제거(척준경 회유)</span><i>→</i><span>척준경 제거</span><i>→</i><span>묘청의 서경 천도 운동</span><i>→</i><span>김부식이 진압</span><i>→</i><span>삼국사기 편찬</span><i>→</i><span>무신 정변(1170)</span></div>
+  <ul>
+    <li class="hot">이 파트는 <b>순서 문제</b>로 가장 자주 나오고, 김부식·삼국사기 인물·역사서 문제도 가능하다고 했어요.</li>
+    <li>이자겸의 난을 진압하는 과정에서 궁궐이 불타 <b class="k">묘청</b>이 서경 천도를 주장했어요(개경파 vs 서경파). 인종이 마음을 바꾸자 묘청이 난을 일으켰고, 국호 <b class="k">대위국</b>, 연호 <b class="k">천개</b>를 썼어요. 진압한 <b class="k">김부식</b>이 왕명으로 <b class="k">삼국사기</b>(기전체)를 편찬해요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>문숙예인 (문종·숙종·예종·인종)</h3>
+  <ul>
+    <li class="hot">관학 진흥책과 학문 기관 쪽은 안 나온 지 꽤 돼서 3점짜리로 나올 가능성이 높다고 했어요.</li>
+    <li class="keep">정치사: <b class="k">별무반은 숙종</b>, <b class="k">동북 9성·반환은 예종</b>, 이후 인종 때 이자겸의 난·묘청의 난·삼국사기.</li>
+    <li><b>최충</b>(문종): 해동공자라 불린 고려 최고 학자로 은퇴 후 학원을 열었어요(<b class="k">문헌공도</b>, 9재 학당). 과거 출제자가 학원을 차리니 합격자가 다 거기서 나와 국자감이 위축돼 <b>관학 진흥책</b>이 필요했어요.</li>
+    <li><b>숙종</b>: <b class="k">서적포</b>, 의천의 건의로 <b class="k">주전도감</b>(동전 주조). <b>예종</b>: <b class="k">양현고</b>(장학 재단), <b class="k">7재</b>(국학), <b class="k">청연각·보문각</b>(학문 연구소).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s15" data-era="goryeo">
+  <h2><span class="no">16</span>무신 집권기</h2>
+  <p class="meta">주제 14 · 출제 비중 80% · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=4780s" target="_blank" rel="noopener">▶ 1:19:40</a></p>
+  <ul>
+    <li class="hot">지난 시험은 <b>최충헌</b>을 "다음 사이" 형태로 냈어요. 이번에는 <b>최충헌·최우 인물 문제</b>(가볍게), 또는 정중부 때의 난까지 섞은 <b>디테일한 순서</b>로 나올 수 있다고 했어요.</li>
+    <li class="keep">최고 권력자를 기준으로 순서를 먼저 외워요: <b class="k">정중부 → 경대승 → 이의민 → 최충헌 → 최우</b>. 중요한 건 최충헌과 최우예요.</li>
+  </ul>
+  <h3 class="nh">권력·군사 기반 (정답 선지가 많은 곳) <span class="b ans">정답 단골</span></h3>
+  <div class="scroll"><table>
+    <tr><th>인물</th><th>권력 기구·군사 기반</th></tr>
+    <tr><td>정중부</td><td><b class="k">중방</b>(무신 회의)</td></tr>
+    <tr><td>경대승</td><td><b class="k">도방</b>(사병 기관, 사후 사라짐)</td></tr>
+    <tr class="hot"><td>최충헌</td><td><b class="k">교정도감</b>(최고 권력 기구), 도방 부활. 이의민을 제거하고 <b class="k">봉사 10조</b>를 올렸어요.</td></tr>
+    <tr class="hot"><td>최우</td><td><b class="k">정방</b>(인사), <b class="k">서방</b>(문신 숙직·이규보 등), 몽골 1차 침입 후 화의→<b class="k">강화 천도</b>, 야간 치안 <b class="k">야별초</b> → 좌별초·우별초·신의군을 합쳐 <b class="k">삼별초</b>, 몽골 항쟁 중 <b class="k">재조대장경(팔만대장경)</b> 조판</td></tr>
+  </table></div>
+  <h3 class="nh">전국적 봉기와 민란</h3>
+  <ul>
+    <li class="keep">전근대사에서 <b>전국적 봉기는 세 시기</b>예요. ① 9세기 말 진성 여왕 때(<b class="k">원종·애노</b>, 적고적) ② 무신 집권기 ③ (뒤에 나오는 조선 후기).</li>
+    <li>정중부 때: <b class="k">김보당의 난</b> → <b class="k">조위총의 난</b>(서경) → <b class="k">교종 승려의 난</b> → <b class="k">망이·망소이의 난</b>(공주 명학소, 소는 특수 행정 구역). 이의민 때: <b class="k">김사미·효심의 난</b>(연합). 최충헌 때: <b class="k">만적의 난</b>("왕후장상의 씨가 따로 있겠는가").</li>
+  </ul>
+  <h3 class="nh">이규보</h3>
+  <ul>
+    <li>서방에서 활동한 문인으로 <b class="k">동명왕편</b>(주몽 건국 이야기)을 썼어요. 문집은 『동국이상국집』이에요. 문화사에서 한 줄씩 나와요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s16" data-era="goryeo">
+  <h2><span class="no">17</span>몽골의 침입과 삼별초 항쟁</h2>
+  <p class="meta">주제 15 · 최근 출제가 적어 가능성 높음 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=5029s" target="_blank" rel="noopener">▶ 1:23:49</a></p>
+  <ul>
+    <li class="hot">무신 집권기 100년 뒤 약 40년을 몽골과 싸워요. <b>대몽 항쟁은 최근에 출제가 적어서</b> 가능성이 꽤 높다고 했어요.</li>
+    <li>첫 만남은 거란을 함께 몰아낸 <b class="k">강동성 전투</b>(고려·몽골 연합으로 거란군 토벌, 이후 형제 맹약 <span class="b sup">(보충)</span>)였고, 몽골 사신 <b class="k">저고여 피살 사건</b>을 구실로 침입해요.</li>
+    <li class="keep"><b>강화 천도 이전·이후</b>가 구별 포인트예요. 1차 침입 때 귀주성에서 <b class="k">박서</b>가 맞섰고(귀주 대첩과 헷갈리지 말 것), 이후 화의 → 최우의 <b class="k">강화 천도</b>.</li>
+    <li class="keep">천도 이후: <b class="k">김윤후</b>(처인성, 충주성에서 노비 문서를 불태우며 독려), <b class="k">송문주</b>(죽주성). 마지막에 <b class="k">팔만대장경(재조대장경)</b> 판이 8만 판이 넘어요. 강화 천도에서 항전했다는 서술과 김윤후가 정답으로 잘 나와요.</li>
+  </ul>
+  <h3 class="nh">삼별초 항쟁</h3>
+  <div class="flow"><span>개경 환도(1270)에 반발</span><i>→</i><span>강화도(왕족 온을 왕으로 추대)</span><i>→</i><span>진도 용장성(배중손)</span><i>→</i><span>제주도 항파두리(김통정)</span></div>
+  <ul>
+    <li>삼별초는 최씨 정권의 군사 기반이에요. 몽골과 화의하고 개경으로 돌아가자 반기를 들어 강화 → 진도 → 제주로 옮기며 약 3년 버텼어요. <b class="k">용장성</b>, <b class="k">배중손</b>, <b class="k">항파두리</b>, <b class="k">김통정</b>이 나오면 삼별초예요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s17" data-era="goryeo">
+  <h2><span class="no">18</span>원 간섭기와 공민왕</h2>
+  <p class="meta">주제 16 · 매 회차 100% · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=5382s" target="_blank" rel="noopener">▶ 1:29:42</a></p>
+  <ul>
+    <li class="hot">원 간섭기는 <b>무조건 한 문제</b> 나와요. 지난 시험은 <b>사회상</b>이었으니, 이번에는 <b>공민왕 왕대사가 더 유력</b>하다고 했어요.</li>
+    <li class="keep">앞부분 복습 흐름: 후삼국 통일(순서) → 초기 왕(태조·광종·성종) → 거란(순서) → 여진·금·이자겸 → 묘청·삼국사기 → 무신 정변(1170~1270) → 몽골.</li>
+  </ul>
+  <h3 class="nh">충렬왕·충선왕 (단독 문제는 아니고 기준점)</h3>
+  <ul>
+    <li><b>충렬왕</b>: 원의 공주와 혼인해 <b>부마국</b>이 됐고 관제가 격하됐어요. 일본 원정에 동원되는 <b class="k">정동행성</b>이 설치됐는데 공민왕이 없애요. 역사서 『삼국유사』·『제왕운기』가 이 시기예요.</li>
+    <li><b>충선왕</b>: 왕위에서 물러난 뒤 원에서 <b class="k">만권당</b>을 세워 학문 교류. 이때 <b class="k">이제현</b>이 활약했고 훗날 공민왕 때까지 살아남아 『사략』을 썼어요. 요즘 시험이 이런 사이드 인물을 내는 변화가 보여요.</li>
+  </ul>
+  <h3 class="nh">원 간섭기 사회상 <span class="b ans">빈출</span></h3>
+  <ul>
+    <li>지배 세력 <b class="k">권문세족</b>: 친원파, 불교, 넓은 농장과 노비. 땅을 빼앗긴 백성을 풀어 주려 <b class="k">전민변정도감</b>이 설치돼요.</li>
+    <li>도병마사가 <b class="k">도평의사사</b>로 바뀌었어요(원 간섭기 키워드).</li>
+    <li class="keep"><b class="k">변발·호복</b> 같은 몽골풍(쉬워도 정답으로 제일 잘 나와요). 공녀를 피하려는 <b class="k">조혼</b>, 매 징발을 맡은 <b class="k">응방</b>, 원의 농서 <b class="k">농상집요</b> 수입.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>공민왕 (3단 구조)</h3>
+  <div class="flow"><span>① 반원 정책</span><i>→</i><span>② 홍건적 침입 위기</span><i>→</i><span>③ 신돈 등용 개혁</span></div>
+  <ul>
+    <li class="hot"><b>① 반원 정책</b>: 몽골풍과 원의 연호 폐지, 관제 복구, <b class="k">정동행성 이문소 폐지</b>, 친원파 <b class="k">기철</b> 숙청, <b class="k">쌍성총관부 수복</b>(원이 차지했던 쌍성총관부·동녕부·탐라총관부 중).</li>
+    <li class="hot"><b>② 위기</b>: <b class="k">홍건적</b> 1·2차 침입(개경 함락, 왕이 안동 복주까지 피란). 개경에 돌아와 머문 <b class="k">흥왕사</b>에서 김용이 왕을 해치려 한 <b class="k">흥왕사의 변</b>.</li>
+    <li class="hot"><b>③ 신돈 개혁</b>: 아무도 못 믿게 되어 <b class="k">신돈</b>과 개혁. <b class="k">전민변정도감 재설치</b>, <b class="k">성균관 중영</b>(이때 활약한 인물이 <b class="k">이색</b>). 이색은 최근 단독 문제가 나왔어요.</li>
+    <li>공민왕은 A급 단독 문제 유력, 우왕까지 같이 보라고 했어요.</li>
+  </ul>
+  <h3 class="nh">우왕·창왕·공양왕</h3>
+  <ul>
+    <li><b>우왕</b>: 현존 세계 최고 금속 활자 인쇄본 <b class="k">직지심체요절</b>(청주 흥덕사, 현재 프랑스 소장, 최근 잘 나와요). 왜구 격퇴 4곳: <b class="k">홍산(최영)·진포(최무선, 화포)·황산(이성계)·관음포(정지)</b>. 이어서 요동 정벌 → <b class="k">위화도 회군</b>.</li>
+    <li><b>창왕</b>: <b class="k">쓰시마 정벌</b>(이후 조선 세종 때 이종무의 대마도 정벌과 구별). <b>공양왕</b>: 조선 건국 1년 전 <b class="k">과전법</b>.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s18" data-era="goryeo">
+  <h2><span class="no">19</span>고려 문화 ① 불교와 역사서</h2>
+  <p class="meta">주제 17 · 비중 증가, 사이드 승려·책 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=5927s" target="_blank" rel="noopener">▶ 1:38:47</a></p>
+  <ul>
+    <li class="hot">문화사 비중이 원래 50%였는데 최근 더 늘었고, <b>사이드 승려와 사이드 책</b>을 건드려요. 지난 시험에는 <b>요세</b>가 나왔는데 20회 동안 낸 적이 없었어요(이런 변화에 주의).</li>
+  </ul>
+  <h3 class="nh">불교</h3>
+  <ul>
+    <li class="hot"><b>균여</b>(광종 때 귀법사 주지, <b class="k">화엄</b>): 향가 <b class="k">보현십원가</b>를 썼어요. 지금까지는 틀린 선지로만 나왔지만 이번에는 <b>가능</b>하다고 했어요. 초기 불교는 광종에게 몰려 있고, 은진미륵(대형 불상)도 광종 때 추정이에요.</li>
+    <li class="keep"><b>의천</b>(문종의 넷째 아들 왕후, 숙종 때 활동): 송에 유학, <b class="k">천태종</b>으로 교종 중심 선종 통합, 수행법 <b class="k">교관겸수</b>. 동아시아 경전의 주석서 목록 『<b class="k">신편제종교장총록</b>』으로 <b class="k">속장경(교장)</b>을 간행했어요. 형 숙종에게 <b class="k">주전도감</b>을 건의해 은병(활구)·해동통보·해동중보·삼한통보가 쏟아졌어요. 의천 사후 분열.</li>
+    <li class="keep"><b>지눌</b>(대각국사 의천과 쌍벽, 보조국사): 선종 중심으로 교종 통합 → <b class="k">조계종</b>. 수행법 <b class="k">돈오점수·정혜쌍수</b>. 승려 본래 모습으로 돌아가자며 순천 송광사에서 <b class="k">수선사 결사</b>.</li>
+    <li><b>혜심</b>(지눌의 제자, 수선사 2대): 과거 합격 후 출가. <b class="k">유불 일치설</b>. 『선문염송』.</li>
+    <li class="hot"><b>요세</b>(지난 시험 출제): 지눌에 대항해 강진 만덕사에서 <b class="k">백련 결사</b>. 반성이 먼저라며 <b class="k">참회를 강조하는 법화 신앙</b>.</li>
+    <li class="keep">정리: 의천(교관겸수)과 지눌(돈오점수·정혜쌍수)이 빈도가 가장 높고, 앞으로는 균여도 챙기라고 했어요.</li>
+  </ul>
+  <h3 class="nh">역사서 (시기별로 외우기)</h3>
+  <ul>
+    <li><b>삼국사기</b>(인종 명을 받은 김부식, 묘청 진압 후): <b class="k">기전체</b> 인물 중심, 현존 최고 역사서, <b class="k">유교적 합리주의</b>. 원사료를 주면 "옛 기록이 거칠고 졸렬해서, 해와 별처럼 빛나게 만든다"는 취지의 서문이 나올 수 있어요(최근 원사료를 더 내고 있어요).</li>
+    <li>무신 집권기: <b class="k">동명왕편</b>(이규보, 한 줄 출제), <b class="k">해동고승전</b>(각훈, 우리나라 승려 전기, 한 줄 출제).</li>
+    <li class="keep">고려의 계승 의식 흐름: 초기 <b>고구려 계승</b>(거란과 싸움) → 여진에게 위축되며 <b>신라 계승</b> → 무신 정변 후 다시 <b>고구려 계승</b>(동명왕편) → 원 간섭기에는 삼국의 구분이 무의미해져 <b>단군</b> 이야기(삼국유사, 제왕운기).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s19" data-era="goryeo">
+  <h2><span class="no">20</span>고려 문화 ② 역사서 마무리·공예·탑·불상·건축</h2>
+  <p class="meta">주제 17 이어서 · 사진은 이름·시대 구별 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=6386s" target="_blank" rel="noopener">▶ 1:46:26</a></p>
+  <h3 class="nh">원 간섭기 역사서</h3>
+  <ul>
+    <li class="keep"><b>삼국유사</b>(일연): <b class="k">불교사 중심</b>, 민간 설화 수록, 불교적 신이사관(신령하고 이상한 이야기). <b class="k">고조선(단군) 건국 이야기</b> 수록 <span class="b ans">정답 단골</span></li>
+    <li class="keep"><b>제왕운기</b>(이승휴): 제(황제)=중국 역사, 왕=우리 역사라는 뜻의 이름. 중국사와 우리 역사를 7언시·5언시로 서술하고 <b class="k">단군 건국 이야기</b> 수록(나온 지 얼마 안 됨). 둘 다 충렬왕 때이고 이때 <b class="k">안향</b>이 성리학을 처음 소개했어요.</li>
+    <li><b>사략</b>(이제현): 충선왕 때 만권당에서 활동했고 공민왕 때까지 살아남아 썼어요.</li>
+  </ul>
+  <h3 class="nh">공예·그림 (사진을 주고 시대를 묻는 문제)</h3>
+  <ul>
+    <li><b class="k">순수 비색 청자</b> → <b class="k">상감 청자</b>(도자기를 파내고 다른 색 흙을 채움). 송나라 사신 <b class="k">서긍</b>이 『고려도경』에서 고려 청자를 칭찬한 내용은 지난 시험에도 나왔어요. 같은 원리의 <b class="k">나전칠기</b>(자개), <b class="k">청동 은입사</b>(파고 은을 채움)도 고려예요.</li>
+    <li>그림: <b class="k">양류관음도·수월관음도</b>(화려한 불화), 공민왕이 변발하고 사냥하는 <b class="k">천산대렵도</b>(전칭). 모두 고려로 묶어요. 수업 자료의 회색 박스는 오답으로 나올 틀린 시대 사진이에요.</li>
+  </ul>
+  <h3 class="nh">탑: 고려는 다각다층 <span class="b ans">정답 단골</span></h3>
+  <ul>
+    <li>통일 신라는 이중 기단 3층, 고려는 그보다 <b class="k">높고 각이 많은</b> <b class="k">다각다층</b>(층 수를 세지 말고 느낌으로 구별).</li>
+    <li class="keep">전기 <b class="k">월정사 팔각 9층 석탑</b>(평창, <b>송</b>의 영향) / 후기 <b class="k">경천사지 10층 석탑</b>(<b>원</b>의 영향, 국립중앙박물관 로비) → 조선 세조 때 <b class="k">원각사지 10층 석탑</b>이 이를 이어받아요. 세 사진은 꼭 보라고 했어요.</li>
+  </ul>
+  <h3 class="nh">불상: 호족의 영향으로 개성이 강함</h3>
+  <ul>
+    <li><b class="k">관촉사 석조 미륵보살 입상</b>(은진미륵, 논산): 머리와 모자가 너무 큰 대두불. 가장 잘 나와요.</li>
+    <li><b class="k">파주 용미리 마애이불입상</b>, <b class="k">안동 이천동 마애여래입상</b>: 바위에 머리만 얹은 모양.</li>
+    <li><b class="k">하남 하사창동 철조 석가여래 좌상</b>: 소재가 특이한 철불.</li>
+    <li>예외: <b class="k">부석사 소조 아미타여래 좌상</b>은 신라 양식을 계승한 정상적인 모습이에요. 이 하나만 빼고는 모양·크기·소재가 특이하다고 외워요.</li>
+  </ul>
+  <h3 class="nh">건축: 사진보다 이름 <span class="b ans">정답 단골</span></h3>
+  <ul>
+    <li class="keep">주심포: <b class="k">봉·부·수</b> = <b class="k">안동 봉정사 극락전</b>(현존하는 가장 오래된 목조 건축물), <b class="k">영주 부석사 무량수전</b>, <b class="k">예산 수덕사 대웅전</b>. 다포는 <b class="k">응진전</b>(황해도 성불사 <span class="b sup">(보충)</span>). 암기 약칭은 <b>봉·부·수·응</b>이에요. 옆에 나온 조선 건축은 오답용이에요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s20" data-era="goryeo">
+  <h2><span class="no">21</span>고려의 국가 문제</h2>
+  <p class="meta">주제 18 · 힌트로 국가를 묻는 문제 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=6891s" target="_blank" rel="noopener">▶ 1:54:51</a></p>
+  <div class="box nh">시험은 위쪽에 사진·자료를 주고 "다음 국가는?"을 묻는 식이라, 키워드를 듣고 <b>"이건 고려"</b>임을 알아채면 돼요. 가장 쉬운 암기는 <b class="k">고·소·영</b>(고려의 <b>소</b>, 관<b>영</b>점)이에요. 지난 시험도 이걸로 끝났어요.</div>
+  <h3 class="nh">경제·사회</h3>
+  <ul>
+    <li class="keep"><b class="k">소</b>: 특수 행정 구역, 차별받는 양민이 사는 곳(공주 명학소, 충주 다인철소). 고려에만 있어요. <b class="k">관영점</b>: 국가가 운영한 가게 <span class="b star">★</span></li>
+    <li>상업·화폐: 시전과 감독 관청 <b class="k">경시서</b>(조선은 <b>평시서</b>라 오답). 은병(활구), 해동통보 등 화폐. 개경 옆 예성강 하구 <b class="k">벽란도</b>(아라비아 상인까지 왕래).</li>
+    <li class="keep"><b>사회 제도</b>(고려 ↔ 조선 비교): 흑창→<b class="k">의창</b>(춘대추납), <b class="k">상평창</b>(물가 조절), <b class="k">동·서 대비원</b>(조선은 동서활인서), <b class="k">혜민국</b>(조선은 혜민서), <b class="k">구제도감·제위보</b>(조선은 제생원). 녹색(조선) 이름은 고려 문제에서 오답이에요.</li>
+    <li>신분 제도는 따로 디테일하게 낸 적이 없어요. 문화로는 <b class="k">직지</b>(우왕, 청주 흥덕사, 현재 프랑스 소장)가 연속으로 나왔어요.</li>
+  </ul>
+  <h3 class="nh">중앙 제도 (빈도 20% 정도)</h3>
+  <ul>
+    <li><b class="k">2성 6부</b>: <b>중서문하성</b>(국가 정책 심의·의결, 재신), <b>상서성</b>(아래에 실무 6부). <b>중추원</b>(군사 기밀, 추밀), <b>어사대</b>(감찰), <b>삼사</b>(회계).</li>
+    <li class="keep"><b class="k">재추 회의</b>: 재신(중서문하성 고위)과 추밀(중추원 고위)이 모이는 합좌 기구예요. <b class="k">도병마사</b>(국방 문제)와 <b class="k">식목도감</b>(법제·격식).</li>
+    <li class="keep"><b class="k">대간(대관)</b>: 어사대 + 중서문하성의 <b class="k">낭사</b>. 간쟁·봉박 기능이 있고, 가장 자주 나오는 건 관리 임명·법 제정에 대한 동의권 <b class="k">서경권</b>이에요.</li>
+  </ul>
+  <h3 class="nh">지방·토지·군사</h3>
+  <ul>
+    <li>지방은 <b class="k">5도 양계</b>(양계는 북계·동계의 군사 특수 지역)의 이원적 구조에 수도 주변 경기. 일반 <b>주·군·현</b>, 말단 <b>향·부곡·소</b>. 주요 도시는 개경·서경(평양)·동경(경주) 뒤에 동경이 빠지고 <b>한양(남경)</b>이 들어와요. 이런 단어가 힌트예요.</li>
+    <li class="keep"><b class="k">전시과</b>: 전지(논밭)와 시지(땔나무 땅)에서 <b>세금을 거두는 수조권</b>을 줬어요(소유권 아님). 3단 변신 <b class="k">시정 → 개정 → 경정</b>. 강의 기준으로 처음에는 현직(직관)과 은퇴(산관)에 인품까지 고려하다가, 갈수록 객관화돼 직관만 줘요.</li>
+    <li><b>군사</b>: 중앙군 <b class="k">2군 6위</b>(직업 군인), 지방군은 5도의 <b class="k">주현군</b>, 양계의 <b class="k">주진군</b>.</li>
+  </ul>
+</section>
+
+<div class="era" id="era_joseon"><span class="en">조선</span><small>건국 ~ 세도 정치 · 제도 · 후기 사회와 문화</small></div>
+
+<section class="card sec" id="s21" data-era="joseon">
+  <h2><span class="no">22</span>조선의 건국 과정</h2>
+  <p class="meta">주제 19 · 출제 비중 50%, 지난 시험 미출제 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=7446s" target="_blank" rel="noopener">▶ 2:04:06</a></p>
+  <ul>
+    <li class="hot">조선의 건국 과정은 <b>지난 시험에 안 나와서</b> 이번에 조금 잘 봐야 한다고 했어요. 출제 가능성이 꽤 높고, 문제 형태는 <b>순서</b>예요. 공민왕도 이번에 더 나올 가능성이 높다고 다시 말했어요.</li>
+    <li>고려 말 정리: 공민왕(A급) → 우왕(직지, 왜구 4전투) → 창왕(쓰시마 정벌) → 공양왕(건국 1년 전 과전법). 창왕·공양왕은 단독 문제가 아니에요.</li>
+  </ul>
+  <h3 class="nh">순서 (가장 중요)</h3>
+  <div class="flow"><span>명의 철령 이북 요구(우왕)</span><i>→</i><span>요동 정벌 결정(최영, 이성계의 4불가론 반대)</span><i>→</i><span>위화도 회군</span><i>→</i><span>최영 제거, 우왕 폐위, 창왕 옹립 후 폐위, 공양왕 즉위</span><i>→</i><span>건국 1년 전 과전법</span><i>→</i><span>정몽주 제거</span><i>→</i><span>도평의사사 추대로 이성계 즉위(조선 건국)</span><i>→</i><span>한양 천도</span></div>
+  <ul>
+    <li class="hot"><b>위화도 회군</b> <span class="b star">★</span>은 조선 건국의 가장 결정적인 사건이에요("여기서 모든 게임이 끝났다"). 우왕 때 명나라가 새로 생겨 <b class="k">철령 이북</b>을 내놓으라 하자 최영(우왕)은 요동 정벌, 이성계는 <b class="k">4불가론</b>으로 반대했어요(여름·전염병·활·작은 나라가 큰 나라를 칠 수 없음 등). 결국 이성계가 출정했다가 <b>회군</b>해 최영을 치고 우왕을 몰아냈어요.</li>
+    <li class="hot">건국 1년 전의 마지막 개혁은 토지 제도 <b class="k">과전법</b> <span class="b star">★</span>. 순서 문제는 거의 이 두 가지(위화도 회군, 과전법)를 기준점으로 해요.</li>
+    <li>디테일: 고려 최고 기관 <b>도평의사사</b>가 만장일치로 공양왕에서 이성계로 왕권을 넘겼어요. 이 직전에 반대할 것 같은 <b class="k">정몽주</b>를 제거했어요. 이 디테일은 한능검에서 다룬 적이 없다고 했어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s22" data-era="joseon">
+  <h2><span class="no">23</span>조선 초기 왕의 업적 (15세기)</h2>
+  <p class="meta">주제 20 · 거의 매번 한두 문제 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=7909s" target="_blank" rel="noopener">▶ 2:11:49</a></p>
+  <div class="box nh">조선은 100년 단위로 15~19세기를 끊고, 분기점이 되는 왕은 <b class="k">중·광·숙·순</b>(중종·광해군·숙종·순조)이에요. 광해군을 전후로 임진왜란·병자호란(양난)이 있고 앞이 전기, 뒤가 후기예요. 15세기는 제도가 만들어지고 완성·유지되는 시기라 <b>초기 왕의 업적</b>이 첫 주제예요.</div>
+  <ul>
+    <li class="hot">단독으로 내는 왕은 <b>태종·세종·세조·성종</b> 네 명이에요(정종·문종·단종·예종은 안 내요). <b>지난 시험은 성종, 그 전 시험은 세종</b>이라 이번에는 <b>태종과 세조</b> 가능성이 높아요. 두 왕은 정통성이 약해 <b>왕권 강화</b>에 치중했다는 공통점이 있어요(태종: 왕자의 난, 세조: 계유정난).</li>
+    <li class="keep"><b>제도 변화 순서</b>(정답 선지로 자주): 태종 <b class="k">6조 직계제</b> → 세종 <b class="k">의정부 서사제</b>(왕권과 신권의 조화, 군사권·인사권은 왕이 직접) → 세조 <b class="k">6조 직계제</b> 부활.</li>
+  </ul>
+  <h3 class="nh">태조·정종·정도전</h3>
+  <ul>
+    <li><b>태조</b>: 건국·천도·도성 정비 정도가 핵심. 세자를 방석으로 책봉했다가 <b class="k">1차 왕자의 난</b>으로 밀려나요(정답은 거의 이쪽). 하늘의 지도 <b class="k">천상열차분야지도</b>.</li>
+    <li><b>정종</b>: 개경으로 환도. <b>태종</b>이 한양으로 다시 환도하고 별궁 <b class="k">창덕궁</b>을 지어요(경복궁은 태조).</li>
+    <li class="hot"><b>정도전</b>(삼봉, 조선의 설계자): 나온 지 좀 됐고 73회가 마지막이라고 했어요. 재상 중심 정치(신권), <b class="k">조선경국전</b>, 불교 비판 <b class="k">불씨잡변</b>, 4대문·경복궁·근정전 이름을 지었어요. 1차 왕자의 난 때 이방원에게 제거돼요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>태종</h3>
+  <ul>
+    <li class="hot">6조 직계제, <b class="k">사간원 독립</b>(대신 견제), 사병 혁파(자신은 사병으로 왕이 된 뒤 문 닫기), 개국 공신과 처남들까지 숙청한 왕권 강화.</li>
+    <li class="hot"><b class="k">호패법</b>, 양전·호구 조사, <b class="k">신문고</b>(태종 설치 → 영조 때 부활. 사라진 건 안 냄). 하늘의 지도와 짝을 이루는 땅의 지도 <b class="k">혼일강리역대국도지도</b>.</li>
+    <li class="keep">인쇄: <b class="k">계미자</b>(태종, 이름 한 글자로 "개") ↔ <b class="k">갑인자</b>(세종, "갑이다"). 잘 나오는 세트예요.</li>
+  </ul>
+  <h3 class="nh">세종 (세종 vs 성종을 비교)</h3>
+  <ul>
+    <li><b class="k">집현전</b>, 의정부 서사제, 군사권은 본인이 직접: <b class="k">4군 6진</b>(4군 최윤덕, 6진 <b class="k">김종서</b>), 이종무의 쓰시마 정벌. 김종서는 계유정난 때 제거됐고 마지막 출제가 70회라 대비해야 해요(야연사준도로 설명 가능).</li>
+    <li class="keep">문화 세트 비교 ★: 윤리서 <b class="k">삼강행실도</b>(충신·효자·열녀)(세종) ↔ 의례서 <b class="k">국조오례의</b>(성종), 역법 <b class="k">칠정산</b>, 농서 <b class="k">농사직설</b>(정초, 세종) ↔ <b class="k">금양잡록</b>(성종), 음악 <b class="k">여민락·정간보·아악 정비</b>(세종) ↔ <b class="k">악학궤범</b>(성종). 고려 말 원의 농서 『농상집요』와도 구별해요.</li>
+    <li>그 밖에: 훈민정음 보급서 <b class="k">용비어천가·월인천강지곡</b>, 의서 <b class="k">향약집성방</b>, 백과사전식 의학서 <b class="k">의방유취</b>, 과학은 세종 때 몰려 있어요(<b class="k">자격루·앙부일구·측우기</b>, 장영실). 경제는 <b class="k">공법</b>(연분 9등법·전분 6등법)이며 지난 시험에 과전법이 나와 가능성은 낮아요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>세조</h3>
+  <ul>
+    <li class="hot"><b>세조가 없앤 두 기관</b>: <b class="k">집현전</b>(단종 복위 운동에 학자 일부가 가담, 성삼문 등)과 <b class="k">유향소</b>(이시애의 난 이후 지방 통제 강화). 둘 다 <b>성종</b> 때 부활하는데, 집현전은 기능이 같은 <b class="k">홍문관</b>(옥당, 정책 자문·경연)으로, 유향소는 사림의 진출(김종직)과 함께예요.</li>
+    <li class="hot">6조 직계제 부활, <b class="k">직전법</b>(현직 관리에게만 토지 지급), 이례적인 불교 진흥 <b class="k">간경도감</b>(경전 간행)과 <b class="k">원각사지 10층 석탑</b>. 세조는 직전법·간경도감이 정답으로 잘 나와요. 말년에 단종의 꿈을 꾸고 불교에 귀의했다는 이야기로 설명했어요.</li>
+    <li><b>경국대전</b>: 편찬 시작은 세조(두 권 완성), <b>완성·반포는 성종</b>(6전: 이·호·예·병·형·공).</li>
+  </ul>
+  <h3 class="nh">성종</h3>
+  <ul>
+    <li><b class="k">경국대전 완성</b>(체제 완성), <b class="k">홍문관</b>, <b class="k">유향소 부활</b>, 사림 등용, <b class="k">관수관급제</b>(세조 직전법과 비교).</li>
+    <li>서거정에게 편찬시킨 문집 <b class="k">동문선</b>·역사서 <b class="k">동국통감</b>, 지리지 <b class="k">동국여지승람</b>(예전에 한 번 나옴). 세종의 정초, 성종의 서거정 두 인물이 사료에 언급될 수 있어요. 이 주제는 최소 한 문제 이상 나오니 꼭 잡아야 해요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s23" data-era="joseon">
+  <h2><span class="no">24</span>사림의 성장과 사화</h2>
+  <p class="meta">주제 21 · 4대 사화 순서 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=8691s" target="_blank" rel="noopener">▶ 2:24:51</a></p>
+  <div class="box nh">고려 말 신진 사대부 중 소수의 급진파(혁명파, 정도전)가 이성계와 건국해 <b class="k">관학파·훈구</b>가 돼요(15세기 주도, 중앙 집권·부국강병). 역성혁명에 반대해 지방으로 내려간 이들이 <b class="k">사학파·사림</b>이에요(향촌 자치·왕도 정치). 한능검은 두 세력을 비교해서 내지 않으니 이런 세력이 있다는 정도만 알면 돼요.</div>
+  <ul>
+    <li class="hot">훈구를 견제하려고 <b>성종</b>이 <b class="k">김종직과 문인들</b>을 등용했고, 이들과 훈구의 싸움이 사화예요. <b>4대 사화는 최근 네 번 연속 출제가 안 돼서</b> 대비하라고 했어요.</li>
+  </ul>
+  <h3 class="nh">4대 사화 순서 <span class="b hot">순서 유력</span></h3>
+  <div class="flow"><span>무오사화</span><i>→</i><span>갑자사화</span><i>→</i><span>(중종반정)</span><i>→</i><span>기묘사화</span><i>→</i><span>을사사화 → 양재역 벽서 사건</span></div>
+  <div class="scroll"><table>
+    <tr><th>사화</th><th>왕</th><th>핵심 키워드</th></tr>
+    <tr><td>무오</td><td>연산군</td><td>김종직의 <b class="k">조의제문</b>을 제자 <b class="k">김일손</b>이 사초에 실음 → 훈구가 "세조를 비판했다"고 모함. 이미 죽은 김종직은 <b class="k">부관참시</b>, 김일손 등 사림 사형.</td></tr>
+    <tr><td>갑자</td><td>연산군</td><td>"엄마 원수 갑자": <b class="k">폐비 윤씨 사사</b> 사건을 다시 꺼내 신하들을 숙청.</td></tr>
+    <tr class="hot"><td>기묘</td><td>중종</td><td>중종반정(진성대군 즉위) 후 <b class="k">조광조</b>(호 정암)의 급진 개혁이 제거됨. 개혁은 <b class="k">현량과</b>(추천제), <b class="k">위훈 삭제</b>(반정 공신 정리), <b class="k">소격서 폐지</b> 세 가지 안에서 나와요.</td></tr>
+    <tr class="hot"><td>을사</td><td>명종</td><td>외척 간 다툼, 권력을 잡은 <b class="k">소윤</b>이 <b class="k">대윤</b>을 침. 시즌 2가 <b class="k">양재역 벽서 사건</b>이에요.</td></tr>
+  </table></div>
+  <ul>
+    <li class="keep">문제는 순서, 조광조 인물, "다음 사이에" 형태가 있고, 선지에 <b>양재역 벽서 사건</b>이 있으면 거의 <b>을사사화</b>를 묻는 문제라는 팁을 줬어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s24" data-era="joseon">
+  <h2><span class="no">25</span>붕당의 시작과 임진왜란</h2>
+  <p class="meta">주제 22 · 전체 전쟁 또는 순서·인물 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=8995s" target="_blank" rel="noopener">▶ 2:29:55</a></p>
+  <div class="box nh">4대 사화를 거치며 사림이 <b>선조 때 중앙 정계를 장악</b>하고, 그 뒤에 자기들끼리 싸우는 것이 <b class="k">붕당</b>이에요. 한능검은 붕당을 디테일하게 내지 않으니 구도만 잡아요.</div>
+  <div class="flow"><span>동인·서인 분당(이조 전랑 임명 문제, 동인 김효원 / 서인 심의겸)</span><i>→</i><span>동인이 다시 북인·남인으로 분당(정여립 모반 사건, 정철의 건저의 사건)</span><i>→</i><span>임진왜란</span></div>
+  <ul>
+    <li class="hot">간단히 내면 <b>전쟁 전체</b>를 인물과 함께, 조금 더 깊이 내면 <b>안의 순서</b>를 묻는다고 했어요. 최근 난도를 건드리고 있으니 순서까지 대비하라고 했어요.</li>
+    <li><b>배경</b>: 15세기에 제도가 만들어지고 유지됐다면 16세기는 모든 면에서 무너져요(국방력 붕괴, 여진 침입, 일본은 전국 시대를 통일해 공격 준비).</li>
+  </ul>
+  <h3 class="nh">전쟁 4단계 + 정유재란</h3>
+  <div class="scroll"><table>
+    <tr><th>단계</th><th>핵심 사건·인물</th></tr>
+    <tr><td>① 초기 패전</td><td><b class="k">부산진</b>(정발), <b class="k">동래성</b>(송상현) → 충주 <b class="k">탄금대(신립) 패전</b> → 선조가 의주로 피란</td></tr>
+    <tr class="hot"><td>② 수군·의병의 활약</td><td>이순신의 <b class="k">한산도 대첩</b>(학익진), 김시민의 <b class="k">진주 대첩</b>(순서: 한산도 → 진주). 의병은 임진왜란에 몰려 있어요.</td></tr>
+    <tr class="hot"><td>③ 조·명 연합군 반격</td><td><b class="k">평양성 탈환</b> → 권율의 <b class="k">행주 대첩</b>(전쟁 시작 약 1년)</td></tr>
+    <tr class="hot"><td>휴전기 전열 정비</td><td>군제 정비 = <b class="k">훈련도감</b>(오군영의 시작, 조총 부대에 대응해 포수·사수·살수의 삼수병, 급료를 받는 직업 군인). 건의한 사람이 <b class="k">유성룡</b>(『징비록』, 『서애집』).</td></tr>
+    <tr class="hot"><td>④ 정유재란</td><td>이순신의 <b class="k">명량 대첩</b> → 마지막 <b class="k">노량 해전</b></td></tr>
+  </table></div>
+  <ul>
+    <li class="keep"><b>의병·승병 인물</b>: <b class="k">정문부</b>(북관 대첩, 가토 기요마사를 격파), <b class="k">조헌</b>, <b class="k">고경명</b>, <b class="k">김천일</b>, <b class="k">곽재우</b>(조식의 제자, 홍의장군), 승병 <b class="k">휴정(서산대사)·유정(사명대사)</b>. 이름만 보고 임진왜란이라고 알아채야 해요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s25" data-era="joseon">
+  <h2><span class="no">26</span>17세기: 광해군·인조·효종·현종</h2>
+  <p class="meta">주제 23 · "광·인·효·현" 순서로 한 번에 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=9338s" target="_blank" rel="noopener">▶ 2:35:38</a></p>
+  <div class="box nh">구도 복습: 15세기 훈구 → 성종 때 김종직 등 사림 진출 → 4대 사화 → 선조 때 사림 집권, 동·서·남·북 붕당 → 임진왜란. 17세기는 분기점인 <b class="k">광해군</b>부터 <b class="k">광·인·효·현</b> 순서로 보고 왕마다 출제 컨셉이 정해져 있어요.</div>
+  <ul>
+    <li class="hot">이번 시험은 <b>인조, 효종(특히 북벌)</b> 쪽을 낼 가능성이 아주 높고, <b>광해군은 지난 시험에 기유약조가 나와서 가능성이 조금 낮다</b>고 했어요. 단독으로 안 나와도 범위 힌트로는 쓰일 수 있어요.</li>
+  </ul>
+  <h3 class="nh">광해군 (단독 문제 출제 왕)</h3>
+  <ul>
+    <li>전쟁을 수행한 왕이라 <b class="k">북인</b>(조식 제자·곽재우·정인홍 등 의병 출신)과 정치했어요. 외교는 명·후금 사이의 <b class="k">중립 외교</b>(<b class="k">강홍립</b>을 파견해 신중히 대처).</li>
+    <li>결국 <b class="k">폐모살제</b>(인목대비를 유폐, 영창대군을 죽임)로 도덕성 문제가 생겨 <b class="k">인조반정</b>으로 쫓겨나요.</li>
+    <li class="keep">단독 문제의 추가 선지: <b class="k">대동법</b>(가장 이른 정책, 경기도에서 시작, 관청은 <b class="k">선혜청</b>, 공인이 등장), <b class="k">기유약조</b>(부산포를 열고 일본과 교류, 지난 시험 한 줄 정답), <b class="k">동의보감</b>(허준) 완성.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>인조: 정묘호란 vs 병자호란 비교</h3>
+  <ul>
+    <li class="hot">인조반정을 주도한 <b>서인</b>이 권력을 잡았고 외교는 중립이 아니라 <b class="k">친명 배금</b>이에요. 그래서 후금(청)이 침입해요(전쟁이 두 번이라 비교가 시험 문제).</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th></th><th>정묘호란</th><th>병자호란</th></tr>
+    <tr><td>상대</td><td><b class="k">후금</b></td><td><b class="k">청</b>(더 강해져 침입)</td></tr>
+    <tr><td>배경</td><td>서인의 친명 배금, <b class="k">이괄의 난</b>(공신 책봉 불만)</td><td>청이 군신 관계 요구, 국론 분열(주전 <b class="k">김상헌</b> vs 주화 <b class="k">최명길</b>, 주전이 우세)</td></tr>
+    <tr class="hot"><td>결과</td><td><b class="k">형제의 맹약</b></td><td><b class="k">군신 관계</b>, <b class="k">삼전도의 굴욕</b>(삼배구고두례)</td></tr>
+    <tr><td>피란</td><td>왕이 <b class="k">강화도</b>로 감</td><td>강화도로 못 가고 <b class="k">남한산성</b>에서 항전</td></tr>
+    <tr><td>인물</td><td>의병 <b class="k">정봉수·이립</b></td><td><b class="k">김준룡</b>(광교산 전투, 근왕병), <b class="k">김상용</b>(강화도에서 순절), <b class="k">임경업</b>(백마산성)</td></tr>
+  </table></div>
+  <ul>
+    <li>병자호란 패전으로 두 아들이 끌려갔어요. 첫째 <b>소현세자</b>는 돌아와 의문사했고, 둘째 <b>봉림대군</b>이 왕(효종)이 돼요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>효종·현종</h3>
+  <ul>
+    <li class="hot"><b>효종</b>: 어린 나이에 볼모 생활을 해서 적개심이 강하고 <b class="k">북벌</b>을 추진해요. <b class="k">어영청</b>을 강화했고, 서인(송시열 등)은 북벌을 주장하며 정권을 유지했어요.</li>
+    <li class="hot">아이러니: 북벌이 가장 활발하던 때, 오히려 청이 요청한 러시아 정벌에 조총 부대를 보낸 <b class="k">나선 정벌</b>(변급, 신류)이 있어요.</li>
+    <li class="keep"><b>현종</b>: <b class="k">예송</b>(상복을 얼마나 입을지를 두고 벌인 논쟁). 어느 붕당이 무엇을 주장했는지는 낸 적이 없고, 예송이 <b>어느 왕 때(현종) 어떤 위치에 있는지</b>만 알면 돼요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s26" data-era="joseon">
+  <h2><span class="no">27</span>숙종의 환국 정치와 경종</h2>
+  <p class="meta">주제 23 이어서 · 지난 시험 출제로 이번엔 가능성 낮음 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=9910s" target="_blank" rel="noopener">▶ 2:45:10</a></p>
+  <ul>
+    <li>숙종은 <b>단독 문제</b>가 나오는 왕이고, 바로 지난 시험(80회)에 출제됐어요. 전문가 특강 때 만든 문제가 그대로 나왔다고 했어요.</li>
+    <li class="keep">변덕이 심해 정권을 급격히 바꾸는 <b class="k">환국 정치</b>가 <b>붕당 정치의 변질</b>이에요. 예송은 <b>기·갑</b>, 환국은 <b class="k">경신·기사·갑술</b>이에요. 환국마다 누가 이겼는지 <b>결과</b>를 먼저 확인해요.</li>
+  </ul>
+  <div class="flow"><span>경신환국</span><i>→</i><span>기사환국</span><i>→</i><span>갑술환국</span></div>
+  <div class="scroll"><table>
+    <tr><th>환국</th><th>결과·키워드</th></tr>
+    <tr><td>경신</td><td><b>서인</b>이 이기고 <b>남인</b> 제거. <b class="k">윤휴·허적</b>이 죽었어요. 허적이 왕의 천막(유악)을 허락 없이 가져다 쓴 일이 발단이에요.</td></tr>
+    <tr class="hot"><td>기사</td><td><b>남인</b>이 이김(장희빈의 아들 원자 책봉, 이를 반대한 <b class="k">송시열</b>이 유배 후 사약을 받음). 잘 나와요.</td></tr>
+    <tr class="hot"><td>갑술</td><td>쫓겨났던 인현왕후가 복귀하고 <b class="k">장희빈은 강등</b>. 사료는 "장씨를 빈으로 강등하되 아들이 세자이니 예를 계속 하도록 하라" 같은 내용이에요.</td></tr>
+  </table></div>
+  <ul>
+    <li class="keep">단독 문제의 추가 선지: <b class="k">금위영</b>(오군영의 완성), <b class="k">백두산 정계비</b>(청과의 간도 영토 분쟁).</li>
+    <li>경종은 약 4년만 재위해 단독 출제가 없고, "다음 사이에" 문제의 끝 선지로 <b class="k">목호룡 고변 사건</b>이 나올 수 있어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s27" data-era="joseon">
+  <h2><span class="no">28</span>영조와 정조의 탕평</h2>
+  <p class="meta">주제 24 · 조선의 르네상스, A급 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=10140s" target="_blank" rel="noopener">▶ 2:49:00</a></p>
+  <ul>
+    <li class="hot">영·정조는 <b>지난 시험에 안 냈어요</b>. 차례상 순서로는 정조 차례였는데 규장각 사료로 퉁쳤다고 했어요. 이번에는 <b>무조건 넣을 것</b>이고, 둘 중에서는 <b>정조가 조금 더 유력</b>하지만 영조도 가능성이 높아요. 둘을 비교하면서 보라고 했어요.</li>
+    <li>붕당 정치가 경신환국부터 변질되자 이를 바로잡으려는 <b>탕평 군주</b>가 영조·정조예요. 영조는 <b class="k">완론탕평</b>(온건·타협), 정조는 <b class="k">준론탕평</b>(옳고 그름을 가려 줌, 시비를 하나하나 검증).</li>
+  </ul>
+  <h3 class="nh">영조</h3>
+  <ul>
+    <li class="hot">즉위 초 <b class="k">탕평 교서</b> → 반발로 <b class="k">이인좌의 난</b>(이시애의 난은 세조, 이괄의 난은 인조와 헷갈리지 말 것) → 진압 후 <b>탕평을 강하게 추진</b>: <b class="k">탕평비·탕평채·탕평파</b> 등 "탕평의 정신"이 나오면 영조예요.</li>
+    <li class="hot"><b class="k">균역법</b>: 군포를 2필에서 <b>1필</b>로 줄임. 재정 보완책으로 <b class="k">선무군관포</b>(명예직을 주고 포를 받음)를 함께 외워요 <span class="b ans">정답 단골</span></li>
+    <li><b>청계천 준설</b>(준천사), <b class="k">신문고 부활</b>(설치는 태종), <b class="k">속대전</b>(속). 『동국문헌비고』는 세모 수준(가볍게).</li>
+  </ul>
+  <h3 class="nh">정조</h3>
+  <ul>
+    <li class="hot"><b class="k">규장각</b>(창덕궁에 설치, 서얼 출신 <b class="k">검서관</b> 유득공·이덕무·박제가, 핵심 제자 정약용), <b class="k">초계문신제</b>(신하 재교육), 자신을 <b class="k">만천명월주인옹</b>이라 칭함.</li>
+    <li class="hot">군사 <b class="k">장용영</b>(친위 부대), <b class="k">수원 화성</b>(정약용이 『기기도설』로 만든 <b class="k">거중기</b> 사용).</li>
+    <li class="hot">"통" 자 정책: <b class="k">『대전통편』</b>(법전), <b class="k">『무예도보통지』</b>(병법서), <b class="k">신해통공</b>(채제공이 건의, 시전 상인의 <b class="k">금난전권</b> 폐지).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s28" data-era="joseon">
+  <h2><span class="no">29</span>세도 정치와 농민 봉기·천주교·동학</h2>
+  <p class="meta">주제 25 · 19세기 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=10490s" target="_blank" rel="noopener">▶ 2:54:50</a></p>
+  <div class="box nh">1800년 정조가 사망하며 조선은 <b class="k">세도 정치</b>(외척이 나라를 좌우)의 나락으로 떨어져요. 왕은 순조(어림), 헌종(어림), <b class="k">철종</b>(강화도령, 교육을 못 받음). 키워드는 <b class="k">비변사</b>(왕비·과거 합격자까지 정함)와 <b class="k">삼정의 문란</b>(탐관오리가 뇌물로 관직을 사고 본전을 뽑으려 전정·군정·환곡을 악용).</div>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>홍경래의 난 vs 임술 농민 봉기</h3>
+  <ul>
+    <li class="hot">둘을 비교하는 게 문제예요. <b>임술 농민 봉기가 더 가능성이 높다</b>고 했어요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th></th><th>홍경래의 난(순조)</th><th class="hot">임술 농민 봉기(철종)</th></tr>
+    <tr><td>원인</td><td>세도 정치의 문제와 <b class="k">서북민(평안도) 지역 차별</b></td><td>삼정의 문란</td></tr>
+    <tr><td>확산</td><td>평안도 사람이 아니면 공감을 못 해 <b>전국 확대 못 하고 진압</b></td><td><b class="k">진주 민란</b>(유계춘, 백낙신)에서 시작해 <b>전국 확대</b></td></tr>
+    <tr class="hot"><td>결과</td><td>진압(우군칙 등 참여)</td><td>해결책으로 <b class="k">삼정이정청</b> 설치, <b class="k">안핵사 박규수</b>(박지원의 손자) 파견</td></tr>
+  </table></div>
+  <ul>
+    <li>임술 농민 봉기 약칭: <b>백·백·유·박</b> = 백낙신, 백건당 <span class="b sup">(보충)</span>, 유계춘, 박규수.</li>
+  </ul>
+  <h3 class="nh">천주교</h3>
+  <ul>
+    <li>서학(학문)으로 들어와 종교로 수용되었고 조선과 코드가 맞지 않아 탄압을 받았어요.</li>
+    <li class="keep"><b>정조 때 신해박해</b>: 남인(정약용 형제 등)이 천주교를 믿어 온건하게 탄압. <b class="k">윤지충이 모친상에 신주를 소각</b>한 사건으로 윤지충·권상연을 처형하고 책을 불태우고 끝내요(안심 = 신해).</li>
+    <li class="keep"><b class="k">순조 때 신유박해</b> <span class="b star">★</span>: 정치적인 강경 탄압. 대부분 죽이거나 유배(<b>정약용은 강진, 정약전은 흑산도</b>, 이승훈 처형) → 곧이어 <b class="k">황사영 백서 사건</b>(베이징 주교에게 구원을 요청하려다 발각).</li>
+    <li>그 밖에 헌종 때 <b>기해박해</b>, 대원군 집권기 <b>병인박해</b>(프랑스 선교사 처형).</li>
+  </ul>
+  <h3 class="nh">동학 (농민 운동은 근대사에서 더 자주 나옴)</h3>
+  <ul>
+    <li><b class="k">1860년 철종 때</b> 경주 몰락 양반 <b class="k">최제우</b>가 창시. 유·불·도와 민간 신앙, 천주교 교리까지 합친 종교. 최제우를 처형한 건 <b>대원군 집권기(1864)</b>라 철종 때 사건으로는 오답이에요.</li>
+    <li>핵심 키워드 <b class="k">인내천·시천주·후천개벽</b>. 이후 <b class="k">최시형</b>이 교단·교리를 정비: <b class="k">포접제</b>(일종의 다단계 조직), 경전 <b class="k">『동경대전』</b>·『용담유사』.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s29" data-era="joseon">
+  <h2><span class="no">30</span>조선의 제도 (중앙·지방·대외 관계·군제)</h2>
+  <p class="meta">주제 26 · 중앙 제도는 최근 계속 출제 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=10940s" target="_blank" rel="noopener">▶ 3:02:20</a></p>
+  <ul>
+    <li class="hot">제도 중에서 <b>중앙 제도가 가장 잘 나오고</b>, 지난 시험과 그 전 시험에도 모두 나왔어요. 매우 중요하다고 했어요.</li>
+  </ul>
+  <h3 class="nh">중앙 제도 <span class="b ans">정답 단골</span></h3>
+  <div class="scroll"><table>
+    <tr><th>기관</th><th>기능·별칭</th></tr>
+    <tr><td>의정부·6조</td><td>6조 직계제는 <b>태종·세조</b> 때</td></tr>
+    <tr class="hot"><td><b>승정원</b></td><td>왕명 출납 비서 기관. 장은 <b class="k">도승지</b> 아래 승지들. 별칭 <b class="k">은대</b>, 후원</td></tr>
+    <tr class="hot"><td><b>의금부</b></td><td>왕명을 받는 직속 사법 기구(대역죄인 담당). 별칭 <b class="k">금오·조옥</b></td></tr>
+    <tr class="hot"><td><b>사간원</b></td><td><b class="k">간쟁</b>, 장은 <b class="k">대사간</b>, 별칭 <b class="k">미원</b></td></tr>
+    <tr class="hot"><td><b>사헌부</b></td><td><b class="k">감찰·탄핵</b>, 장은 <b class="k">대사헌</b>, 별칭 <b class="k">상대</b>(서릿발처럼 무서움). 지난 시험에 출제</td></tr>
+    <tr class="hot"><td><b>홍문관</b></td><td>옥당. 집현전을 세조가 없애고 성종 때 부활. 정책 자문·경연</td></tr>
+  </table></div>
+  <ul>
+    <li>사간원+사헌부 = <b class="k">양사(대관)</b>이고 대표 기능은 <b>서경권·동의권</b>. 여기에 홍문관을 합쳐 <b class="k">3사(언관직·청요직)</b>.</li>
+  </ul>
+  <h3 class="nh">지방 제도 (고려와 비교)</h3>
+  <ul>
+    <li>고려: 5도 양계, 말단 향·부곡·<b>소</b>(고·소·영의 소). 조선: <b class="k">8도</b>, 부·목·군·현, 말단은 <b class="k">면·리(통)</b>. 도의 장은 <b class="k">관찰사</b>, 군현은 <b class="k">수령</b>, 실무는 향리.</li>
+    <li class="keep"><b class="k">유향소</b>(지방 의회 성격): 수령을 보좌하고 향리를 규찰. 단독으로 나오면 정답이 거의 <b class="k">좌수·별감</b>. 중앙에서 통제하는 <b>경재소</b>도 알아 두세요.</li>
+  </ul>
+  <h3 class="nh">대외 관계 (한능검은 국가를 묻는 유형이 있음)</h3>
+  <ul>
+    <li class="hot">지난 시험에 <b>명나라</b>가 나왔어요. 이번에 낸다면 <b>일본</b>이 가능성이 있다고 했어요.</li>
+    <li><b>명</b>: 건국 초에는 불편했으나 <b>사대</b>(자주적 실리 외교). 사절단 천추사·하정사, 명에 보내는 사절은 <b class="k">조천사</b>. 청이 들어선 뒤 청에 보내는 사절은 <b class="k">연행사</b>(오랑캐라 천자를 뵙는다는 뜻을 못 씀).</li>
+    <li><b>여진</b>: 4군 6진 개척(세종), 숙소 <b class="k">북평관</b>, 병자호란, 북벌.</li>
+    <li class="keep"><b>일본</b>: 세종 때 <b class="k">쓰시마 정벌</b>(이종무) 후 <b class="k">3포(부산포·제포·염포)</b> 개항, 무역 규모 제한, 일본 사신 숙소 <b class="k">동평관</b>. 임진왜란 후 <b class="k">회답겸쇄환사</b>(포로 교환), 쇼군에게 <b class="k">통신사</b>, 광해군 때 <b class="k">기유약조</b>(지난 시험 출제).</li>
+  </ul>
+  <h3 class="nh">기타: 비변사·군제</h3>
+  <ul>
+    <li><b class="k">비변사</b>: 변방 대비 기구. 15세기에는 국방이 완벽해 필요 없다가 <b>16세기에 만들어지고</b> 임진왜란 이후 강화돼 세도 정치의 중심. 대원군이 <b>혁파(축소)</b>했다는 서술이 거의 100% 정답이에요.</li>
+    <li class="keep">군제: 5위 → 임진왜란 후 <b class="k">5군영</b>. 가장 빠른 것 <b class="k">훈련도감</b>(유성룡, 삼수병, 직업 군인)과 가장 늦은 것 <b class="k">금위영</b>(숙종)만 기억하고, 사이에 <b>어영청·총융청·수어청</b>을 넣어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s30" data-era="joseon">
+  <h2><span class="no">31</span>조선 후기 사회상 (서민 문화·경제·상인)</h2>
+  <p class="meta">주제 27 · 매 시험 100% 출제 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=11331s" target="_blank" rel="noopener">▶ 3:08:51</a></p>
+  <ul>
+    <li class="hot">매 시험 출제되는 주제예요. 생산력이 올라가고 서당 교육이 보편화되자 서민이 양반의 3대 취향인 <b>시·서·화</b>를 따라 해요. 이 페이지의 키워드는 모두 <b>조선 후기</b>예요.</li>
+  </ul>
+  <h3 class="nh">서민 문화</h3>
+  <ul>
+    <li><b class="k">사설시조</b>(형식을 깬 시조), <b class="k">시사</b>(중인층의 시 모임, 옥계시사·직하시사, 지난 시험 출제), 한글 소설과 이야기꾼 <b class="k">전기수</b>, 책 대여점 <b class="k">세책점</b>, <b class="k">판소리·가면극</b>, <b class="k">민화</b>.</li>
+    <li>그림은 <b>진경산수화(정선)</b>, <b>김홍도(단원)·신윤복(혜원)</b> 풍속화 등(뒤에 자세히).</li>
+  </ul>
+  <h3 class="nh">경제</h3>
+  <ul>
+    <li class="keep">팔기 위한 <b class="k">상품 작물</b>(담배·고추 등)과 <b class="k">구황 작물</b>(감자·고구마), <b class="k">이앙법</b>의 전국 확대, <b class="k">상평통보</b>의 전국 유통.</li>
+    <li class="keep">광산은 국가 운영에서 <b class="k">민영 광산</b>으로: 점을 설치해 주고 세금을 거두는 <b class="k">설점수세</b>, 광산 전문 경영자 <b class="k">덕대</b>. 민영 수공업도 발달.</li>
+    <li><b>상인</b>(지역사로도 나올 수 있어요): 의주 <b class="k">만상</b>(대청 무역), 동래 <b class="k">내상</b>(대일 무역), 개성 <b class="k">송상</b>, 한강의 <b class="k">경강상인</b>, 평양 <b class="k">유상</b>. 공무역 <b class="k">개시</b>와 사무역 <b class="k">후시</b>, 서울 도성 주변의 <b>난전</b>과 시전, <b class="k">공인</b>(대동법 이후, 선혜청과 함께), 전국 장시를 도는 <b class="k">보부상</b>, 도매상 <b class="k">도고</b>, 육로의 <b class="k">장시</b>·수로의 <b class="k">포구</b>.</li>
+    <li class="keep">일본과의 무역처 <b class="k">초량 왜관</b>("초"라고 적혀 있어도 조선 후기예요).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s31" data-era="joseon">
+  <h2><span class="no">32</span>조선 문화 ① 성리학(이황·이이)과 실학</h2>
+  <p class="meta">주제 28 · 인물 사이드 주의 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=11555s" target="_blank" rel="noopener">▶ 3:12:35</a></p>
+  <h3 class="nh">16세기: 조식·이황·이이 (붕당과 연결해서)</h3>
+  <ul>
+    <li>북인 쪽 <b>조식</b>(남명): 칼을 차고 다니며 실천을 중시한 <b>칼 찬 선비</b>. 제자들이 임진왜란에 의병으로 나섰어요(<b class="k">곽재우</b>). 예전에 한 번 나왔어요.</li>
+    <li class="hot">이황·이이 비교는 실학보다 가능성은 떨어지지만, 요즘 시험이 인물의 사이드까지 건드려 확인하라고 했어요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th></th><th>이황</th><th>이이</th></tr>
+    <tr><td>성격</td><td>군주 중심, 철저히 <b>은퇴</b>하고 왕이 불러도 사양. <b>기대승과 논쟁</b>(편지 답변)</td><td>정치하는 사람, 현명한 신하가 군주를 가르쳐야 함</td></tr>
+    <tr><td>책</td><td><b class="k">성학십도</b>(그림책), 주자서절요 <span class="b sup">(보충)</span></td><td><b class="k">성학집요</b>(요약), <b class="k">동호문답</b>, <b class="k">격몽요결</b></td></tr>
+    <tr><td>서원·향약</td><td>안동 <b class="k">도산서원</b>, <b class="k">예안향약</b></td><td>파주 <b class="k">자운서원</b>, <b class="k">해주향약</b></td></tr>
+    <tr><td>기타</td><td></td><td>임진왜란 전 <b class="k">10만 양병</b>을 주장</td></tr>
+  </table></div>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>18세기 실학 (A급)</h3>
+  <ul>
+    <li class="hot">실학은 실제로 도움이 되는 학문이에요. <b>중농학파</b> 유형원·이익·정약용, <b>중상학파</b> 유수원·홍대용·박지원·박제가. 선구자(유형원·유수원)는 오답으로만 나와요. <b>이번 시험 가능성이 가장 높은 인물은 정약용 또는 박지원</b>이고, 나머지는 최근에 나왔어요.</li>
+    <li class="keep"><b>이익</b>(성호, 76회 출제): 토지 제도 <b class="k">한전론</b>(<b class="k">영업전</b>은 매매하지 못하게 묶음), 『성호사설』, 『곽우록』, 나라를 좀먹는 6가지 폐단 <b class="k">6좀</b>.</li>
+    <li class="hot"><b>정약용</b>(다산, 여유당): <b class="k">여전제</b>(공동 생산·공동 분배, 노동 일수에 따라 분배; 현실적으로는 정전제), 정조 때 <b class="k">거중기</b>(화성), 신유박해로 <b class="k">강진 유배</b>, 유배 중 <b class="k">1표 2서</b>(『경세유표』·『목민심서』·『흠흠신서』), 『마과회통』(홍역 연구).</li>
+    <li><b>홍대용</b>(79회 출제): 우주에 관심, 『<b class="k">의산문답</b>』, <b class="k">무한 우주론·지전설</b>.</li>
+    <li class="hot"><b>박지원</b>(연암): 청에 다녀와 <b class="k">『열하일기』</b>, 한문 소설 <b class="k">양반전·허생전·호질</b>. 한능검에서는 제한적으로 다뤄서 <b>호(연암)</b>를 잘 봐야 해요.</li>
+    <li><b>박제가</b>: 서울 출신 규장각 검서관, 『<b class="k">북학의</b>』, <b class="k">소비론</b>("재물은 샘과 같다").</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s32" data-era="joseon">
+  <h2><span class="no">33</span>조선 문화 ② 그림·공예·건축·교육</h2>
+  <p class="meta">주제 28 이어서 · 호와 그림을 함께 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=12022s" target="_blank" rel="noopener">▶ 3:20:22</a></p>
+  <ul>
+    <li class="hot">후기 쪽 그림은 <b>그림과 인물의 호를 꼭 기억</b>하라고 강하게 당부했어요.</li>
+  </ul>
+  <h3 class="nh">회화</h3>
+  <ul>
+    <li><b>전기(15세기)</b>: <b class="k">몽유도원도</b>(안견, 안평대군의 꿈을 그림), <b class="k">고사관수도</b>(강희안 <span class="b sup">(보충)</span>, 늙은 선비가 물을 바라봄). 16세기는 초충도·신사임당 <span class="b sup">(보충)</span>.</li>
+    <li class="keep"><b>진경산수화</b>: <b class="k">겸재 정선</b>(우리 자연을 보고 그림) <b class="k">인왕제색도·금강전도</b>(삐죽삐죽한 금강산 그림).</li>
+    <li class="keep"><b>풍속화</b>: <b class="k">단원 김홍도</b>(서민의 생활: 무동·씨름도 등) ↔ <b class="k">혜원 신윤복</b>(도시 양반의 풍류와 여인: 미인도, 월하정인, 단오풍정, 연소답청). 그림의 톤으로 구별해요. 영통골 입구도·파적도는 오답용.</li>
+    <li class="keep">19세기 <b class="k">추사 김정희</b>: <b class="k">추사체</b>, <b class="k">세한도</b>(제주 유배 중), <b class="k">금석과안록</b>(북한산비를 진흥왕 순수비로 고증).</li>
+  </ul>
+  <h3 class="nh">공예·건축·교육</h3>
+  <ul>
+    <li>공예: 고려 청자(상감 청자) → 조선 <b class="k">분청사기</b>(15세기 절정, 분칠) → <b class="k">백자</b>(순백자, 푸른색 그림의 <b class="k">청화백자</b>는 조선 후기).</li>
+    <li>건축: 조선 건축은 대부분 고려 건축을 묻는 문제의 오답용이에요. 가볍게 <b class="k">해인사 장경판전</b>(팔만대장경 보관)과 임진왜란 후 승병 활약으로 불교 위상이 높아진 <b>17세기의 대형 건축물</b>(외관은 여러 층, 내부는 층이 없이 하나로 통함): <b class="k">법주사 팔상전</b>(현존하는 조선 시대 유일의 목조탑), <b class="k">화엄사 각황전</b>, <b class="k">금산사 미륵전</b>. 앞 글자 "팔·각·미".</li>
+    <li class="keep"><b>향교 vs 서원</b>: 둘 다 지방 교육 기관이지만 향교는 <b>관학</b>(국가가 설치·운영, 부·목·군·현에 하나씩, 교수·훈도 파견), 서원은 <b>사립</b>이에요. 궁궐은 군걸 특강(별도)을 참고하라고 했어요.</li>
+  </ul>
+</section>
+
+<div class="era" id="era_geundae"><span class="en">근대</span><small>대원군 집권기 ~ 국권 피탈</small></div>
+
+<section class="card sec" id="s33" data-era="geundae">
+  <h2><span class="no">34</span>대원군 집권기와 열강의 침입</h2>
+  <p class="meta">주제 29 · 개항기 7~8문제 · 대외 정책이 대부분 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=12274s" target="_blank" rel="noopener">▶ 3:24:34</a></p>
+  <ul>
+    <li class="hot">개항기는 <b>일곱~여덟 문제</b>가 나오고 지난 시험은 일곱 문제였어요. 시기를 <b>① 청과의 구도 ② 러·일 구도 ③ 일본 독주기</b> 세 구도로 나눠 봐요. 세도 정치가 끝나는 1863년부터 10년간이 대원군 집권기예요.</li>
+    <li class="hot">시험 문제는 거의 <b>대외 정책</b>이고 출제 비중이 70%가 넘어요. 지난 시험은 신미양요였지만, 연달아 나올 수 있다고 했어요.</li>
+  </ul>
+  <h3 class="nh">대내 정책: 세도 정치를 깨뜨림</h3>
+  <ul>
+    <li>세도가 축출·인재 등용, <b class="k">비변사를 의정부(정부 기능)와 삼군부(군사 기능)로 분리</b>. 삼정의 문란 시정: <b class="k">양전 사업</b>(전정), <b class="k">호포제</b>(군정, 양반도 군포 납부), <b class="k">사창제</b>(환곡을 마을 자치로). 법전 <b class="k">대전회통</b>.</li>
+    <li>하지만 <b class="k">경복궁 중건</b>으로 민심이 떠났어요. 재원 마련을 위해 <b class="k">당백전</b>(물가 폭등)과 강제 기부 <b class="k">원납전</b>. <b class="k">최익현</b>이 대원군 하야 상소를 올렸어요(인물 문제 대비).</li>
+    <li>최익현: 이후 강화도 조약 때 <b class="k">왜양일체론</b>, 을사의병, 쓰시마에 끌려가 단식하다 순국.</li>
+  </ul>
+  <h3 class="nh">대외 정책 (병인·병인, 신미) <span class="b ans">순서 배열 먼저</span></h3>
+  <div class="flow"><span>병인박해(프랑스 선교사 처형)</span><i>→</i><span>제너럴 셔먼호 사건</span><i>→</i><span>병인양요</span><i>→</i><span>오페르트 도굴 시도</span><i>→</i><span>신미양요</span><i>→</i><span>척화비</span></div>
+  <div class="scroll"><table>
+    <tr><th>사건</th><th>핵심</th></tr>
+    <tr><td>병인양요(프랑스)</td><td>병인박해가 배경. 강화도 침입 → <b class="k">문수산성(한성근)·정족산성(양헌수)</b> 승리. 프랑스군이 <b class="k">외규장각 의궤</b> 등을 약탈(박병선 박사, 5년 단위 갱신 대여 형식으로 반환).</td></tr>
+    <tr><td>제너럴 셔먼호 사건</td><td>미국 상선이 대동강을 따라 평양까지 올라와 통상을 요구하다 평양 관민이 불태움. 당시 평안도 관찰사 <b class="k">박규수</b>(박지원의 손자, 훗날 임술 농민 봉기의 안핵사).</td></tr>
+    <tr class="hot"><td>신미양요(미국)</td><td>제너럴 셔먼호 사건이 원인. 강화도 <b class="k">광성보</b>에서 <b class="k">어재연</b>이 항전, 미군이 <b class="k">수자기</b>(장군 깃발)를 약탈(이후 반환). 지난 시험 출제.</td></tr>
+    <tr><td>오페르트 사건</td><td>독일 상인 오페르트가 대원군의 아버지 <b class="k">남연군 묘</b>를 도굴하려 시도(개별 사건).</td></tr>
+    <tr><td>척화비</td><td>신미양요 후 전국에 건립: 서양과의 화친을 반대한다는 내용</td></tr>
+  </table></div>
+</section>
+
+<section class="card sec" id="s34" data-era="geundae">
+  <h2><span class="no">35</span>강화도 조약과 서양 열강과의 조약</h2>
+  <p class="meta">주제 30 · 최근 붙여서 출제(변화) · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=12573s" target="_blank" rel="noopener">▶ 3:29:33</a></p>
+  <ul>
+    <li class="hot">강화도 조약이 <b>연속으로 출제</b>돼 약간의 변화가 있었어요. 대원군 하야(1873, 고종 친정) 이후 <b>민씨 외척</b>이 등장하는데 대원군과 달리 개항에 열려 있었어요. 3점짜리 고난도(부속 조약, 1883 개정 통상 장정, 사이 사건)도 대비하라고 했어요.</li>
+  </ul>
+  <h3 class="nh">강화도 조약(조일 수호 조규, 1876)</h3>
+  <ul>
+    <li>배경: 직전 해(1875) <b class="k">운요호 사건</b>. 우리나라 <b>최초의 근대적 조약</b>이자 <b>불평등 조약</b>.</li>
+    <li class="keep"><b class="k">조선은 자주국</b>(청의 종주권을 배제하려는 일본의 의도), <b class="k">부산 + 원산·인천 개항</b>, <b class="k">해안 측량권</b> <span class="b star">★</span>(밑줄), <b class="k">치외법권(영사 재판권)</b>(이후 서양 조약에도 모두 있어요).</li>
+    <li><b>부속 조약</b> 두 가지: <b class="k">조일 수호 조규 부록</b>(개항장 거류지 설정과 일본인 심리) / <b class="k">무역 규칙(통상 장정)</b>: <b class="k">무관세·무항세·무제한 유출</b>.</li>
+    <li class="hot">무역 규칙의 개정이 <b class="k">1883년 개정 통상 장정</b>: <b>관세</b> 부과(우리에게 유리), <b class="k">방곡령</b> 조항(1개월 전 사전 통고) → 1889년 방곡령 사건에서 일본의 항의로 철회·배상. 일본은 <b class="k">최혜국 대우</b>를 챙겼어요. 이 조약은 아무리 넓게 봐도 강화도 조약은 아니라는 점(연도도 내용도 달라요)을 알아야 3점 문제를 풀 수 있어요.</li>
+    <li class="keep">"다음 사이" 문제: 82년 조미 조약, 또는 어렵게는 <b class="k">두모진(두모포) 수세 사건</b>이 나올 수 있어요.</li>
+  </ul>
+  <h3 class="nh">수신사와 조선책략 → 조미 수호 통상 조약</h3>
+  <ul>
+    <li><b>수신사</b>(일본에 파견): 1차 김기수(1876), <b class="k">2차 김홍집(1880)</b>이 청의 황준헌의 『<b class="k">조선책략</b>』을 가져왔어요. 러시아를 막기 위해 <b class="k">친중국·결일본·연미국</b>(방아책). 이 영향으로 <b>미국과 수교</b>.</li>
+    <li class="hot"><b>조미 수호 통상 조약(1882)</b>: 70회가 마지막 출제라 단독 가능. <b>서양과의 최초 조약</b>(두 번째는 영국), <b>청이 알선</b>. 강화도 조약에는 <b>해안 측량권</b>, 조미 조약에는 <b class="k">거중 조정</b>(밑줄)이 있어요. 관세 조항, <b class="k">최혜국 대우</b>, 치외법권도 있어요. 임오군란(1882)보다 <b>조미 조약이 먼저</b>예요.</li>
+    <li><b class="k">보빙사</b>(미국에 파견): 민영익이 대표, 우편을 배운 홍영식 등.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s35" data-era="geundae">
+  <h2><span class="no">36</span>임오군란과 갑신정변</h2>
+  <p class="meta">주제 31 · 한 문제는 무조건 · 결과에 주목 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=12940s" target="_blank" rel="noopener">▶ 3:35:40</a></p>
+  <ul>
+    <li class="hot">번갈아 출제되던 두 사건이 <b>지난 시험에는 안 나와서</b> 이번에는 낼 가능성이 높고(문제 유형에 변화를 주는 중), 두 사건 중 한 문제는 무조건 나온다고 했어요. <b>과정보다 결과</b>를 외우라는 게 핵심이에요.</li>
+  </ul>
+  <h3 class="nh">1880년 개화 전담 기구</h3>
+  <ul>
+    <li class="keep"><b class="k">통리기무아문</b>(12사) 설치. 군제 개편(무위영·장어영의 2영), 신식 군대 <b class="k">별기군</b>(왜별기), 사절단: 81년 일본에 <b class="k">조사 시찰단</b>, 청에 <b class="k">영선사</b>. 두 해 동안 개화에 몰두하다 예산이 부족해 군인들 월급이 밀려요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">결과 암기</span>임오군란(1882) → 제물포·조청</h3>
+  <ul>
+    <li>배경: 개화 정책에 보수 세력·하층의 불만, <b>13개월 월급 체불</b>. 과정: 도봉소에서 장난을 치자 군인들이 폭발 → 도봉소 공격, 대원군을 찾음 → 대원군이 민씨 세력과 일본 공사관 공격을 지시하고 한 달간 재집권 → 민씨가 청을 불러 진압하고 대원군을 끌고 감.</li>
+    <li class="hot">결과: <b class="k">제물포 조약</b>(일본 공사관 경비병 주둔, 배상금), <b class="k">조청 상민 수륙 무역 장정</b>(청이 조선을 <b>속방</b>으로 규정, 양화진 등 내지 통상권(한양에 가게), 고문 파견: 청의 <b class="k">마젠창</b>, 독일인 <b class="k">묄렌도르프</b>).</li>
+    <li>이후 개화파가 나뉘어요: 민씨와 코드가 맞는 <b class="k">친청 온건 개화파</b> vs <b class="k">친일 급진 개화파</b>(김옥균 등).</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">결과 암기</span>갑신정변(1884) → 한성·톈진</h3>
+  <ul>
+    <li>배경: 임오군란 진압 후 청의 간섭 심화, 민씨의 친청화, 급진파 위축, <b class="k">김옥균의 차관 도입 실패</b>, 청불 전쟁으로 청군 절반 철수 + 일본의 지원 약속 → 우편을 담당한 <b class="k">홍영식이 부임하는 날 우정국 개국 축하연</b>을 거사일로.</li>
+    <li class="hot">과정: 반대파 처단, 고종 확보, <b>개화당 정부 수립</b>, 개혁 정강 발표 → 청군이 바로 개입해 <b class="k">3일 천하</b>.</li>
+    <li class="hot">결과: <b class="k">한성 조약</b>(조선이 일본에 배상금, 공사관 신축비) + <b class="k">톈진 조약</b>(청·일 양국 군대 동시 철수, 이후 출병 시 사전 통고: 동시 아웃·동시 인). 암기: 임오는 <b>제물포·조청</b>, 갑신은 <b>H(한성)·T(톈진)</b>.</li>
+  </ul>
+  <h3 class="nh">거문도 사건(1885)과 방곡령</h3>
+  <ul>
+    <li>청의 간섭을 견제하려고 러시아를 끌어들이려 하자 <b>영국이 거문도를 불법 점령</b>했어요(출제 비중은 떨어짐). 강대국 충돌을 막으려고 <b class="k">부들러</b>·<b class="k">유길준</b>이 <b class="k">한반도 중립화론</b>을 제안했어요.</li>
+    <li>조항은 1883년이지만 사건은 <b class="k">1889년 방곡령 사건</b>(1개월 전 통고 규정을 못 지켜 철회하고 배상).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s36" data-era="geundae">
+  <h2><span class="no">37</span>동학 농민 운동과 갑오개혁</h2>
+  <p class="meta">주제 32 · 두 번 연속 미출제(78회가 마지막) → 대비 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=13519s" target="_blank" rel="noopener">▶ 3:45:19</a></p>
+  <div class="box nh">1894년에 세 사건이 동시에 벌어져요: 동학 농민 운동 → 진압 못 한 정부가 청을 부름 → 톈진 조약에 따라 일본도 출병 → 일본이 경복궁을 점령하고 개혁(갑오개혁)을 추진, 청일 전쟁. 구도를 잡아야 순서를 풀 수 있어요.</div>
+  <ul>
+    <li class="hot">동학 농민 운동은 <b>최근 두 번 출제가 안 돼서</b> 반드시 대비하라고 했어요. 쉽게 내면 동학의 기본 내용(1860 최제우 창시, 인내천·시천주, 최시형의 교단·교리 정비), 어렵게 내면 <b>순서</b>예요.</li>
+  </ul>
+  <h3 class="nh">동학 농민 운동 순서 ("아짜" 느낌으로 3단계)</h3>
+  <div class="flow"><span>① 교조 신원 운동(삼례 집회 → 경복궁 복합 상소 → 보은 집회)</span><i>→</i><span>② 고부 민란(조병갑, 만석보, 전봉준, 사발통문, 안핵사 이용태 파견)</span><i>→</i><span>③ 1차 봉기: 백산 봉기 → 황토현 전투 → 황룡촌 전투 → 전주성 점령 → 전주 화약</span><i>→</i><span>일본의 개입(경복궁 점령 → 청일 전쟁 → 군국기무처)</span><i>→</i><span>2차 봉기: 남북 연합 → 우금치 전투 패배</span></div>
+  <ul>
+    <li class="hot"><b>1단계는 말로 하는 집회</b>: 최제우의 억울한 죽음을 풀어 달라는 <b class="k">교조 신원</b>. 안 되니 한양에서 <b class="k">복합 상소</b>. <b>2단계 고부 민란</b>: 탐관오리 <b class="k">조병갑</b>(만석보 수세 등), 이에 저항한 <b class="k">전봉준</b>이 <b class="k">사발통문</b>을 돌림. 정부가 보낸 안핵사 <b class="k">이용태</b>가 오히려 백성을 괴롭혀 진짜 봉기가 시작돼요.</li>
+    <li class="hot"><b>3단계 1차 봉기</b>: <b class="k">백산</b> 집결 → <b class="k">황토현</b>(지방군)·<b class="k">황룡촌</b>(중앙군) 격파 → <b class="k">전주성 점령</b> → 정부가 청을 부르고 일본이 따라 들어오자 서둘러 <b class="k">전주 화약</b>. 이때 농민군의 <b class="k">폐정 개혁안</b>, 전라도에 <b class="k">집강소</b>, 정부는 <b class="k">교정청</b>. "다음 줄이면" 99% 이 구도로 끝나요.</li>
+    <li class="keep"><b>일본의 준동</b>: 화약 후에도 철군하지 않고 "개혁해야 한다"며 <b class="k">경복궁 점령</b> → 이틀 뒤 <b class="k">청일 전쟁</b> → 이틀 뒤 <b class="k">군국기무처</b> 설치(갑오개혁 1차).</li>
+    <li class="keep"><b>2차 봉기</b>: 1차는 남접(전라도), 2차는 <b>"남북이 합세하여, 충청도와 전라도가 연합하여"</b>라는 멘트가 나오면 모두 이 줄 다음이에요. 마지막 주요 전투 <b class="k">우금치 전투</b>에서 패배.</li>
+  </ul>
+  <h3 class="nh">갑오개혁 1차 vs 2차 (지난 시험은 을미개혁 → 비교 문제 가능)</h3>
+  <div class="scroll"><table>
+    <tr><th></th><th>1차(군국기무처)</th><th>2차(박영효 + 홍범 14조)</th></tr>
+    <tr><td>핵심 키워드</td><td><b class="k">군국기무처</b>(초정부적 기구, 총재 김홍집, 부총재 박정양), 대원군 섭정</td><td>대원군을 내려보내고 친일 세력 <b class="k">박영효</b>를 불러들임, <b class="k">홍범 14조</b></td></tr>
+    <tr class="hot"><td>내용</td><td><b class="k">과거제 폐지·신분제 폐지</b>, 봉건적 학습 타파, 개국 기년 사용, 은본위제, <b class="k">궁내부와 의정부</b>(이원 체제)</td><td>중앙·지방 <b class="k">부 체제</b> 도입, <b class="k">재판소 설치</b>, <b class="k">교육 입국 조서</b>(교육 대상은 일반 국민 → <b class="k">한성 사범학교</b>)</td></tr>
+  </table></div>
+</section>
+
+<section class="card sec" id="s37" data-era="geundae">
+  <h2><span class="no">38</span>을미개혁·독립협회·대한제국(광무개혁)</h2>
+  <p class="meta">주제 33 · 러·일 구도 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=14116s" target="_blank" rel="noopener">▶ 3:55:16</a></p>
+  <ul>
+    <li class="hot">지난 시험에는 <b>을미개혁</b>과 <b>독립협회</b> 두 문제가 나왔어요. 이번에는 <b>대한제국(광무개혁)</b> 출제 가능성이 가장 높다고 했어요. 독립협회도 연속으로 다시 나올 수 있고 을미개혁 단독은 가능성이 낮아요.</li>
+  </ul>
+  <h3 class="nh">시모노세키 → 삼국 간섭 → 을미사변·을미개혁 (암기 "시·삼·을")</h3>
+  <ul>
+    <li>청일 전쟁 후 <b class="k">시모노세키 조약</b>(일본이 배상금과 요동 반도를 받음) → 러시아가 프랑스·독일과 압박한 <b class="k">삼국 간섭</b>(일본이 요동 반환) → 일본이 경복궁 <b class="k">건청궁</b>에서 만행을 저지른 <b class="k">을미사변</b> → <b class="k">을미개혁</b>.</li>
+    <li class="keep">을미개혁 키워드 "양·우·종"과 친해지기: <b class="k">태양력·건양 연호</b>, <b class="k">우편 제도</b>, <b class="k">종두법</b>, 친위대·진위대 설치, <b class="k">단발령</b> → 반발로 <b class="k">을미의병</b>.</li>
+  </ul>
+  <h3 class="nh">아관파천 → 독립협회 → 대한제국</h3>
+  <div class="flow"><span>아관파천(러시아 공사관, 이권 침탈)</span><i>→</i><span>독립협회(1896~98)</span><i>→</i><span>고종 경운궁 환궁(1897)</span><i>→</i><span>대한제국 선포(환구단, 광무)</span><i>→</i><span>독립협회 해산(헌의 6조 오해)</span><i>→</i><span>대한국 국제(1899)</span></div>
+  <ul>
+    <li><b>아관파천</b>: 신변에 불안을 느낀 고종이 러시아 공사관으로 피신. 러시아가 이권을 요구해 주자 최혜국 대우 때문에 다른 나라도 요구해 이권이 털려요. 이를 막으려고 독립협회가 등장.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>독립협회</h3>
+  <ul>
+    <li>구성: <b class="k">서재필</b>을 비롯한 <b class="k">정동 구락부</b>의 개화 지식인이 지도부, <b>민중이 기반</b>이라 뒤로 갈수록 세져요.</li>
+    <li><b>초기 계몽 활동</b>: <b class="k">독립신문</b>, <b class="k">영은문을 헐고 독립문</b> 건립(영은문은 청 사신 환영문), 모화관을 <b class="k">독립관</b>으로 바꿈, 강연·토론회.</li>
+    <li class="hot"><b>후기 정치 활동(1898)</b>: 러시아 <b class="k">한러 은행 폐쇄</b>·<b class="k">절영도 조차 요구 저지</b> 같은 이권 침탈 저지, 최초의 근대적 민중 집회 <b class="k">만민 공동회</b> → 관리가 참여한 <b class="k">관민 공동회</b> → <b class="k">헌의 6조</b> → <b class="k">중추원을 의회로</b> 개편하려 시도(<b class="k">입헌 군주제</b>). 반대파가 <b>공화정으로 모함</b>해 고종이 해산시켰어요.</li>
+    <li>한국 중앙 총상회(서울 시전 상인)는 독립협회와 같은 편이에요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">가장 유력</span>대한제국(광무개혁)</h3>
+  <ul>
+    <li class="hot">러시아 공사관에서 1년 만에 <b>경운궁(덕수궁)</b>으로 돌아와 <b class="k">환구단</b>에서 황제 즉위, 연호 <b class="k">광무</b>, 개혁은 <b class="k">구본신참</b>(옛것을 근본으로 새것을 참고). 독립협회를 해산시키고 <b class="k">1899년 대한국 국제</b>(황제가 모든 권한을 가짐)를 발표해요(시작 시점이 아니라 이때예요).</li>
+    <li class="hot">가장 잘 나오는 정답은 <b class="k">지계 발급 사업</b>(근대적 토지 소유 증서 발급). <span class="b ans">정답 단골</span></li>
+    <li>황제가 직접 군사권을 담당하는 <b class="k">원수부</b>, <b class="k">무관학교</b>, 간도 관리사 <b class="k">이범윤</b> 파견, 주로 <b class="k">실업·기술 학교</b>, 병원 <b class="k">광제원</b>(광혜원과 구별). 대부분의 개혁은 1904년 러일 전쟁 때 마무리돼요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s38" data-era="geundae">
+  <h2><span class="no">39</span>일본 독주기: 의병·의사·애국 계몽 운동</h2>
+  <p class="meta">주제 34 · 의병은 최근 계속 연속 출제 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=14606s" target="_blank" rel="noopener">▶ 4:03:26</a></p>
+  <div class="box nh">개항기의 세 번째 구도예요(① 청 ② 러·일 ③ 일본 독주기). 러일 전쟁 이후 청·러시아가 빠지고 일본만 남아요. 1905년 <b class="k">을사 조약</b>부터 외교권을 시작으로 나라를 빼앗겨 가요. 암기 약칭 <b class="k">외·군·사·경·합</b>(외교권·군대·사법권·경찰권·한일 병합 조약). 이에 맞서 <b>유생은 의병</b>, <b>지식인은 애국 계몽 운동</b>을 해요. 서로 방식이 달라 좋아하지 않지만 마지막에 합쳐진 느낌의 단체가 <b class="k">신민회</b>예요.</div>
+  <ul>
+    <li class="hot">의병은 최근 시험에서 <b>계속 연속으로 출제</b>돼서 의병끼리의 비교(을미·을사·정미)를 대비하라고 했어요. 애국 계몽 쪽에서 따로 낼 때 정답은 거의 <b>신민회</b>이고, 경우에 따라 보안회가 나와요.</li>
+  </ul>
+  <h3 class="nh">유생들: 상소 → 의병</h3>
+  <ul>
+    <li>처음에는 말로 해요: 1860년대 통상 반대, 70년대 개항 반대(<b class="k">최익현의 왜양일체론</b>), 80년대 미국과 수교 반대(<b class="k">이만손의 영남 만인소</b>). 안 되니 90년대부터 의병으로 전환돼요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th>의병</th><th>배경·인물</th></tr>
+    <tr><td><b>을미의병</b></td><td>배경 <b class="k">을미사변·단발령</b>. 의병장 <b class="k">이소응·유인석</b>(유생). 이듬해 고종이 러시아 공사관에서 <b class="k">해산 권고 조칙</b>을 내려 해산해요(정답으로 제일 잘 나옴).</td></tr>
+    <tr><td><b>을사의병</b></td><td>배경 <b class="k">을사 조약(외교권 박탈)</b>. <b class="k">민종식</b>, <b class="k">최익현</b>, 최초의 평민 출신 <b class="k">신돌석</b>. 최익현은 대원군 하야 상소·왜양일체론·을사의병까지 세 번 나와요.</td></tr>
+    <tr class="hot"><td><b>정미의병</b></td><td>배경 <b class="k">한일 신협약(정미 7조약)의 부수 각서로 군대 해산</b> → 해산 군인이 의병에 합류해 <b>의병 전쟁화</b>. <b class="k">13도 창의군</b>이 서울 진공 작전(실패), 총대장 <b class="k">이인영</b>, 군사장 <b class="k">허위</b>.</td></tr>
+  </table></div>
+  <h3 class="nh">의사들의 활동</h3>
+  <ul>
+    <li><b class="k">장인환·전명운</b>의 스티븐스 사살(1908, 샌프란시스코), <b class="k">안중근</b>의 하얼빈 이토 히로부미 사살(1909, 뤼순 감옥에서 미완성 <b class="k">『동양 평화론』</b>) — 단독 문제가 나올 때가 있어요. <b class="k">이재명</b>(이완용 습격) 의거도 알아 두세요.</li>
+  </ul>
+  <h3 class="nh">애국 계몽 운동 (순서대로)</h3>
+  <ul>
+    <li class="keep"><b class="k">보안회</b>(1904, 러일 전쟁 직후): 일제의 <b class="k">황무지 개간권 요구</b>를 저지해 성공 — 연도가 핵심. 헌정연구회·대한자강회는 단독급이 아니에요.</li>
+    <li class="hot"><b class="k">신민회</b>(1907~1911, 나라를 빼앗긴 1910년보다 1년 더 감): <b class="k">비밀 결사</b>, <b class="k">공화정</b> 지향, <b class="k">안창호·양기탁</b> 등. 교육의 <b class="k">대성학교·오산학교</b>, 산업의 <b class="k">태극서관·자기 회사</b>, 언론 <b class="k">대한매일신보</b>, 가장 중요한 <b class="k">국외 독립운동 기지 건설</b>. 의병의 무장 투쟁 기반과 계몽 운동을 결합한 <b>A급 단체</b>이고, 마지막은 <b class="k">105인 사건</b>(1911)이에요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s39" data-era="geundae">
+  <h2><span class="no">40</span>근대 문화: 신문·교육·근대 시설</h2>
+  <p class="meta">주제 35 · 매 시험 출제 · 이 페이지에서 한 문제 무조건 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=14977s" target="_blank" rel="noopener">▶ 4:09:37</a></p>
+  <ul>
+    <li class="hot">지난 시험에 <b>유경공원과 철도</b> 두 문제가 나왔는데 또 나올 수 있다고 했어요. 구도를 잡고 앞뒤로 나눠서 외우라고 했어요.</li>
+  </ul>
+  <div class="box nh"><b>구도(그림으로 정리)</b>: 근대 시설은 <b class="k">1898~1899</b>에 몰려 있어요(독립협회 마지막 해 + 대한제국, 고종이 의지가 있어서 투자). 그 앞에는 <b class="k">83·86 세트</b>(개항 직후), 그 뒤에는 러일 전쟁 후와 <b>1908~09 끝자락</b>(원각사, 덕수궁 석조전)이에요. 연도를 다 외우지 못해도 앞/중간/뒤로 구별하면 풀려요.</div>
+  <h3 class="nh">근대 시설 연표</h3>
+  <div class="scroll"><table>
+    <tr><th>시기</th><th>시설</th></tr>
+    <tr><td>1883~86 (앞)</td><td>83 <b class="k">박문국</b>(한성순보), <b class="k">기기창</b>(무기 공장), <b class="k">전환국</b>(화폐), 84 <b class="k">우정총국</b>(개국 축하연에서 갑신정변), 85 <b class="k">광혜원</b>(최초의 근대식 병원)</td></tr>
+    <tr class="hot"><td>1898~99 (몰림)</td><td>98 <b class="k">한성 전기 회사</b>(미국인과 합작), 명동성당 / 99 <b class="k">전차</b>, <b class="k">경인선</b>(첫 철도), <b class="k">광제원</b>(대한제국 때, 광혜원과 구별). 암기: "달리는 모든 것은 99". 황성신문·제국신문도 이 시기(황제 = 대한제국기).</td></tr>
+    <tr><td>러일 전쟁 이후</td><td>대륙 연결: <b class="k">경부선·경의선</b>(경부선 하면 초량). 순서는 너무 디테일해서 "러일 전쟁 이후"만.</td></tr>
+    <tr><td>1908~10 (뒤)</td><td><b class="k">원각사</b>(신극 공연 극장, 일제 강점기 선지로 틀리게 잘 나옴), <b class="k">덕수궁 석조전</b></td></tr>
+  </table></div>
+  <h3 class="nh">신문 <span class="b ans">정답 단골</span></h3>
+  <ul>
+    <li class="keep"><b class="k">한성순보</b>(1883, 박문국): <b>순한문</b>, 10일마다, 정부 발행 관보적 신문. 갑신정변 때 인쇄 시설이 불타 1884년에 중단. <b class="k">한성주보</b>: 주 단위, <b>최초로 상업 광고</b> 게재(틀린 선지로 나옴).</li>
+    <li><b class="k">독립신문</b>: 서재필이 주도, 한글 3면 + 영문 1면, 최초의 민간 신문. <b class="k">황성신문</b>·<b class="k">제국신문</b>(1898~1910): 황성신문의 장지연 <b class="k">시일야방성대곡</b>(을사 조약 규탄).</li>
+    <li class="hot"><b class="k">대한매일신보</b>(1904~1910): 영국인 <b class="k">베델</b>과 양기탁이 창간, 치외법권 덕에 일본을 대놓고 비판하는 강경 항일. <b>국채 보상 운동을 지원</b>한 것이 가장 잘 나오는 정답이고, 거꾸로 국채 보상 운동 문제의 정답도 대한매일신보 지원이에요(서로가 서로의 정답).</li>
+    <li><b class="k">만세보</b>(천도교), <b class="k">경향신문</b>(천주교)은 가볍게.</li>
+  </ul>
+  <h3 class="nh">근대 교육</h3>
+  <ul>
+    <li>최근 비중이 높아졌어요(83·86 세트). <b class="k">원산학사</b>(1883, 최초의 근대식 <b>사립</b>, "관민이 합심하여"), <b class="k">동문학</b>(통역관 양성소), <b class="k">육영공원</b>(1886, 최초의 근대식 <b>관립</b>, 영재 육성, 좌원·우원으로 나눠 선발, 젊은 현직 관료·양반 자제 대상, 헐버트·길모어·벙커 초빙. 지난 시험 출제, <b class="k">헐버트</b>의 교재 <b class="k">『사민필지』</b>).</li>
+    <li>개신교 선교사 학교(배재·이화·경신·정신·숭실)는 이름만. 갑오개혁 2차의 <b class="k">교육 입국 조서</b>(대상은 일반 국민 → 한성 사범학교), 광무 교육은 실업·기술 학교.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s40" data-era="geundae">
+  <h2><span class="no">41</span>국권 피탈 과정</h2>
+  <p class="meta">주제 36 · 화폐 정리 사업·국채 보상 운동 가능 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=15455s" target="_blank" rel="noopener">▶ 4:17:35</a></p>
+  <ul>
+    <li class="hot">구도를 먼저 잡으라고 했어요. 기본은 <b>1904년 러일 전쟁 이후</b>를 출제하고, 이번에는 <b>화폐 정리 사업과 국채 보상 운동</b> 쪽 출제 가능성이 있다고 했어요.</li>
+  </ul>
+  <div class="flow"><span>(전쟁 직전) 영일 동맹 1차, 용암포 사건, 고종의 중립 선언</span><i>→</i><span>러일 전쟁(1904): 한일 의정서(군용지)</span><i>→</i><span>1차 한일 협약(고문 정치)</span><i>→</i><span>열강의 승인(가쓰라·태프트 밀약, 영일 동맹 2차, 포츠머스 조약)</span><i>→</i><span>을사 조약(외교권 박탈, 통감부)</span><i>→</i><span>헤이그 특사 → 고종 강제 퇴위</span><i>→</i><span>한일 신협약(정미 7조약, 군대 해산)</span><i>→</i><span>기유각서(사법권)</span><i>→</i><span>경찰권 박탈</span><i>→</i><span>한일 병합 조약(1910)</span></div>
+  <ul>
+    <li class="keep">전쟁 직전 <b class="k">용암포 사건</b>(러시아가 내려오다 저지당함)은 나오면 3점이니 밑줄. "전쟁 기간 중 일은?" 유형에서는 을사 조약 이전 일에 <b class="k">일본의 독도 편입 발표</b>도 포함돼요.</li>
+    <li>한일 의정서: 군사 요충지(군용지)를 요구. 이 무렵 <b class="k">황무지 개간권</b>을 요구해 <b class="k">보안회</b>가 저항(1904).</li>
+    <li class="hot"><b>1차 한일 협약</b>: 고문 파견 — 재정 고문 <b class="k">메가타</b>, 외교 고문 <b class="k">스티븐스</b>(1908년 장인환·전명운이 사살). 메가타는 <b class="k">화폐 정리 사업</b>(제일은행권을 본위 화폐로 바꾸고 낡은 화폐를 갑·을·병으로 등급을 매겨 교환, 일부는 매수하지 않음)으로 우리 <b>민족 자본이 많이 무너지고 화폐 발행권을 박탈</b>당했어요. 이 사업의 예산을 일본에서 빌려 <b class="k">차관 도입이 늘어</b> 나랏빚이 불었고, 이를 갚자는 것이 <b class="k">국채 보상 운동</b>(대구 서상돈·김광제, 대한매일신보 지원).</li>
+    <li><b>을사 조약</b>: 외교권 강탈, <b class="k">통감부</b> 설치. 고종의 저항: 대한매일신보 친서, 미국에 헐버트 특사 파견, 네덜란드 <b class="k">헤이그 만국 평화 회의 특사</b>(외교권이 없는데 왜 보냈느냐는 문제). 일제는 고종을 강제 퇴위시키고 <b class="k">한일 신협약(정미 7조약)</b>을 강요: 차관 통치, 부수 각서로 군대 해산.</li>
+  </ul>
+</section>
+
+<div class="era" id="era_ilje"><span class="en">일제 강점기</span><small>통치·경제 · 독립운동 · 문화</small></div>
+
+<section class="card sec" id="s41" data-era="ilje">
+  <h2><span class="no">42</span>일제 강점기 통치 방식과 경제 정책</h2>
+  <p class="meta">주제 37 · 시기 구분 문제 출제 확률 200%(두 문제 이상) · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=15759s" target="_blank" rel="noopener">▶ 4:22:39</a></p>
+  <ul>
+    <li class="hot">지난 시험은 35번부터 시작했고 일제 강점기가 <b>여덟 문제</b>예요. 지난 시험에는 <b>10년대와 미나미(30년대 말)</b>를 냈어요. <b>미나미는 거의 디폴트</b>로 나오고, 이번에는 <b>20년대 또는 30년대 초 우가키</b>를 한 문제 줄 가능성이 있다고 했어요. 미나미와 둘 중 하나 가능성이 높아요.</li>
+  </ul>
+  <div class="box nh"><b>시기 구분</b>: 1910년대 <b class="k">무단 통치(헌병 경찰 통치)</b> → 20년대 <b class="k">문화 통치(민족 분열 통치, 친일파 양성책)</b> → 30년대 <b class="k">민족 말살 통치</b>(전시 체제). 앞의 <b>우가키</b> 시기(만주 사변 1931, 아직 여유가 있어 <b>농촌 정책</b>에 몰려 있음)와 <b>미나미</b> 시기(중일 전쟁 1937 이후 본격 전시)로 나누면 크게 네 시기예요. 분기점은 <b class="k">3·1 운동</b>(10→20년대)과 <b class="k">세계 경제 대공황</b>(30년대).</div>
+  <h3 class="nh">1910년대: 무단 통치 + 토지·회사 정책</h3>
+  <ul>
+    <li class="keep">통감부가 <b class="k">조선 총독부</b>가 돼요. 총독은 육·해군 대장 출신. 정무총감(행정), <b class="k">경무총감(치안, 헌병 사령관)</b>이 맡아 <b>헌병 경찰 통치</b>. <b class="k">중추원</b>은 3·1 운동 전까지 열린 적 없는 명목상 기구(있으면 100% 친일).</li>
+    <li class="keep">규칙 위반 시 재판 없이 <b class="k">즉결 처분</b>, <b class="k">태형령(조선인에게만)</b> <span class="b star">★</span>, 교원도 <b class="k">제복·착검</b>, 언론·출판·집회·결사 불허. <b class="k">조선 물산 공진회</b>(1915, 경복궁)는 지난 시험 출제.</li>
+    <li class="hot"><b>토지 조사 사업</b>: 대한제국의 지계 발급 사업이 러일 전쟁으로 중단된 것을 일제가 이어받는 척했지만 결국 토지 약탈. 관청은 <b class="k">임시 토지 조사국</b>, 방식은 <b class="k">기한부 신고제</b>(기간이 짧고 절차가 복잡해 신고 못 하면 땅을 빼앗김). 10년대는 토지 조사, 20년대는 산미 증식이에요.</li>
+    <li><b class="k">회사령</b>(회사를 세우려면 총독의 허가): 다른 영(<b>어업령·산림령·광업령·임야 조사령</b>)도 모두 10년대 "허가를 요한다"예요. 20년대에 신은행령이 하나 있지만 낸 적은 없어요.</li>
+  </ul>
+  <h3 class="nh">1920년대: 문화 통치</h3>
+  <ul>
+    <li><b>총독</b>: 문관도 임명 가능하다고 했지만 <b>실제 임명 사례는 없음</b>. 헌병 경찰 → <b class="k">보통 경찰</b>(하지만 관서·예산은 모두 늘어남). 10년대 키워드(태형령, 교원 제복)는 폐지.</li>
+    <li>언론·출판·집회·결사 일부 허용: <b class="k">조선일보·동아일보</b> 창간(검열·삭제·정간·압수로 억압). 풀어 주다가 탄압 법안 <b class="k">치안 유지법(1925)</b>. 주요 법안 두 개: 치안 유지법(25), <b class="k">국가 총동원법(1938)</b>.</li>
+    <li class="hot"><b class="k">산미 증식 계획</b>: 일본의 쌀 부족(공업화) 때문에 쌀을 늘려 가져감. 증산량은 있었지만 <b>수탈량이 훨씬 많아</b> 국내 쌀은 부족해지고 <b class="k">만주 잡곡 수입</b>이 증가. 회사령 <b>폐지·신고제 전환은 20년</b>.</li>
+    <li class="keep"><b>20년대 연표</b> 암기 "<b class="k">관동대 암·형</b>": 23 <b>관동 대지진</b>(조선인 학살), 23 <b>암태도 소작 쟁의</b>, 23 <b>형평사</b>(진주) / 24 <b>경성 제국 대학</b>("이민경": 2차 조선 교육령 → 민립 대학 설립 운동 탄압 → 경성제대) / 29 <b>원산 노동자 총파업</b>(최대 규모, 신간회 지원). 노동·농민 단체 노농 총동맹이 노동 총동맹과 농민 총동맹으로 분화(20년대).</li>
+  </ul>
+  <h3 class="nh">1930년대: 우가키 → 미나미</h3>
+  <ul>
+    <li><b>우가키(만주 사변기)</b>: <b class="k">농촌 진흥 운동</b>, <b class="k">남면북양 정책</b>, <b class="k">농지령</b>(소작 조정) 등 농촌 관련은 모두 우가키. 이 시기에 사회주의 운동이 가장 치열해 <b class="k">혁명적 농민 조합·노동 조합</b>이 나오고 한 줄로 <b class="k">평양 을밀대 위 강주룡의 고공 농성</b>(1931, 임금 삭감 항의; 평양 지역사)이 나올 수 있어요.</li>
+    <li class="hot"><b>미나미(중일 전쟁기, 1937~)</b>: 본격 전시. <b class="k">국가 총동원법(1938)</b>, <b class="k">황국 신민 서사 암송</b>(한국 신민 서사), <b class="k">내선일체</b>, <b class="k">창씨개명</b>, <b class="k">신사 참배</b>, <b class="k">궁성 요배</b>, <b class="k">국민학교령</b>, 사상범 <b class="k">보호 관찰령·예방 구금령</b>(지난 시험 80회 출제).</li>
+    <li class="keep">인적 수탈 암기 "<b class="k">지·지·징</b>": 육군 <b>특별 지원병</b>, <b>학도 지원병</b>, <b>징병</b>(+ 징용, 정신대). 물적 수탈: <b>공출·배급</b>. 총동원 문제는 <b class="k">국민정신 총동원 조선 연맹</b>, 하부 조직 <b class="k">애국반</b>, 몸뻬 복장 통일.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s42" data-era="ilje">
+  <h2><span class="no">43</span>1910년대 국내외 독립운동</h2>
+  <p class="meta">주제 38 · 이번엔 국내 쪽 가능성이 더 높음 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=16534s" target="_blank" rel="noopener">▶ 4:35:34</a></p>
+  <ul>
+    <li class="hot">지난 시험에는 <b>국외</b> 쪽이 나왔어요(예상대로). 이번에는 <b>국내가 조금 더 유력</b>하다고 했어요. 국내는 <b>두 단체 비교</b>, 국외는 <b>지역사</b>(어느 지역에 어느 단체가 있나)가 시험 문제예요.</li>
+  </ul>
+  <h3 class="nh">국내: 독립 의군부 vs 대한 광복회 (비밀 결사)</h3>
+  <div class="scroll"><table>
+    <tr><th></th><th>독립 의군부</th><th>대한 광복회</th></tr>
+    <tr><td>대표</td><td><b class="k">임병찬</b>(최익현의 제자, 쓰시마에서 단식하는 스승 곁에서 풀려나 귀국)</td><td><b class="k">박상진</b></td></tr>
+    <tr><td>목표</td><td><b class="k">복벽주의</b>(고종을 다시 왕으로)</td><td><b class="k">공화정</b></td></tr>
+    <tr class="hot"><td>활동</td><td>총독부에 <b class="k">국권 반환 요구서</b>(편지)를 보냄 — 정답 가능성이 가장 높음</td><td>친일 부호를 찾아가 군자금을 요구하고 안 주면 <b class="k">처단</b>(지난 시험에 대한 광복회 출제)</td></tr>
+  </table></div>
+  <h3 class="nh">국외: 지역사 (독립운동 기지 건설)</h3>
+  <div class="scroll"><table>
+    <tr><th>지역</th><th>핵심</th></tr>
+    <tr><td><b>서간도</b></td><td><b class="k">삼원보</b>(신한민촌, 남만주), <b class="k">이회영</b> — 암기 <b>경·부·신</b>: <b class="k">경학사</b>·<b class="k">부민단</b>·<b class="k">신흥 강습소</b>(뒤에 신흥 무관 학교)</td></tr>
+    <tr><td><b>북간도</b></td><td><b class="k">중광단</b>(대종교 계열 무장 투쟁, 이후 북로 군정서·청산리 전투), <b class="k">서전서숙</b>, <b class="k">명동학교</b>, 인물 윤동주</td></tr>
+    <tr><td><b>연해주</b></td><td><b class="k">신한촌</b>, <b class="k">최재형</b>, 단체 <b class="k">성명회·권업회·대한 광복군 정부·대한국민의회</b>(제일 잘 나오는 건 권업회), 1937년 <b>중앙아시아 강제 이주</b>(홍범도 장군도 함께 끌려감)</td></tr>
+    <tr class="hot"><td><b>하와이(포와)</b></td><td>노동 이민, <b class="k">사진 결혼</b>, 지난 시험 출제. 정답은 거의 <b class="k">대조선 국민군단</b>(군사 훈련). 주요 도시 호놀룰루.</td></tr>
+    <tr><td><b>미주 본토</b></td><td>샌프란시스코의 <b class="k">흥사단</b> = 안창호</td></tr>
+    <tr><td><b>멕시코</b></td><td>유카탄 반도 <b class="k">에네켄 농장</b>, <b class="k">숭무학교</b></td></tr>
+    <tr><td><b>일본</b></td><td>(낸 지 조금 됨) <b>관동 대지진(1923)</b>, 3·1 운동 배경의 <b>2·8 독립 선언</b></td></tr>
+  </table></div>
+</section>
+
+<section class="card sec" id="s43" data-era="ilje">
+  <h2><span class="no">44</span>3·1 운동과 대한민국 임시 정부</h2>
+  <p class="meta">주제 39 · 출제 확률 80% · 3·1 운동은 안 낸 지 꽤 됨 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=16990s" target="_blank" rel="noopener">▶ 4:43:10</a></p>
+  <ul>
+    <li class="hot">지난 시험에는 <b>임시 정부</b> 한 문제를 냈고 3·1 운동은 낸 지 조금 됐어요. 시험은 <b>3·1 운동과 6·10 만세 운동, 광주 학생 항일 운동(신간회 포함)을 비교</b>하는 형태라 서로가 오답 선지가 돼요.</li>
+  </ul>
+  <h3 class="nh">3·1 운동 (1919.3.1)</h3>
+  <ul>
+    <li class="keep"><b>배경</b>: 윌슨의 <b class="k">민족 자결주의</b>(파리 강화 회의)와 레닌, 국외 독립 선언 두 번(만주 <b class="k">무오 독립 선언(대한 독립 선언)</b>, 일본 도쿄 유학생의 <b class="k">2·8 독립 선언</b>), 10년간 <b>무단 통치</b>에 대한 반발, 그리고 <b class="k">3월 1일은 고종의 인산일</b>(독살설) — 6·10은 순종의 인산일(숫자가 들어간 날은 특별하다고 외워요).</li>
+    <li><b>과정</b>: 서울에서 <b class="k">민족 대표 33인</b>이 탑골 공원 대신 <b class="k">태화관</b>에서 독립 선언서(공약 3장) 낭독, 학생들은 탑골 공원에서 시위 → 일제의 강제 진압 → 서울에서 지방 도시, 농촌, 해외(만주·연해주·일본·미국 필라델피아)로 확산. 처음엔 <b>비폭력</b>, 학생이 주도하다 뒤로 갈수록 노동자·농민이 가세하며 <b>무력 저항</b>으로. 일제의 탄압은 <b class="k">제암리 교회 학살 사건</b>.</li>
+    <li class="hot"><b>결과</b>(특히 중요): <b>한계</b> = 구심점이 없고 말로만 해서는 안 됨 → ① <b class="k">임시 정부 수립</b> ② <b class="k">무장 투쟁 활성화</b>(의열단 1919, 봉오동·청산리 전투 1920) ③ 일제가 통치 방식을 <b>무단 → 문화</b>로 변경 ④ 주변국에 영향(중국 5·4 운동, 인도 반영 민족 투쟁) ⑤ 사회주의가 국내에 유입(20년대).</li>
+  </ul>
+  <h3 class="nh">대한민국 임시 정부 (출발)</h3>
+  <ul>
+    <li><b class="k">1919년 9월 통합 임정</b>(3·1 운동 반년 뒤), 위치 <b class="k">상하이</b>, 최초의 <b class="k">민주 공화제</b> 정부, 3권 분립의 입법 기구 <b class="k">임시 의정원</b>(이 말이 나오면 임시 정부). 대통령 <b class="k">이승만</b>, 국무총리 <b class="k">이동휘</b>.</li>
+    <li>초기에는 외교론이 중심이었어요(이어서 자금·연락망, 활동은 다음 구간에서).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s44" data-era="ilje">
+  <h2><span class="no">45</span>대한민국 임시 정부의 활동과 이동</h2>
+  <p class="meta">주제 39 이어서 · 한 문제 또는 두 문제는 무조건 · 처음부터 끝까지 한 번에 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=17380s" target="_blank" rel="noopener">▶ 4:49:40</a></p>
+  <ul>
+    <li class="hot">임시 정부는 <b>시작부터 끝까지 한 번에</b> 이해해야 해요. 이 주제에서 한 문제는 무조건 나오고 많으면 두 문제예요. 지난 시험 정답은 <b>건국 강령</b>이었고, 전체 <b>순서</b>를 묻거나 조소앙 같은 <b>인물</b>을 따로 낼 수도 있어요.</li>
+  </ul>
+  <h3 class="nh">초기 활동 (한능검이 좋아하는 선지들, 밑줄)</h3>
+  <ul>
+    <li class="keep">국내와 연결하는 비밀 조직 <b class="k">연통제</b>(행정)와 <b class="k">교통국</b>(통신). 거점은 만주의 <b class="k">이륭양행</b>(영국인 조지 쇼가 운영 <span class="b sup">(보충)</span>)과 부산의 <b class="k">백산상회</b>(안희제) <span class="b star">★</span></li>
+    <li>자금: 독립되면 갚겠다고 파는 <b class="k">독립(애국) 공채</b>. 외교 활동: 미국의 <b class="k">구미 위원부</b>, 프랑스 <b class="k">파리 위원부</b>, <b class="k">임시 사료 편찬회</b>(한일 관계 사료집), 임시 정부의 기관지 <b class="k">독립신문</b>(독립협회의 독립신문과 이름이 같아 헷갈리지 말 것), <b class="k">비행학교</b>(윌로스 비행학교).</li>
+  </ul>
+  <h3 class="nh">위기와 이동 (그래프로 외우기)</h3>
+  <div class="flow"><span>1919 임시 정부 출범(외교론 중심)</span><i>→</i><span>1921 연통제·교통국 발각</span><i>→</i><span>1923 국민 대표 회의(창조파 vs 개조파 → 둘 다 이탈)</span><i>→</i><span>이승만 탄핵, 2대 대통령 박은식, 국무령·국무위원 체제로 개헌</span><i>→</i><span>1931 한인 애국단</span><i>→</i><span>윤봉길 의거 후 장제스 지원, 이동</span><i>→</i><span>1940 충칭 정착</span></div>
+  <ul>
+    <li>외교론으로 통합을 이끌었는데 4년간 성과가 없자 무장 투쟁론자들이 노선을 재논의하려고 <b class="k">국민 대표 회의(국민대표회의, 1923)</b>를 열었고, <b class="k">창조파</b>(임정을 깨고 새로 만들자)와 <b class="k">개조파</b>(그대로 개조하자)가 싸우다 둘 다 나가 임정은 더 약해져요. 이 과정에서 이승만을 탄핵하고 <b class="k">박은식</b>이 2대 대통령에 올랐어요.</li>
+    <li class="hot">마지막 카드로 <b>1931년 만주 사변</b> 해에 김구가 상하이에서 <b class="k">한인 애국단</b>을 조직(암기 "<b>만·만·한·봉·봉</b>": 만보산 사건, 만주 사변, 한인 애국단, 이봉창, 윤봉길). <b class="k">이봉창</b>(도쿄에서 일왕 행렬에 폭탄, 실패) → <b class="k">윤봉길</b>(상하이 승전 기념식장에 폭탄, 성공)을 본 중국 국민당 <b class="k">장제스</b>가 지원을 약속했어요.</li>
+    <li>이후 일제를 피해 이동: <b class="k">상하이 → 우한(한커우) → 광저우 → 충칭</b>(주요 도시 세 곳: 상하이·한커우·충칭). <b class="k">1940년 충칭에 정착</b>.</li>
+  </ul>
+  <h3 class="nh">충칭 시기 (안정기): 정당·군대·건국 강령</h3>
+  <ul>
+    <li class="keep"><b>정당</b> <b class="k">한국 독립당</b>, <b>정규군</b> <b class="k">한국 광복군</b>(1940), 개헌으로 <b class="k">주석제</b>(주석 김구), <b class="k">건국 강령</b>(조소앙의 <b class="k">삼균주의</b>: 정치·경제·교육의 균등) <span class="b star">★</span> — 지난 시험 정답이 건국 강령.</li>
+    <li class="keep"><b>광복군</b>을 출제하면 정답은 거의 이 중 하나: <b class="k">OSS 국내 정진군</b> 훈련, <b class="k">인도·미얀마 전선에서 영국군과 연합 작전</b>, <b class="k">김원봉 세력의 합류</b>(1942).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s45" data-era="ilje">
+  <h2><span class="no">46</span>항일 학생 운동과 의열 투쟁</h2>
+  <p class="meta">주제 40 · 3·1 운동·6·10·광주 학생 비교 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=17736s" target="_blank" rel="noopener">▶ 4:55:36</a></p>
+  <div class="box nh">20년대에 사회주의가 들어오면서 독립운동이 민족주의와 사회주의로 양분됐다가 1927년에 합친 것이 <b class="k">신간회</b>(민족 유일당, 최대 합법 단체)예요. 학생 운동 문제는 <b>6·10 만세 운동(1926) → 신간회 → 광주 학생 항일 운동(1929)</b>의 흐름으로 풀어요.</div>
+  <ul>
+    <li class="hot">지난 시험에 6·10이 나왔으니 이번에는 <b>광주 학생 항일 운동 또는 3·1 운동</b> 가능성이 높다고 했어요. <b>의열단도 77회가 마지막</b>이라 주목하라고 했어요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th></th><th>6·10 만세 운동(1926)</th><th class="hot">광주 학생 항일 운동(1929)</th></tr>
+    <tr><td>계기</td><td>순종의 인산일(6월 10일). 사료에서 순종을 <b>융</b> 또는 <b>이척</b>이라 씀</td><td><b>등굣길 충돌</b>(광주발 열차). 일본 경찰이 우리 학생만 잡아가자 "검거 학생 석방" 요구</td></tr>
+    <tr><td>성격</td><td>민족주의·사회주의·학생이 함께 준비했으나 <b>사회주의가 사전 발각</b>돼 전국 확대 안 됨. 그러나 합칠 가능성을 발견 → <b class="k">신간회</b>가 나옴</td><td><b class="k">신간회의 지원</b>을 받아 <b>전국 확대</b>, <b class="k">3·1 운동 이후 최대 규모</b></td></tr>
+  </table></div>
+  <h3 class="nh">의열 투쟁</h3>
+  <ul>
+    <li class="keep">거의 <b>의열단</b> 단독이고, 경우에 따라 <b>한인 애국단</b>이 나와요. 강우규(노인 동맹단, 사이토 총독 부임 때 폭탄), 조명하, 경성 부민관 폭파 사건 등은 <b>둘 다 아닌 틀린 선지</b>예요.</li>
+    <li class="hot"><b>의열단</b>(1919 만주 지린 결성, 단장 <b class="k">김원봉</b>): 국내에 침투해 총을 쏘고 폭탄을 던지는 투쟁. 활동 지침이 <b class="k">신채호가 쓴 조선 혁명 선언</b>(독립운동은 민중에 의한 직접 혁명, 폭력)으로 거의 정답이에요.</li>
+    <li class="keep">의거 인물 암기: <b class="k">박재혁</b>(부산 경찰서), <b class="k">김익상</b>(조선 총독부), <b class="k">김상옥</b>(종로 경찰서), <b class="k">김지섭</b>(일본 궁성 이중교), <b class="k">나석주</b>(동양 척식 주식회사·식산 은행).</li>
+    <li>독립이 되지 않자 관내로 들어와 <b class="k">황포 군관 학교</b>에 입교하고 <b class="k">조선 혁명 간부 학교</b>(1932)를 세운 뒤 <b class="k">민족 혁명당</b>(1935, 난징)을 만들어요. 이후 30년대 중반의 무장 투쟁으로 이어져요.</li>
+    <li><b>한인 애국단</b>(1931, 상하이, 김구): <b class="k">이봉창</b>(도쿄 일왕 행렬 폭탄, 실패) · <b class="k">윤봉길</b>(상하이 승전 기념식, 성공) → 장제스의 지원.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s46" data-era="ilje">
+  <h2><span class="no">47</span>무장 투쟁 (봉오동~한중 연합 작전~관내)</h2>
+  <p class="meta">주제 41 · 출제 비중 90%, 매번 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=18122s" target="_blank" rel="noopener">▶ 5:02:02</a></p>
+  <ul>
+    <li class="hot">유형이 세 가지예요: ① 봉오동~한중 연합까지의 <b>기본 순서</b>(지난 시험에 딱 나옴) ② <b>한중 연합 작전</b> ③ 30년대 중반 이후 <b>관내 투쟁</b>. <b>이번에는 ②번이 가장 가능성이 높지만</b> 최근 시험이 예외를 많이 만들어서 모두 봐야 한다고 했어요.</li>
+  </ul>
+  <h3 class="nh">기본 순서 (암기 "봉·청·간·자·3·미·만·한중")</h3>
+  <div class="flow"><span>봉오동 전투(홍범도)</span><i>→</i><span>훈춘 사건(일제의 출병 구실)</span><i>→</i><span>청산리 전투(김좌진 북로 군정서 + 홍범도 등)</span><i>→</i><span>간도 참변(경신참변)</span><i>→</i><span>대한 독립 군단(서일, 북만주 집결)</span><i>→</i><span>자유시 참변</span><i>→</i><span>3부(참의부·정의부·신민부)</span><i>→</i><span>미쓰야 협정(1925)</span><i>→</i><span>3부 통합(국민부·혁신 의회)</span><i>→</i><span>만주 사변(1931)</span><i>→</i><span>한·중 연합 작전</span></div>
+  <ul>
+    <li>3·1 운동의 한계에서 1920년 본격화. 청산리의 북로 군정서는 <b class="k">중광단</b>이 기원이에요(북간도). 일제가 간도를 초토화한 <b class="k">간도 참변(경신참변)</b> 후 북쪽으로 올라가 <b class="k">대한 독립 군단</b>(서일), 러시아 자유시에서 남의 내전에 참여했다 입은 피해가 <b class="k">자유시 참변</b>. 돌아와 만주에서 <b>3부</b>를 만들자 일제가 <b class="k">미쓰야 협정</b>(1925)으로 탄압해 3부가 <b>통합</b>돼요.</li>
+  </ul>
+  <h3 class="nh"><span class="b hot">이번 시험 유력</span>한·중 연합 작전 (남만주 / 북만주로 묶기)</h3>
+  <div class="scroll"><table>
+    <tr><th></th><th>남만주</th><th>북만주</th></tr>
+    <tr class="hot"><td>단체</td><td><b class="k">국민부</b>(조선 혁명당)</td><td><b class="k">혁신 의회</b>(한국 독립당)</td></tr>
+    <tr class="hot"><td>부대·인물</td><td><b class="k">조선 혁명군</b> <b class="k">양세봉</b></td><td><b class="k">한국 독립군</b> <b class="k">지청천</b>(이청천)</td></tr>
+    <tr class="hot"><td>중국 측</td><td><b>중국 의용군</b></td><td><b>중국 호로군</b></td></tr>
+    <tr class="hot"><td>전투</td><td><b class="k">영릉가·흥경성 전투</b>(암기 "어흥")</td><td><b class="k">쌍성보·사도하자·대전자령·동경성 전투</b>(가장 잘 나오는 건 대전자령, 다른 전투도 낼 수 있음)</td></tr>
+  </table></div>
+  <h3 class="nh">30년대 중반 이후 관내 투쟁</h3>
+  <ul>
+    <li>의열단에서 출발: 관내로 들어와 황포 군관 학교·조선 혁명 간부 학교 → 1935년 난징에서 <b class="k">민족 혁명당</b>(좌우 합작, 중심 김원봉; 우파 조소앙·지청천은 이탈해 점점 좌파색) → 좌파 <b class="k">조선 민족 전선 연맹</b> → 중일 전쟁 후 1938년 한커우(우한)에서 <b class="k">조선 의용대</b> 창설 — <b>관내 최초의 한인 무장 부대</b>(광복군 1940보다 빠름).</li>
+    <li class="keep">이후 일부는 화북(타이항산 쪽)으로 올라가 <b class="k">조선 의용군·조선 독립 동맹</b>(김두봉 등)을 만들지만 이들은 <b>틀린 선지</b>로만 나와요. 김원봉은 충칭 임시 정부로 들어가 <b class="k">광복군에 합류</b>(정답이 될 수 있음). 압축 설명이라 이해가 안 되면 기본 강의를 보라고 했어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s47" data-era="ilje">
+  <h2><span class="no">48</span>1920년대 국내 독립운동: 민족주의·사회주의·신간회</h2>
+  <p class="meta">주제 42 · 출제 비중 120% · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=18551s" target="_blank" rel="noopener">▶ 5:09:11</a></p>
+  <ul>
+    <li class="hot">지난 시험에 <b>물산 장려 운동</b>이 나왔으니 이번에는 <b>민립 대학 설립 운동</b> 또는 <b>형평 운동·소년 운동</b> 쪽을 보라고 했어요.</li>
+  </ul>
+  <h3 class="nh">민족주의: 실력 양성 운동</h3>
+  <ul>
+    <li class="keep"><b>민립 대학 설립 운동</b>: <b class="k">2차 조선 교육령(1922)</b> → 민립 대학 기성회 조직(이상재), 1천만 원 모금 운동 → 가뭄·홍수로 모금이 잘 안 돼 실패, 일제가 무마하려고 <b class="k">경성 제국 대학(1924)</b> 설립. 순서 "이·민·경".</li>
+    <li class="keep"><b>물산 장려 운동</b>: <b>회사령 폐지(1920)</b> 이후 우리도 회사를 만들자(경성방직 등), 우리 물건이 비싸고 품질이 낮아도 팔아 주자는 민족 자본 형성 운동. 평양 <b class="k">조만식</b>, 자작회 같은 유사 단체, 관세 철폐 움직임으로 확산. 일제 탄압으로 성과가 적었어요. 1907년 대구 서상돈의 <b>국채 보상 운동</b>과 구별(둘 다 경제적 자립 운동).</li>
+    <li>성과가 부족하자 <b>이광수</b>의 <b class="k">자치론</b>(타협)이 나오고, 이에 맞선 것이 <b class="k">비타협론</b>(타협하지 않는 민족주의).</li>
+  </ul>
+  <h3 class="nh">사회주의와 사회 운동</h3>
+  <ul>
+    <li>3·1 운동 이후 유입 → 단체 난립(화요회·북풍회·무산자 동맹) → <b>1925년 조선 공산당</b>, 일제의 탄압 법안 <b class="k">치안 유지법(1925)</b>.</li>
+    <li class="hot"><b class="k">형평 운동</b> <span class="b star">★</span>: 백정에 대한 사회적 차별 철폐. 갑오개혁으로 법제적 신분제는 폐지됐지만 차별은 남았어요. <b class="k">1923년 진주</b>에서 <b>조선 형평사</b> 창립(암기 "관동대 암·형 23"). <b class="k">소년 운동</b> <span class="b star">★</span>: 천도교 중심, <b class="k">방정환·김기전</b>, 잡지 『어린이』, 어린이날.</li>
+    <li>노동·농민 운동이 활발해져 노농 총동맹이 분화(노동 총동맹, 농민 총동맹). <b class="k">암태도 소작 쟁의</b>(1923, 상대는 조선인 지주, 결과는 성공), <b class="k">원산 노동자 총파업</b>(1929, 최대 규모, 신간회 지원).</li>
+  </ul>
+  <h3 class="nh">신간회 (1927)</h3>
+  <ul>
+    <li class="keep"><b>비타협 민족주의 + 사회주의</b>가 합친 <b class="k">민족 유일당, 최대 합법 단체</b>. 배경: <b class="k">6·10 만세 운동</b>과 사회주의 단체 정우회의 <b class="k">정우회 선언</b>(과정상의 동맹자로 합칠 수 있다). 강령은 정치·경제적 각성, 단결, 기회주의 배격.</li>
+    <li class="keep">가장 잘 나오는 정답: <b class="k">광주 학생 항일 운동 지원</b>(1929), <b class="k">원산 노동자 총파업 지원</b>. 여성계의 자매 단체는 <b class="k">근우회</b>.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s48" data-era="ilje">
+  <h2><span class="no">49</span>일제 강점기 사회·문화·종교</h2>
+  <p class="meta">주제 43 · 한 문제 또는 두 문제는 무조건 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=18986s" target="_blank" rel="noopener">▶ 5:16:26</a></p>
+  <h3 class="nh">대중문화·생활</h3>
+  <ul>
+    <li><b class="k">모던 보이·모던 걸</b>, 소비문화의 중심 <b class="k">미쓰코시 백화점</b>, <b class="k">경성 라디오 방송국</b>(텔레비전 아님), 영화 <b class="k">아리랑</b>(1926, 나운규, 단성사 개봉; <b>임자 없는 나룻배</b>도 한 줄 출제).</li>
+    <li class="keep">잡지는 <b>20년대</b>(10년대는 언론·출판·집회 자유가 없음): <b class="k">신여성·별건곤·삼천리·개벽</b>. 가요 암기 "황·사·타·눈물": <b class="k">황성 옛터, 사의 찬미, 타향살이, 목포의 눈물</b>. 지난 시험에 나온 <b class="k">경평 축구 대회</b>도 있어요.</li>
+    <li>소설 <b class="k">상록수</b>(브나로드 운동), 연극 <b class="k">토월회</b>, 식민지 도시의 이중성: 상류층 <b class="k">문화 주택</b>, 서민 <b>영단 주택·토막집</b>. 사회주의의 영향으로 문학 단체 <b class="k">카프(KAPF)</b>·신경향파.</li>
+  </ul>
+  <h3 class="nh">종교</h3>
+  <div class="scroll"><table>
+    <tr><th>종교</th><th>핵심</th></tr>
+    <tr class="hot"><td><b>천도교</b>(동학)</td><td>인내천·시천주·후천개벽, 잡지 <b class="k">개벽·신여성·어린이</b>, 기관지 <b class="k">만세보</b>, 소년 운동 <b class="k">방정환·김기전</b></td></tr>
+    <tr class="hot"><td><b>대종교</b></td><td>단군 신앙, <b class="k">무장 투쟁</b> 중시. <b class="k">나철·오기호</b>(오적 암살단), <b class="k">중광단</b> → 북로 군정서 → 청산리 전투</td></tr>
+    <tr><td>원불교</td><td>불교의 현대화, 새 생활 운동</td></tr>
+    <tr><td>개신교</td><td><b>신사 참배</b> 거부(신민회, 105인 사건과도 관련)</td></tr>
+    <tr><td>천주교</td><td>『경향』(잡지·신문), 무장 투쟁 단체 <b class="k">의민단</b></td></tr>
+    <tr><td>유교·불교</td><td>박은식의 <b class="k">유교 구신론</b>, 한용운의 <b class="k">조선 불교 유신론</b></td></tr>
+  </table></div>
+</section>
+
+<section class="card sec" id="s49" data-era="ilje">
+  <h2><span class="no">50</span>국어 연구와 민족주의 역사학</h2>
+  <p class="meta">주제 43 이어서 · 국어 연구는 A급 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=19162s" target="_blank" rel="noopener">▶ 5:19:22</a></p>
+  <ul>
+    <li class="hot"><b>국어 연구</b>는 A급이에요. 지난 시험에는 안 나왔지만 그 전에 연속으로 냈어요. 이 페이지에서 가능성이 가장 높은 건 <b>2차 교육령(이·민·경)</b>, <b>조선어 연구회와 조선어 학회(이윤재·최현배)</b>, <b>백남운</b>이에요.</li>
+  </ul>
+  <h3 class="nh">국어 연구 순서</h3>
+  <div class="flow"><span>국문 연구소(대한제국, 주시경·지석영)</span><i>→</i><span>조선어 연구회(1921)</span><i>→</i><span>조선어 학회(1931)</span><i>→</i><span>조선어 학회 사건(1942)</span></div>
+  <ul>
+    <li>나라를 빼앗기자 국문 연구소는 사라지고 주시경도 1910년대에 돌아가셨어요.</li>
+    <li class="keep"><b class="k">조선어 연구회</b>(1921): 연구 동아리, 잡지 <b class="k">『한글』</b>, <b class="k">가갸날</b>. <b class="k">조선어 학회</b>(1931): 더 무게 있게 <b class="k">맞춤법 통일안·표준어·외래어 표기법</b>, <b class="k">우리말 큰사전</b> 편찬 시도(완성은 해방 후 한글 학회), <b class="k">조선어 학회 사건</b>(1942)으로 탄압. 인물 <b class="k">이윤재·최현배</b>는 단체를 묻는 문제의 힌트로 나와요.</li>
+  </ul>
+  <h3 class="nh">역사 연구</h3>
+  <ul>
+    <li><b>박은식</b>: <b class="k">국혼(혼)</b>을 강조, 『<b class="k">한국통사</b>』(우리의 고통의 역사), 『<b class="k">한국독립운동지혈사</b>』(피의 역사). 임시 정부 2대 대통령.</li>
+    <li><b>신채호</b>: 호 <b class="k">단재</b>, <b class="k">낭가 사상·화랑 정신</b>, 『조선상고사』·『조선사연구초』, 의열단 <b class="k">조선 혁명 선언</b>.</li>
+    <li class="hot"><b>백남운</b>(가능성이 가장 높음, 낼 때가 됨): <b class="k">사회 경제 사학</b>. 일제의 <b>정체성론</b>을 비판하고 <b class="k">세계사적 보편성</b>(아시아적 봉건 사회)을 강조. 이 키워드로 거의 맞힐 수 있어요. 순수 학문만 하겠다는 흐름은 <b class="k">실증 사학</b>(진단 학회).</li>
+  </ul>
+</section>
+
+<div class="era" id="era_hyeondae"><span class="en">현대</span><small>해방 ~ 통일 정책</small></div>
+
+<section class="card sec" id="s50" data-era="hyeondae">
+  <h2><span class="no">51</span>해방 이후 정부 수립 과정 (1)</h2>
+  <p class="meta">주제 44 · 현대사 6~7문제, 이 주제는 100% · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=19378s" target="_blank" rel="noopener">▶ 5:22:58</a></p>
+  <ul>
+    <li class="hot">현대사는 <b>44번부터</b> 시작하고 지난 시험은 43번부터 <b>일곱 문제</b>(보통 6~7문제)예요. 정부 수립 과정은 <b>매번 100% 출제</b>이고 지난 시험에 <b>김규식 단독</b>이 나왔어요. 문제는 <b>순서</b>가 기본이고 인물도 나와요.</li>
+  </ul>
+  <div class="box nh"><b>구도</b>: 열강 회담 순서 <b class="k">카·얄·포</b>(카이로 → 얄타 → 포츠담) → 일본 패망 선언 → 약 20일 뒤 미군 진주와 <b class="k">맥아더 포고문</b> → <b class="k">모스크바 3상 회의</b> → <b class="k">미소 공동 위원회(1차, 2차)</b> → <b class="k">UN 총회 → UN 소총회</b>. 순서가 많으면 크게 3단계로 쪼개요: ① 해방 직전·직후 ② 한반도 문제 논의 ③ 그 이후. 순서에서 가장 중요한 가운데는 <b class="k">"모·미·정·정"</b>(모스크바 3상 회의 → 미소공위 → 정읍 발언)이에요.</div>
+  <h3 class="nh">열강 회담 (한능검 출제 영역은 아님)</h3>
+  <ul>
+    <li><b class="k">카이로</b>(최초로 한국 독립을 약속), <b class="k">얄타</b>(소련의 참전 — 이것 때문에 분단됐다는 이야기), <b class="k">포츠담</b>(재확인).</li>
+  </ul>
+  <h3 class="nh">1단계: 해방 직전·직후 (국내 1 + 국외 2 단체)</h3>
+  <ul>
+    <li>국외: 중국 <b>충칭의 임시 정부</b>(광복군: OSS 훈련·인도 미얀마·김원봉 합류)와 화북의 <b>조선 독립 동맹·조선 의용군</b>(오답용). 국내: 비밀 결사 <b class="k">건국 동맹</b>(여운형).</li>
+    <li class="hot"><b>건국 동맹</b>이 해방 날 수면 위로 올라와 <b class="k">건국 준비 위원회(건준)</b>가 돼요. 미군이 들어오기 전 약 20일 동안 활동: 치안대와 지부 조직, 미군이 온다는 소식에 <b class="k">조선 인민 공화국</b> 선포(북한의 "조선 민주주의 인민 공화국"이 아님). 미군은 <b class="k">맥아더 포고문</b>(38도선 이남은 미군정, 정부 인정 안 함)으로 깔끔하게 무시했어요. 순서에서 해방 직후 가장 빠른 단체가 건준.</li>
+    <li class="hot"><b>여운형</b>(몽양): 77회가 마지막이라 3회째 안 나왔어요. 상하이 <b class="k">신한 청년당</b>, <b class="k">건국 동맹·건준</b>, 중도 좌파로 좌우 합작에 참여, 혜화동에서 피살. 중도 우파 <b>김규식</b>은 이후 소총회 뒤 1948년 4월 <b class="k">남북 협상</b>(지난 시험 문제).</li>
+  </ul>
+  <h3 class="nh">2단계: 한반도 문제 논의</h3>
+  <ul>
+    <li class="keep"><b class="k">모스크바 3상 회의</b>: <b>미·영·소</b> 외무 장관. 가장 중요한 결정은 <b class="k">신탁 통치</b>(최장 5년)와 미소 공동 위원회 개최. 한능검은 틀린 선지를 내지 않아 순서에 주목하세요. 국내 반응: 모두 반대하다가 <b>좌익은 찬탁으로 전환</b>, 우익은 계속 <b>반탁</b>.</li>
+    <li class="keep"><b class="k">미소 공동 위원회 1차</b>: 정부 수립에 <b>참여시킬 단체의 성격 문제</b>로 결렬, 좌우 대립이 극명해져요. 결렬 직후 <b class="k">이승만의 정읍 발언</b>(단독 정부 수립 주장, 이승만 인물 문제에서 사료로 나올 수 있음). 이후 미국의 <b class="k">트루먼 독트린</b>(냉전의 시작, 닉슨은 화해).</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s51" data-era="hyeondae">
+  <h2><span class="no">52</span>해방 이후 정부 수립 과정 (2) 좌우 합작에서 정부 수립까지</h2>
+  <p class="meta">주제 44 이어서 · 순서 + 인물 4명 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=19918s" target="_blank" rel="noopener">▶ 5:31:58</a></p>
+  <ul>
+    <li class="hot">정읍 발언으로 분단 얘기가 나오자 여론이 나빠졌고, 미군정이 중도파를 모아 <b class="k">좌우 합작 위원회</b>(좌우 합작 운동 지원)를 열어 <b class="k">좌우 합작 7원칙</b>을 발표해요(큰 성과는 없음). 가운데 순서 <b>"모·미·정·좌"</b>(모스크바 3상 회의 → 미소공위 1차 결렬 → 정읍 발언 → 좌우 합작)가 가장 중요하고, 지난 시험에서 인물로 나왔어요.</li>
+    <li class="hot">인물은 <b>네 명</b>이 나올 수 있어요: <b>이승만</b>(호 우남, 정읍 발언), <b>김구</b>(호 백범, 3천만 동포에게 읍고함), <b>여운형</b>(몽양, 건준·좌우 합작, 혜화동 피살), <b>김규식</b>(우사, 좌우 합작·남북 협상). 호를 알아야 해요.</li>
+  </ul>
+  <h3 class="nh">3단계: 냉전과 유엔</h3>
+  <div class="flow"><span>트루먼 독트린(냉전)</span><i>→</i><span>미소 공동 위원회 2차 결렬</span><i>→</i><span>UN 총회(인구 비례 총선거)</span><i>→</i><span>UN 한국 임시 위원단 입북 거부</span><i>→</i><span>UN 소총회(남한 단독 선거 결정)</span><i>→</i><span>제주 4·3 사건(1948.4)</span><i>→</i><span>남북 협상(4월)</span><i>→</i><span>5·10 총선거</span><i>→</i><span>제헌 국회·헌법(7.17)</span><i>→</i><span>8·15 정부 수립</span></div>
+  <ul>
+    <li>미소 공위 2차도 바로 결렬되자 미국은 문제를 <b>UN 총회</b>로 넘겼고, 인구 비례 총선거(남한 200석·북한 100석)를 결정했지만 북한이 거부해 <b class="k">UN 한국 임시 위원단</b>(선거 감독)이 북쪽에 가지 못해요. <b class="k">소총회</b>는 접근 가능한 남쪽만 <b>단독 선거</b>를 결정하면서 사실상 <b>분단이 확정</b>돼요.</li>
+    <li class="keep"><b class="k">제주 4·3 사건</b>: 소총회 이후 4월, 남한 단독 선거에 반대한 무장대와 토벌대의 대립에서 많은 민간인이 희생. 정답은 거의 <b>진상 규명 및 진상 보고서, 특별법 제정</b>("제주 4·3 → 지·진상"). 정부 수립 직후 여수·순천 10·19 사건으로 이어져요.</li>
+    <li class="hot"><b>남북 협상</b>(1948.4): 분단을 막으려는 마지막 시도. <b>김구·김규식</b>이 북쪽 대표를 만나 외국군 철수와 남한만의 단독 정부 반대를 논의. 김구는 38선을 넘으며 <b class="k">"삼천만 동포에게 읍고함"</b>을 발표(사료로 출제 가능). 지난 시험은 남북 협상(김규식).</li>
+    <li class="keep"><b>5·10 총선거</b>: 우리나라 <b>최초의 보통 선거</b>. 뽑힌 <b class="k">제헌 의원</b>은 국회의원 임기가 4년인데 이때만 <b>2년</b>(예외). 남북 협상파·임정 계열(김구·김규식·조소앙)은 불참. 제헌 국회가 헌법을 만들어 7월 17일(제헌절) 공포, 해방 3년 되는 <b>8월 15일 정부 수립</b>. 대통령 이승만, 부통령 이시영.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s52" data-era="hyeondae">
+  <h2><span class="no">53</span>6·25 전쟁</h2>
+  <p class="meta">주제 45 · 출제 비중 50%, 지난 시험에 나와 이번엔 낮음 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=20260s" target="_blank" rel="noopener">▶ 5:37:40</a></p>
+  <ul>
+    <li class="hot">한 번 내면 한 번 쉬는 흐름이라 이번엔 안 나올 가능성이 높지만, 최근 시험이 예외를 계속 만들어서 빠르게 보라고 했어요. 가장 많은 유형은 <b>"다음 전쟁 기간 중에"</b>예요.</li>
+    <li class="keep">"전쟁 기간 중" 문제에서 <b>제외</b>할 것: 배경인 <b class="k">애치슨 선언</b>(지난 시험 정답), 전쟁 뒤의 <b class="k">한미 상호 방위 조약</b>. <b>들어갈 것</b>: 전쟁 중 이승만 정부의 <b class="k">52년 발췌 개헌(부산 정치 파동, 직선제)</b>과 협정 직전의 <b class="k">반공 포로 석방</b>.</li>
+  </ul>
+  <h3 class="nh">배경과 전선 이동 (지도에서 번호를 붙여 외우기)</h3>
+  <div class="flow"><span>북한 남침(서울 3일 만에 함락)</span><i>→</i><span>유엔군 참전, 낙동강 전선(다부동)</span><i>→</i><span>인천 상륙 작전</span><i>→</i><span>서울 수복, 38도선 돌파, 평양 탈환</span><i>→</i><span>압록강 인근 최대 북진</span><i>→</i><span>중국군 개입</span><i>→</i><span>흥남 철수</span><i>→</i><span>1·4 후퇴(서울 다시 함락)</span><i>→</i><span>평택까지 후퇴 후 반격</span><i>→</i><span>5번 선(전선 고착)</span><i>→</i><span>소련의 휴전 제안, 포로 문제 대립</span><i>→</i><span>반공 포로 석방</span><i>→</i><span>1953 휴전 협정</span><i>→</i><span>한미 상호 방위 조약, 미국 원조</span></div>
+  <ul>
+    <li><b>배경</b>: 북한은 소련과 중국의 비밀 지원으로 유리하다고 판단했고, 남한은 분리됐다는 판단. 미군 철수와 미국의 극동 방위선에서 한국·대만이 빠졌다는 <b class="k">애치슨 선언</b>.</li>
+    <li class="keep">흥남 철수(고립된 국군·유엔군과 피란민이 배로 철수)와 1·4 후퇴는 한 달 차이이고 선지로 잘 나오니 순서를 확인해요. 휴전 제안은 소련을 거쳐 <b class="k">말리크</b>(유엔 소련 대표)가 했고, 가장 크게 대립한 쟁점은 <b>포로 문제</b>예요(우리는 휴전 반대).</li>
+    <li>이승만이 협정 체결 직전에 <b class="k">반공 포로 석방</b>("테이블을 엎음") → 대가로 <b class="k">한미 상호 방위 조약</b>(안전 보장)을 얻고 미국의 무상 원조로 <b class="k">삼백 산업</b>(제분·제당·면직)이 발달해요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s53" data-era="hyeondae">
+  <h2><span class="no">54</span>이승만 정부와 4·19 혁명, 장면 내각</h2>
+  <p class="meta">주제 46 · 개헌 + 대선 연도 + "다음 사이" · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=20631s" target="_blank" rel="noopener">▶ 5:43:51</a></p>
+  <ul>
+    <li class="hot">이승만 정부를 따로 낸 지가 조금 됐고 6·25보다 <b>이쪽 가능성이 더 높아 보인다</b>고 했어요. 이승만·박정희 정부는 안에서 <b>순서</b>(선후 관계, "다음 사이")를 묻기 때문에 구도를 잡아야 해요.</li>
+  </ul>
+  <div class="box nh"><b>구도</b>: 대선 연도 <b class="k">48 → 52 → 56 → 60</b>. 세 번째(56)에 위기가 오고, 위기 이후 독재를 강화하며 <b>진보당 사건</b>, 60년 <b>3·15 부정 선거</b> → <b>4·19</b>로 무너져요. 여기에 <b>개헌 두 개(발췌·사사오입)</b>를 끼워 넣으면 끝이에요. 호 <b>우남(이승만)</b>도 알아 두세요(몽양 여운형, 백범 김구, 우사 김규식).</div>
+  <h3 class="nh">48~56: 개헌과 선거</h3>
+  <ul>
+    <li><b>제헌 헌법(1948)</b>: 대통령 4년 임기, <b>중임 제한(두 번까지)</b>, <b>국회 간선</b> → 초대 이승만. 제헌 국회(2년)의 주요 법안: <b class="k">반민족 행위 처벌법</b>, <b class="k">농지 개혁법</b>(유상 매수·유상 분배), <b class="k">귀속 재산 처리법</b>(일제가 남긴 재산을 민간에 팔기).</li>
+    <li class="keep"><b>1차 개헌 = 발췌 개헌(52, 부산 정치 파동)</b>: 50년 총선에서 남북 협상파가 대거 당선돼 간선으로는 재선이 어려워지자 <b>직선제</b>로 바꿈. 전쟁 중 부산에서 이뤄졌어요. 2대 대통령.</li>
+    <li class="keep"><b>2차 개헌 = 사사오입 개헌(54)</b>: <b>초대 대통령에 한해 중임 제한 철폐</b>. 국회의원 203명의 2/3는 135.33인데 135표로 부결되자 "반올림하면 135"라며 통과시켰어요(사료에 "135"가 나오면 이것).</li>
+    <li class="keep"><b>56년 선거</b>: 자유당 이승만·이기붕, 민주당 신익희(급사)·장면, 무소속 조봉암(진보당)이 선전. 이승만은 당선됐지만 부통령은 <b>장면</b>(위기).</li>
+    <li><b>위기 이후 독재 강화</b>: <b class="k">진보당 사건</b>(조봉암 사법 살인), <b class="k">신 국가 보안법</b>, 경향신문 폐간(1959). 60년 <b>3·15 부정 선거</b>.</li>
+  </ul>
+  <h3 class="nh">4·19 혁명 → 장면 내각</h3>
+  <div class="flow"><span>대구 2·28(일요일 등교령)</span><i>→</i><span>3·15 부정 선거 규탄, 마산 김주열 시신 발견</span><i>→</i><span>서울·전국 확산, 교수단 시국 선언</span><i>→</i><span>이승만 하야 성명</span><i>→</i><span>허정 과도 정부: 3차 개헌(양원제·내각제)</span><i>→</i><span>장면 내각(제2공화국)</span><i>→</i><span>5·16 군사 정변</span></div>
+  <ul>
+    <li class="hot">4·19 키워드: <b class="k">마산 김주열</b>, 마산보다 빠른 <b class="k">대구 2·28</b>(지역사), 대통령 직무실 <b class="k">경무대</b>, <b class="k">교수단 시국 선언</b>, <b class="k">이승만 하야</b>. 이기붕은 없고 서열 3번째 외무장관 <b class="k">허정</b>이 과도 정부를 구성해 3차 개헌(<b class="k">양원제(민의원·참의원)</b>, <b class="k">내각제</b>).</li>
+    <li><b>장면 내각(제2공화국)</b>: 대통령 <b class="k">윤보선</b>(국회 간선), 국무총리 <b class="k">장면</b>. 민주당 압승 후 구파·신파가 싸우고, 학생 운동·교원 노조·통일 논의가 폭발했어요. 경제 개발 5개년 계획은 수립만 하고 시행 못 함. <b>9개월 만에</b> <b class="k">5·16 군사 정변</b>으로 끝나요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s54" data-era="hyeondae">
+  <h2><span class="no">55</span>박정희 정부</h2>
+  <p class="meta">주제 47 · 출제 비중 130%(한두 문제 무조건) · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=21254s" target="_blank" rel="noopener">▶ 5:54:14</a></p>
+  <ul>
+    <li class="hot">박정희 정부는 시험에 매번 나오는 파트예요. <b>경제 개발 5개년 계획, 수출 100억 불 달성, 포항 제철, 전·세·경·광, 유신·고·마·청</b>, 지하철 1호선은 모두 여기라고 했어요. 무조건 한 문제(많으면 두 문제).</li>
+  </ul>
+  <div class="box nh"><b>구도</b>: 박정희 정부는 <b>세 시기</b>로 나눠요. ① 군정기(1961~63, 5·16 군사 정변, 혁명 공약) ② 제3 공화국(63~72, 민주 공화당) ③ 유신(72~79). 정권의 두 카드는 <b class="k">정치(반공 → 통일)</b>와 <b class="k">경제(재건)</b>예요. 둘 중 하나가 흔들리면 위기, 둘 다 깨지면 끝나요.</div>
+  <h3 class="nh">정치 카드: 반공 → 통일 → 유신</h3>
+  <ul>
+    <li>군정기: 군사 혁명 위원회, <b class="k">혁명 공약</b>(반공 + 경제 재건). 그 뒤로 반공이 이어지다 <b class="k">1969년 닉슨 독트린</b>(미국의 화해 선언)으로 흔들려 <b>통일 카드</b>로 교체: 70년 8·15 선언 → <b class="k">1972년 7·4 남북 공동 성명</b>(통일의 3대 원칙: <b class="k">자주·평화·민족적 대단결</b>) → <b class="k">유신 헌법</b>(국민 투표 90% 찬성).</li>
+    <li class="keep"><b>개헌 번호</b>: 1차 발췌 → 2차 사사오입 → 3차 양원제·내각제(허정) → 6차 <b class="k">3선 개헌</b>(69, 세 번까지) → 7차 <b class="k">유신 헌법</b>. 번호를 다 외울 필요는 없고 "3선 개헌 이후"를 알아야 해요.</li>
+    <li class="hot"><b>유신 헌법(70회 출제)</b>: 대통령을 <b class="k">통일 주체 국민회의</b>에서 간선, 임기 6년에 중임 제한 없음, <b class="k">긴급 조치</b>(긴급 명령이 아님), 삼권 분립 무시: 국회의원 1/3 추천권, 법관 임명권 등 초헌법적 대통령.</li>
+    <li>유신에 대한 저항: <b class="k">개헌 청원 100만인 서명 운동</b>(73), <b class="k">3·1 민주 구국 선언</b>(76, 명동 선언).</li>
+  </ul>
+  <h3 class="nh">경제 카드와 시기별 키워드</h3>
+  <ul>
+    <li class="keep"><b>경제</b>: 군정기 화폐 개혁(자금 부족) → 외자 도입 두 카드 <b class="k">한일 국교 정상화(65, 김종필·오히라 메모 배경)</b>와 <b class="k">베트남 전투병 파병(미국의 브라운 각서)</b>. (한일 회담 반대는 6·3 시위 — 이 시위는 오답으로 나옴.) <b class="k">경제 개발 5개년 계획</b>은 장면 내각이 수립했지만 시행은 박정희: 1차 62, 2차 67, 3차 72, 4차 77(5년씩). 1·2차 경공업, 3·4차 중화학 공업. 지난 시험 정답이 이 계획. <b class="k">포항 제철, 수출의 날·수출 100억 불, 1차 석유 파동(73)은 중동 특수로 극복</b>.</li>
+    <li class="hot"><b>시기 구분 암기</b> "<b class="k">전·세·경·광</b>(유신 전) / <b class="k">유·고·마·청</b>(유신 시기)": 전태일 분신(70), 새마을 운동(70), 경부 고속 도로 완공(70), 광주 대단지 사건(71) / 지하철 1호선 개통(74), 판문점 도끼 만행 사건(76), 함평 고구마 피해 보상 운동, 청년 문화(장발·미니스커트 단속, 금지곡 "아침 이슬"·"거짓말이야").</li>
+  </ul>
+  <h3 class="nh">몰락 (1979)</h3>
+  <div class="flow"><span>2차 석유 파동</span><i>→</i><span>YH 무역 사건</span><i>→</i><span>김영삼 의원직 제명</span><i>→</i><span>부마 민주 항쟁</span><i>→</i><span>10·26 사태(김재규의 저격)</span><i>→</i><span>최규하 대통령(통일 주체 국민회의)</span><i>→</i><span>신군부의 군사 정변</span></div>
+</section>
+
+<section class="card sec" id="s55" data-era="hyeondae">
+  <h2><span class="no">56</span>신군부·5·18, 전두환 정부와 민주화 운동 비교</h2>
+  <p class="meta">주제 48 · 4·19 / 5·18 / 6월 항쟁 비교 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=21851s" target="_blank" rel="noopener">▶ 6:04:11</a></p>
+  <ul>
+    <li class="hot">현대사에서 <b>민주화 운동 세 개(4·19, 5·18, 6월 항쟁)</b>를 비교하는 문제가 자주 나오고 지난 시험에도 하나 나왔어요.</li>
+  </ul>
+  <h3 class="nh">신군부와 5·18</h3>
+  <ul>
+    <li>신군부(전두환·노태우)가 군사 정변을 일으키자 <b class="k">서울의 봄</b>(서울역 앞 시민 시위) → 비상 계엄 확대 → <b class="k">광주 5·18 민주화 운동</b>(<b>시민군</b>, 계엄군의 무력 진압). 과도기 기관 <b class="k">국보위</b>(국가 보위 비상 대책 위원회). 전두환이 통일 주체 국민회의에서 대통령에 선출되고 <b class="k">8차 개헌</b>(7년 단임, 간선) 후 다시 대통령.</li>
+    <li class="keep">5·18을 따로 내면 정답은 <b class="k">유네스코 세계 기록 유산</b>(최근 4·19 기록물도 추가돼 4·19에서도 정답이 될 수 있음).</li>
+  </ul>
+  <h3 class="nh">전두환 정부 구도: 경제는 좋고 민주화는 꽝</h3>
+  <div class="flow"><span>3저 호황(경제 성장 10%)</span><i>→</i><span>그러나 간선제</span><i>→</i><span>박종철 고문 치사</span><i>→</i><span>4·13 호헌 조치</span><i>→</i><span>6월 민주 항쟁</span><i>→</i><span>6·29 선언(노태우)</span><i>→</i><span>9차 개헌(대통령 5년 단임 직선제)</span></div>
+  <ul>
+    <li>경제: <b class="k">3저 호황</b>(저금리·저유가·저달러)으로 무역 흑자, 성장률 10% 이상. 유화 정책: 교복·두발 자유화, 통금 해제, 해외여행 자유화, 프로 스포츠, 최초의 이산가족 고향 방문단.</li>
+    <li class="keep">통제·탄압: <b class="k">보도 지침</b> <span class="b star">★</span>(땡전 뉴스), 인권 탄압 <b class="k">부천서 성 고문 사건</b>, <b class="k">박종철 고문 치사</b>.</li>
+    <li class="hot"><b>6월 항쟁</b>: 직선제 개헌 요구에 전두환이 <b class="k">4·13 호헌 조치</b>를 발표해 반발. 키워드 <b class="k">박종철·이한열</b>(최루탄), 구호 <b class="k">호헌 철폐·독재 타도</b>. 결과: 노태우의 <b class="k">6·29 선언</b>(직선제 약속) → <b class="k">9차 개헌 = 현행 헌법</b>(5년 단임 직선제).</li>
+  </ul>
+  <h3 class="nh">세 운동 비교</h3>
+  <div class="scroll"><table>
+    <tr><th></th><th>4·19 혁명</th><th>5·18</th><th>6월 항쟁</th></tr>
+    <tr><td>키워드</td><td><b class="k">마산 김주열</b>, 대구 2·28, 경무대, 교수단 시국 선언</td><td><b class="k">광주 시민군</b>, 신군부의 무력 진압</td><td><b class="k">박종철·이한열</b>, 호헌 철폐 독재 타도</td></tr>
+    <tr class="hot"><td>결과</td><td>이승만 <b>하야</b> → 허정 과도 정부, 3차 개헌(양원제·내각제)</td><td>진압당함. 유네스코 세계 기록 유산</td><td>6·29 선언, 9차 개헌(현행 헌법). 전두환은 임기를 채우고 퇴임</td></tr>
+  </table></div>
+  <ul>
+    <li>4·19와 6월 항쟁은 둘 다 개헌이 이루어졌어요(차이: 이승만은 하야, 전두환은 임기를 채움)라는 점이 중점이에요. 6·3 시위(한일 회담 반대)와 부마 항쟁(YH·김영삼 제명)은 보통 오답용이지만 부마 항쟁은 단독으로 낸 적이 한 번 있어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s56" data-era="hyeondae">
+  <h2><span class="no">57</span>노태우 정부 (이후 정부 포함)</h2>
+  <p class="meta">주제 49 · 지난 시험에 현대사를 정부별로 몰아 출제(세 문제) · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=22320s" target="_blank" rel="noopener">▶ 6:12:00</a></p>
+  <ul>
+    <li class="hot">현대사는 "누구 정부, 누구 정부" 식으로 몰아서 낼 때가 있어서 뒷부분도 집중해서 봐야 한다고 했어요. 공부하면 잡기 편한 파트예요.</li>
+  </ul>
+  <ul>
+    <li class="keep">노태우 정부의 <b>코어</b>는 <b class="k">1991년</b>: <b class="k">UN 동시 가입</b>, <b class="k">남북 기본 합의서</b>(남북 사이의 화해와 불가침 및 교류·협력에 관한 합의서), <b class="k">한반도 비핵화 공동 선언</b>. (91년 6기)</li>
+    <li><b>북방 외교</b>: <b class="k">7·7 선언</b>(1988) → <b class="k">서울 올림픽</b>(88, 자유·사회주의 진영 모두 참가) → 헝가리·폴란드·중국·소련·베트남 등과 수교(헝가리 얘기를 잘 낼 수 있음). 정치: 여소야대 → <b class="k">3당 합당</b>(민주 자유당), 한 줄로 나와요. 79회에 출제된 이후 지난 시험에는 안 나왔어요.</li>
+    <li>김영삼 이후 정부의 키워드는 바로 아래 "김영삼 ~ 문재인 정부"에서 이어져요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s57" data-era="hyeondae">
+  <h2><span class="no">58</span>김영삼 ~ 문재인 정부</h2>
+  <p class="meta">주제 49 이어서 · 정부별 키워드 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=22448s" target="_blank" rel="noopener">▶ 6:14:08</a></p>
+  <ul>
+    <li class="keep">김영삼 정부는 <b>지난 시험에 출제</b>돼 연속 가능성은 적다고 했어요. 현대사는 정부별로 몰아 낼 때가 있어서 아래 키워드를 정부와 연결해 외워 두세요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th>정부</th><th>핵심 키워드</th></tr>
+    <tr class="hot"><td><b>김영삼</b><br>(문민정부, 14대)</td><td>93년 <b class="k">금융 실명제</b>, <b class="k">역사 바로 세우기</b>(군 사조직 하나회 해체, 옛 조선 총독부 건물 철거, 전두환·노태우를 법정에 세움, <b class="k">국민학교를 초등학교로</b> 명칭 변경), <b class="k">지방 자치제 전면 실시</b>, <b class="k">고위 공직자 재산 등록제</b> 의무화, 96년 <b class="k">OECD 가입</b> 그러나 이어서 <b class="k">외환 위기</b>. 삼풍 백화점 붕괴, 민주 노총 창립 등 사건 사고도 이 시기("삼" 자 사건).</td></tr>
+    <tr class="hot"><td><b>김대중</b><br>(국민의 정부)</td><td>외환 위기 극복: <b class="k">노사정 위원회</b>(노동자·사용자·정부 3주체), <b class="k">금 모으기 운동</b>. <b class="k">햇볕 정책</b>, 최초의 <b class="k">남북 정상 회담</b>(6·15 남북 공동 선언), 국가 인권 위원회, 국민 기초 생활 보장법, 2002 월드컵.</td></tr>
+    <tr class="hot"><td><b>노무현</b><br>(참여 정부)</td><td><b class="k">한·칠레 FTA</b>(최초의 FTA), <b class="k">행정 중심 복합 도시</b> 건설 시작(예전에 한 번 출제), 두 번째 정상 회담(<b class="k">10·4 남북 공동 선언</b>), 호주제 폐지, 친일 반민족 행위 진상 규명 위원회, 진실·화해를 위한 과거사 정리 기본법.</td></tr>
+    <tr><td><b>이명박</b></td><td>다문화 가정 지원법, G20 정상 회의 <span class="b sup">(보충)</span></td></tr>
+    <tr><td><b>박근혜</b></td><td>한·중 FTA</td></tr>
+    <tr><td><b>문재인</b></td><td>평창 올림픽을 계기로 <b class="k">판문점 선언</b>(세 번째 정상 회담)</td></tr>
+  </table></div>
+  <ul>
+    <li class="keep">전두환 정부에서는 3저 호황 외에 <b class="k">최저 임금 위원회</b>(한 줄)가 지난 시험 정답이었으니 놓치지 마세요. 노태우 정부에서는 학생 운동 <b class="k">강경대</b> 사건이 나와요(강경대 = 노태우).</li>
+    <li>교재 하단에 11대부터 19대 대통령까지의 키워드를 전화기 다이얼 모양으로 정리했고, 강사가 3분짜리 영상으로 따로 만들어 두었으니 꼭 보라고 했어요.</li>
+  </ul>
+</section>
+
+<section class="card sec" id="s58" data-era="hyeondae">
+  <h2><span class="no">59</span>통일 정책과 남북 정상 회담</h2>
+  <p class="meta">주제 50 · 지난 시험에 정상 회담 출제 → 세 정상 회담 비교 · <a href="https://www.youtube.com/watch?v=YwXeMQ0TJxU&t=22684s" target="_blank" rel="noopener">▶ 6:18:04</a></p>
+  <ul>
+    <li class="hot">메인은 세 가지예요: <b>박정희의 7·4 남북 공동 성명</b>, <b>노태우의 1991년(UN 동시 가입·남북 기본 합의서·비핵화 선언)</b>, <b>김대중의 6·15 남북 공동 선언(첫 번째 정상 회담)</b>. <b>지난 시험에 정상 회담이 나와서</b> 이번에는 세 정상 회담을 서로 비교해 보라고 했어요.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th>정부</th><th>핵심</th></tr>
+    <tr><td><b>박정희</b></td><td>반공 체제가 닉슨 독트린으로 깨지자 통일 이야기. 민간 차원의 <b class="k">적십자 회담</b>, 정부는 비공식 특사 <b class="k">이후락</b> 파견 → <b class="k">7·4 남북 공동 성명</b>(통일의 3대 원칙 <b class="k">자주·평화·민족적 대단결</b>), <b class="k">남북 조절 위원회</b>. 발표 뒤 남북은 반대로 갔어요(남쪽은 유신, 북쪽은 헌법 개정). <b class="k">6·23 선언</b>은 세모 수준.</td></tr>
+    <tr><td><b>전두환</b></td><td>최초의 <b class="k">이산가족 고향 방문단</b>(안 어울리지만 사실)</td></tr>
+    <tr class="hot"><td><b>노태우</b></td><td><b class="k">7·7 선언</b>("칙칙폭") → 서울 올림픽 → 1991년 <b class="k">UN 동시 가입</b>, <b class="k">남북 기본 합의서</b>(불가침), 불가침을 보여 주자는 <b class="k">한반도 비핵화 공동 선언</b></td></tr>
+    <tr class="hot"><td><b>김대중</b></td><td><b class="k">햇볕 정책</b>, <b class="k">첫 번째 정상 회담(6·15 남북 공동 선언)</b>, 이때는 <b>비행기</b>를 타고 평양에 감. 6·15의 결과로 <b class="k">경의선 복구 공사 시작</b>, <b class="k">개성 공단 합의</b>.</td></tr>
+    <tr class="hot"><td><b>노무현</b></td><td><b class="k">두 번째 정상 회담(10·4 남북 공동 선언)</b>, 이때는 <b>도보로 군사 분계선을 통과</b>. 경의선 <b>시험 운행</b>, 개성 공단 <b>실제 착공</b>.</td></tr>
+    <tr class="hot"><td><b>문재인</b></td><td>평창 올림픽을 계기로 <b class="k">판문점 선언</b>(판문점에서 만나고 오감, 세 번째 정상 회담)</td></tr>
+  </table></div>
+  <ul>
+    <li class="keep">비교 포인트 정리: 6·15와 10·4는 비슷해 보여서 구별해야 해요. 경의선은 김대중 때 <b>복구 공사 시작</b> → 노무현 때 <b>시험 운행</b>, 개성 공단은 김대중 때 <b>합의</b> → 노무현 때 <b>실제 착공</b>. 정상 회담 교통수단은 1차 비행기, 2차 도보 군사 분계선 통과, 3차 판문점.</li>
+  </ul>
+  <div class="box nh"><b>강사의 마무리 말씀</b>: 이 내용을 100% 알 필요는 없고 <b>60% 정도만 알아도 합격에 지장이 없어요</b>. 끝까지 포기하지 말고 <b>반복의 반복</b>을 하라고 했어요. 시험 전날의 문단속 전문가 특강(파이널 라이브 강의)에서 실제 나올 수 있는 문제를 고민해 좋은 자료로 다시 만나겠대요.</div>
+</section>
+
 </main></div>
 
 <footer>
   <p>이 노트는 영상 자막(자동 생성)을 읽고 정리한 비공식 요약이에요. 자막의 오인식은 실제 역사 용어에 맞춰 고쳤고, 영상에 없는 내용은 (보충)으로 표시했어요. 시험 가능성에 대한 말은 강사의 의견이라 실제 출제와 다를 수 있어요. 시험 직전에는 반드시 원본 영상과 교재로 확인하세요.</p>
-  <p>2/4~4/4 특강(고려·조선·근현대)도 같은 형식으로 이어서 추가할 수 있어요.</p>
+  <p>② 통합본의 앞 1시간(선사~발해)은 ①과 같은 강의라 중복해서 담지 않았어요. 고려부터 현대까지는 이 영상의 자막을 시간 순서대로 정리했고, 시대 구분 제목은 노트 편의상 붙인 거예요.</p>
 </footer>
 </div>
 
@@ -510,28 +1708,25 @@ body.onlyhot .gal,body.onlyhot h3.nh+.gal{display:none}
   var d=Math.round((exam-t0)/864e5);
   $('#dday').innerHTML='81회 시험(2026.11.28) <b>'+(d>0?'D-'+d:d===0?'D-DAY':'종료')+'</b>';
 
-  /* 상단 칩 */
+  /* 상단 칩(시대) */
   var chips=$('#chips');
-  $$('.card.sec').forEach(function(s){
-    var h=$('h2',s), no=$('.no',h); if(!no)return;
-    var a=document.createElement('a'); a.href='#'+s.id;
-    a.textContent=(no.textContent+' '+h.textContent.replace(no.textContent,'')).replace(/\s+/g,' ').trim().slice(0,12);
-    chips.appendChild(a);
-  });
+  var topA=document.createElement('a'); topA.href='#outlook'; topA.textContent='출제 전망'; chips.appendChild(topA);
+  $$('#main > .era').forEach(function(e){var a=document.createElement('a'); a.href='#'+e.id; a.textContent=$('.en',e).textContent; chips.appendChild(a)});
 
   /* 왼쪽 목차(시각 포함) + 현재 위치 표시 */
   var toc=$('#toc'), tl=document.createElement('div'); tl.className='tt'; tl.textContent='목차'; toc.appendChild(tl);
   var tocLinks={};
-  $$('.card.sec').forEach(function(s){
+  $$('#main > .era, #main > .card.sec').forEach(function(s){
+    if(s.classList.contains('era')){var eh=document.createElement('a'); eh.href='#'+s.id; eh.className='eh'; eh.textContent=$('.en',s).textContent; toc.appendChild(eh); return}
     var h=$('h2',s), no=$('.no',h), tm=$('.meta a',s);
     var a=document.createElement('a'); a.href='#'+s.id;
-    var t=document.createElement('span'); t.textContent=h.textContent.replace(no.textContent,'').trim();
+    var t=document.createElement('span'); t.textContent=(no.textContent+' '+h.textContent.replace(no.textContent,'').trim());
     a.appendChild(t);
     if(tm){var sm=document.createElement('small'); sm.textContent=tm.textContent.replace('▶','').trim(); a.appendChild(sm)}
     toc.appendChild(a); tocLinks[s.id]=a;
   });
   if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(tocLinks).forEach(function(k){tocLinks[k].classList.remove('cur')});tocLinks[e.target.id].classList.add('cur')}})},{rootMargin:'-20% 0px -70% 0px'});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(tocLinks).forEach(function(k){tocLinks[k].classList.remove('cur')});var ca=tocLinks[e.target.id];ca.classList.add('cur');if(toc.offsetParent){toc.scrollTop=Math.max(0,ca.offsetTop-toc.clientHeight/2)}}})},{rootMargin:'-20% 0px -70% 0px'});
     $$('.card.sec').forEach(function(s){io.observe(s)});
   }
 
